@@ -473,7 +473,19 @@ export const THESES_LIBRARY: ThesisNotion[] = [
         reference: "Victor Klemperer, LTI - La Langue du IIIe Reich",
         developpement: "Dans LTI – La Langue du Troisième Reich, le philologue Victor Klemperer montre que le totalitarisme nazi ne s’est pas imposé uniquement par la violence, mais aussi par une transformation profonde de la langue quotidienne. Le régime n'a pas tant créé de nouveaux mots qu'il a répété et détourné des termes existants pour saturer l'espace public. La « Lingua Tertii Imperii » modifie le sens des mots existants : ainsi, « fanatique », autrefois péjoratif, devient une qualité valorisée, symbole de dévouement absolu au régime. La LTI utilise aussi des superlatifs permanents (« total », « historique », « mondial ») afin de créer une exaltation collective et une émotion continue. De plus, le vocabulaire médical ou industriel sert à déshumaniser les individus, avec des termes comme « liquidation » ou « élimination ». Enfin, l’usage massif de sigles et d’acronymes (Gestapo, HJ, DAF) robotise la langue et limite l’esprit critique. Klemperer explique que les mots pénètrent notre conscience à notre insu et orientent notre façon de penser. Ainsi, en empoisonnant la langue de l'intérieur, le pouvoir totalitaire colonise l'esprit des citoyens, rendant la pensée critique et l'opposition intellectuelle presque impossibles à formuler.",
         argumentPivot: "Klemperer démontre que le langage n'est pas neutre : en modifiant et en répétant sans cesse des termes précis, un régime totalitaire peut coloniser inconsciemment la pensée des individus et détruire leur esprit critique."
-      }
+      },
+      {
+        these: "Les jeux de langage : le sens des mots comme usage social et pratique",
+        reference: "Ludwig Wittgenstein, Recherches philosophiques",
+        developpement: "Dans sa seconde philosophie, présentée dans les Recherches philosophiques, Ludwig Wittgenstein abandonne l'idée d'un langage unique servant de miroir à la réalité. Il introduit le concept de « jeux de langage » pour montrer que parler est une activité pratique indissociable de nos actions quotidiennes. Pour Wittgenstein, le langage est semblable à une boîte à outils : il contient une multitude de jeux régis par des règles spécifiques, comme ordonner, plaisanter, consoler ou décrire un fait. La signification d'un mot ne réside pas dans l'objet qu'il désigne, mais dans l'usage que l'on en fait au sein d'un contexte social précis. Les problèmes philosophiques apparaissent lorsque l'on extrait un mot de son jeu naturel, provoquant ainsi des confusions sur le sens profond des mots.",
+        argumentPivot: "Wittgenstein démontre que le sens d'un mot n'est pas une essence figée, mais dépend entièrement de son usage pratique au sein de différents « jeux de langage » inséparables de nos formes de vie sociale."
+      },
+      {
+      these: "La parole politique : la révélation de soi et la construction du monde commun",
+      reference: "Hannah Arendt, Condition de l'homme moderne",
+      developpement: "Dans Condition de l'homme moderne, Hannah Arendt soutient que la parole et l'action sont les deux piliers qui fondent la vie politique et manifestent la liberté humaine. Pour Arendt, c'est en s'exprimant publiquement au sein de l'espace public que l'individu révèle son identité unique aux autres, répondant à la question « qui es-tu ? » plutôt qu'à « qu'es-tu ? ». Sans la parole, l'action humaine resterait muette et brutale, réduite à une simple force physique. Les mots permettent de donner un sens à nos actes, d'initier des projets collectifs et de bâtir un monde commun sans recourir à la violence. Parler constitue ainsi l'acte politique par excellence qui nous permet de vivre ensemble en tant qu'êtres libres et égaux.",
+      argumentPivot: "Arendt démontre que la parole est le fondement de la vie politique, car elle permet à l'individu de révéler sa singularité unique au sein de l'espace public, substituant le débat rationnel à la force physique."
+    },
     ]
   }
 ];
