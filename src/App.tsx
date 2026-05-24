@@ -401,17 +401,17 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.15, ease: "easeOut" }}
+            transition={{ duration: 0.2 }}
             className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-6 bg-slate-900/40 backdrop-blur-md select-none"
           >
             {/* Backdrop click to close */}
             <div className="absolute inset-0" onClick={() => setSelectedSubject(null)} />
 
             <motion.div
-              initial={{ scale: 0.97, opacity: 0, y: 12 }}
+              initial={{ scale: 0.97, opacity: 0, y: 15 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.97, opacity: 0, y: 12 }}
-              transition={{ duration: 0.15, ease: "easeOut" }}
+              exit={{ scale: 0.97, opacity: 0, y: 15 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
               className="relative w-full max-w-4xl bg-slate-900 rounded-2xl border-4 border-slate-900 shadow-2xl overflow-hidden flex flex-col z-10 max-h-[90vh]"
             >
               {/* Main Content of dark panel */}
