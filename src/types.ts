@@ -17,7 +17,25 @@ export type Notion =
   | "Le travail"
   | "La vérité";
 
-export type ExamType = "Annale" | "Potentiel";
+export type ExamType = "Annale" | "Potentiel" | "Theses";
+
+export interface ThesisAngle {
+  these: string;
+  reference: string;
+  developpement: string;
+  argumentPivot: string;
+}
+
+export interface ThesisNotion {
+  notion: Notion;
+  angles: ThesisAngle[];
+}
+
+export interface NotionMetadata {
+  definition: string;
+  contexte: string;
+  family: "nature_science" | "etat_justice" | "conscience_culture";
+}
 
 export interface SubjectIdeas {
   problematica: string;

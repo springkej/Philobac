@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Search, Compass, Layers, User, Sparkles } from 'lucide-react';
-import { subjects, NOTIONS } from './data';
+import { Search, Compass, Layers, User, Sparkles, BookOpen, ChevronRight } from 'lucide-react';
+import { subjects, NOTIONS, THESES_LIBRARY, NOTION_INTRO_DATA } from './data';
 import { Subject, ExamType, Notion } from './types';
 
 // Geometric Balance Specific Badges Mapping
@@ -25,6 +25,56 @@ const NOTION_COLORS: Record<Notion, string> = {
   "La vérité": "bg-pink-50 text-pink-600 border-pink-100",
 };
 
+const familyStyles: Record<string, {
+  badge: string;
+  definitionBox: string;
+  definitionText: string;
+  contexteBox: string;
+  contexteTitle: string;
+  highlightWord: string;
+  pivotBox: string;
+  pivotTitle: string;
+  thesisHeaderBg: string;
+  backBtn: string;
+}> = {
+  nature_science: {
+    badge: "bg-emerald-50 text-emerald-700 border-emerald-100",
+    definitionBox: "bg-emerald-50/60 text-emerald-950 border border-emerald-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-emerald-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
+    contexteTitle: "text-emerald-850 font-bold",
+    highlightWord: "text-emerald-700 italic font-bold",
+    pivotBox: "bg-emerald-50/45 border border-emerald-100 text-emerald-950",
+    pivotTitle: "text-emerald-700",
+    thesisHeaderBg: "bg-emerald-50/30 border-b border-emerald-100/80",
+    backBtn: "text-emerald-600 hover:text-emerald-800",
+  },
+  etat_justice: {
+    badge: "bg-indigo-50 text-indigo-700 border-indigo-100",
+    definitionBox: "bg-indigo-50/60 text-indigo-950 border border-indigo-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-indigo-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
+    contexteTitle: "text-indigo-850 font-bold",
+    highlightWord: "text-indigo-700 italic font-bold",
+    pivotBox: "bg-indigo-50/45 border border-indigo-100 text-indigo-950",
+    pivotTitle: "text-indigo-700",
+    thesisHeaderBg: "bg-indigo-50/30 border-b border-indigo-100/80",
+    backBtn: "text-indigo-600 hover:text-indigo-800",
+  },
+  conscience_culture: {
+    badge: "bg-violet-50 text-violet-700 border-violet-100",
+    definitionBox: "bg-violet-50/60 text-violet-950 border border-violet-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-violet-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
+    contexteTitle: "text-violet-850 font-bold",
+    highlightWord: "text-violet-700 italic font-bold",
+    pivotBox: "bg-violet-50/45 border border-violet-100 text-violet-950",
+    pivotTitle: "text-violet-700",
+    thesisHeaderBg: "bg-violet-50/30 border-b border-violet-100/80",
+    backBtn: "text-violet-600 hover:text-violet-800",
+  }
+};
+
 export default function App() {
   const [activeTab, setActiveTab] = useState<ExamType>('Annale');
   const [searchQuery, setSearchQuery] = useState('');
@@ -32,6 +82,7 @@ export default function App() {
   const [selectedYear, setSelectedYear] = useState<string>('all');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
+  const [selectedThesisNotion, setSelectedThesisNotion] = useState<Notion | null>(null);
 
   // Filter Logic
   const filteredSubjects = useMemo(() => {
@@ -112,6 +163,17 @@ export default function App() {
                 >
                   <Sparkles className="w-4 h-4 text-amber-500" />
                   Sujets potentiels
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => { setActiveTab('Theses'); setIsMobileMenuOpen(false); }}
+                  className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
+                    activeTab === 'Theses' ? 'bg-slate-100 text-slate-900 font-medium' : 'text-slate-500 hover:bg-slate-50 font-medium'
+                  }`}
+                >
+                  <BookOpen className="w-4 h-4 text-emerald-500" />
+                  Bibliothèque des Thèses
                 </button>
               </li>
             </ul>
@@ -226,6 +288,17 @@ export default function App() {
                         Sujets potentiels
                       </button>
                     </li>
+                    <li>
+                      <button
+                        onClick={() => { setActiveTab('Theses'); setIsMobileMenuOpen(false); }}
+                        className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
+                          activeTab === 'Theses' ? 'bg-slate-100 text-slate-900 font-semibold' : 'text-slate-500 font-medium'
+                        }`}
+                      >
+                        <BookOpen className="w-4 h-4 text-emerald-500" />
+                        Bibliothèque des Thèses
+                      </button>
+                    </li>
                   </ul>
                 </div>
 
@@ -298,8 +371,9 @@ export default function App() {
             <h1 className="text-lg font-bold tracking-tight text-slate-900">PhiloBac</h1>
           </div>
           <div className="flex gap-2">
-            <button onClick={() => setActiveTab('Annale')} className={`px-3 py-1.5 rounded text-xs font-bold ${activeTab === 'Annale' ? 'bg-slate-100 text-slate-900' : 'text-slate-500'}`}>Annales</button>
-            <button onClick={() => setActiveTab('Potentiel')} className={`px-3 py-1.5 rounded text-xs font-bold ${activeTab === 'Potentiel' ? 'bg-amber-100 text-amber-700' : 'text-slate-500'}`}>Potentiels</button>
+            <button onClick={() => setActiveTab('Annale')} className={`px-2 py-1.5 rounded text-[11px] font-bold ${activeTab === 'Annale' ? 'bg-slate-100 text-slate-900' : 'text-slate-500'}`}>Annales</button>
+            <button onClick={() => setActiveTab('Potentiel')} className={`px-2 py-1.5 rounded text-[11px] font-bold ${activeTab === 'Potentiel' ? 'bg-amber-100 text-amber-700' : 'text-slate-500'}`}>Potentiels</button>
+            <button onClick={() => setActiveTab('Theses')} className={`px-2 py-1.5 rounded text-[11px] font-bold ${activeTab === 'Theses' ? 'bg-emerald-100 text-emerald-700' : 'text-slate-500'}`}>Thèses</button>
           </div>
         </header>
 
@@ -357,39 +431,171 @@ export default function App() {
         {/* Content Section */}
         <div className="flex-1 overflow-y-auto p-6 md:p-8 custom-scrollbar relative">
           
-          {/* Section Title */}
-          <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 pb-2 gap-4">
-            <h2 className="text-lg font-bold text-slate-900 tracking-tight">
-              {activeTab === 'Annale' ? 'Dernières annales & archives' : 'Sujets probables (Inédits)'}
-            </h2>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 bg-white border border-slate-200 rounded-full text-[11px] font-medium text-slate-600 shadow-sm">{filteredSubjects.length} résultats</span>
-            </div>
-          </div>
+          {activeTab === 'Theses' ? (
+            <div className="max-w-4xl mx-auto pb-12">
+              <div className="mb-8">
+                <h2 className="text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2 mb-2">
+                  <BookOpen className="w-6 h-6 text-emerald-500" /> Bibliothèque des Thèses
+                </h2>
+                <p className="text-sm text-slate-500 font-medium">Pour chaque notion du programme, explorez les grandes thèses et arguments pivots à mobiliser en dissertation.</p>
+              </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 content-start">
-            <AnimatePresence>
-              {filteredSubjects.length === 0 ? (
-                <motion.div
-                  key="empty-state"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  className="col-span-full p-8 text-center border border-slate-200 border-dashed rounded-xl bg-white/50"
-                >
-                  <p className="text-sm font-medium text-slate-500">Aucun sujet ne correspond à votre recherche.</p>
-                </motion.div>
+              {!selectedThesisNotion ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                  {NOTIONS.map((notion) => {
+                    const hasData = THESES_LIBRARY.some(t => t.notion === notion);
+                    const metadata = NOTION_INTRO_DATA[notion];
+                    const family = metadata?.family || "conscience_culture";
+                    const styles = familyStyles[family];
+                    return (
+                      <button
+                        key={notion}
+                        onClick={() => setSelectedThesisNotion(notion)}
+                        className={`flex flex-col text-left p-4 rounded-xl border ${hasData ? 'border-slate-200 bg-white hover:shadow-sm' : 'border-slate-100 bg-slate-50/50 opacity-60 hover:opacity-100'} ${
+                          hasData && family === 'nature_science' ? 'hover:border-emerald-300' :
+                          hasData && family === 'etat_justice' ? 'hover:border-indigo-300' :
+                          hasData ? 'hover:border-violet-300' : ''
+                        } transition-all`}
+                      >
+                        <span className={`text-xs font-bold mb-2 px-2 py-0.5 rounded border inline-block w-fit ${styles?.badge || 'bg-slate-100 text-slate-500 border-slate-200'}`}>
+                          {notion}
+                        </span>
+                        <div className="flex items-center justify-between w-full mt-1">
+                          <span className="text-sm font-semibold text-slate-700">Explorer la notion</span>
+                          <ChevronRight className="w-4 h-4 text-slate-400" />
+                        </div>
+                      </button>
+                    )
+                  })}
+                </div>
               ) : (
-                filteredSubjects.map((subject) => (
-                  <SubjectCard 
-                    key={subject.id} 
-                    subject={subject} 
-                    onViewPistes={(sub) => setSelectedSubject(sub)}
-                  />
-                ))
+                <div className="space-y-8">
+                  <button 
+                    onClick={() => setSelectedThesisNotion(null)}
+                    className="text-xs font-bold text-slate-500 hover:text-slate-900 flex items-center gap-1 transition-colors"
+                  >
+                    ← Retour aux notions
+                  </button>
+
+                  {(() => {
+                    const metadata = NOTION_INTRO_DATA[selectedThesisNotion];
+                    const family = metadata?.family || "conscience_culture";
+                    const styles = familyStyles[family];
+
+                    return (
+                      <div className="space-y-6">
+                        <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight">
+                          {selectedThesisNotion}
+                        </h1>
+
+                        <div className={`p-5 rounded-xl ${styles.definitionBox}`}>
+                          <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold mb-2">Définition</p>
+                          <blockquote className={styles.definitionText}>
+                            « {metadata?.definition} »
+                          </blockquote>
+                        </div>
+
+                        <div className={`${styles.contexteBox} p-5 rounded-xl`}>
+                          <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-2">Contexte & Étymologie</p>
+                          <p className="text-sm leading-relaxed font-medium text-slate-750">
+                            {metadata?.contexte}
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  })()}
+
+                  {(() => {
+                    const thesisData = THESES_LIBRARY.find(t => t.notion === selectedThesisNotion);
+                    const metadata = NOTION_INTRO_DATA[selectedThesisNotion];
+                    const family = metadata?.family || "conscience_culture";
+                    const styles = familyStyles[family];
+
+                    if (!thesisData || thesisData.angles.length === 0) {
+                      return (
+                         <div className="p-8 text-center border border-slate-200 border-dashed rounded-xl bg-white/50">
+                           <p className="text-sm font-medium text-slate-500">Les thèses pour cette notion sont en cours de rédaction.</p>
+                         </div>
+                      );
+                    }
+
+                    return (
+                      <div className="space-y-6 pt-4">
+                        <h2 className="text-lg font-bold text-slate-800 tracking-tight">
+                          Thèses & Arguments Pivots
+                        </h2>
+                        {thesisData.angles.map((angle, idx) => (
+                          <div key={idx} className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <div className={`p-5 border-b border-slate-100 ${styles.thesisHeaderBg}`}>
+                              <h3 className="text-lg font-bold text-slate-900 mb-1">{angle.these}</h3>
+                              <p className="text-xs font-semibold text-slate-600 flex items-center gap-1.5">
+                                <User className="w-3.5 h-3.5 shrink-0 text-slate-500" /> {angle.reference}
+                              </p>
+                            </div>
+                            <div className="p-5 space-y-4">
+                              <div>
+                                <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-2">Développement</p>
+                                <p className="text-sm leading-relaxed text-slate-700 font-medium">
+                                  {angle.developpement.split(/(«[^»]+»|"[^"]+")/g).map((part, i) => {
+                                    if (part.startsWith('«') || part.startsWith('"')) {
+                                      return <em key={i} className={styles.highlightWord}>{part}</em>;
+                                    }
+                                    return part;
+                                  })}
+                                </p>
+                              </div>
+                              <div className={`rounded-lg p-4 ${styles.pivotBox}`}>
+                                <p className="text-[10px] uppercase tracking-widest text-slate-550 font-bold mb-2">L'Argument Pivot</p>
+                                <p className="text-sm font-bold leading-snug">
+                                  {angle.argumentPivot}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    );
+                  })()}
+                </div>
               )}
-            </AnimatePresence>
-          </div>
+            </div>
+          ) : (
+            <>
+              {/* Section Title */}
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 pb-2 gap-4">
+                <h2 className="text-lg font-bold text-slate-900 tracking-tight">
+                  {activeTab === 'Annale' ? 'Dernières annales & archives' : 'Sujets probables (Inédits)'}
+                </h2>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-white border border-slate-200 rounded-full text-[11px] font-medium text-slate-600 shadow-sm">{filteredSubjects.length} résultats</span>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 content-start">
+                <AnimatePresence>
+                  {filteredSubjects.length === 0 ? (
+                    <motion.div
+                      key="empty-state"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, scale: 0.95 }}
+                      className="col-span-full p-8 text-center border border-slate-200 border-dashed rounded-xl bg-white/50"
+                    >
+                      <p className="text-sm font-medium text-slate-500">Aucun sujet ne correspond à votre recherche.</p>
+                    </motion.div>
+                  ) : (
+                    filteredSubjects.map((subject) => (
+                      <SubjectCard 
+                        key={subject.id} 
+                        subject={subject} 
+                        onViewPistes={(sub) => setSelectedSubject(sub)}
+                      />
+                    ))
+                  )}
+                </AnimatePresence>
+              </div>
+            </>
+          )}
 
         </div>
       </main>
