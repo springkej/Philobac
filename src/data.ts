@@ -374,6 +374,101 @@ export const THESES_LIBRARY: ThesisNotion[] = [
         argumentPivot: "Sartre affirme que l'écrivain ne peut se soustraire aux luttes de son temps, la création artistique étant un appel éthique destiné à mobiliser la liberté humaine contre l'injustice."
       }
     ]
+  },
+  {
+    notion: "Le langage",
+    angles: [
+      {
+        these: "L'inadéquation du langage à la vie intérieure : le mot comme étiquette",
+        reference: "Henri Bergson, Essai sur les données immédiates de la conscience",
+        developpement: "Pour Henri Bergson, le langage a été forgé par la société pour répondre à des besoins d'action et de communication pratiques, et non pour exprimer la vérité intime de notre conscience. Il reproche aux mots d'être des « étiquettes » générales, fixes et impersonnelles. Or, notre vie intérieure, ce qu'il nomme la « durée », est un flux continu, mouvant et absolument singulier. En nommant un sentiment complexe, comme l'amour ou la tristesse, le langage l'isole, le fige et l'assimile au sentiment de tous les autres hommes. Ainsi, le langage spatialise et appauvrit notre expérience vécue. Au lieu de révéler notre moi profond, les mots le recouvrent d'un voile de banalités sociales, nous éloignant de la réalité authentique et nuancée de notre existence.",
+        argumentPivot: "Bergson démontre que le langage, outil social fait de concepts généraux, fige et trahit la nature fluide et singulière de notre vie intérieure subjective."
+      },
+      {
+        these: "Le langage comme illusion vitale et métaphore oubliée",
+        reference: "Friedrich Nietzsche, Vérité et mensonge au sens extra-moral",
+        developpement: "Friedrich Nietzsche affirme que le langage est fondamentalement trompeur et qu'il nous éloigne de la réalité foisonnante de la nature. Selon lui, les mots ne sont à l'origine que des métaphores subjectives qui, à force d'être répétées, ont perdu leur force poétique pour devenir des concepts rigides. L'être humain oublie cette origine et finit par croire que les mots reflètent des vérités objectives. Par exemple, le concept de « feuille » gomme les différences uniques entre chaque feuille réelle pour imposer une idée générale et fausse. La grammaire elle-même nous force à croire à des illusions métaphysiques, comme l'existence d'un « je » permanent. Le langage n'est donc pas un miroir du réel, mais une construction artificielle inventée par les hommes pour survivre, communiquer et se rassurer.",
+        argumentPivot: "Nietzsche soutient que le langage est une armée de métaphores usées qui simplifie la réalité pour imposer des concepts généraux, créant ainsi l'illusion d'une vérité objective."
+      },
+      {
+        these: "L'illusion de l'ineffable : le langage comme accomplissement de la pensée",
+        reference: "G.W.F. Hegel, Encyclopédie des sciences philosophiques",
+        developpement: "Contrairement à ceux qui croient que le langage appauvrit nos idées, Hegel soutient que vouloir penser sans les mots est une entreprise insensée. Il s'attaque directement au mythe de l'ineffable, cette illusion selon laquelle nous posséderions des pensées ou des émotions trop sublimes pour être exprimées. Pour Hegel, si nous ne trouvons pas les mots, ce n'est pas parce que le langage est limité, mais parce que notre pensée est encore obscure et inachevée. L'indicible n'est que de la confusion intellectuelle. C'est uniquement en se formulant à travers le langage que la pensée s'objective, gagne en clarté et accède à la conscience d'elle-même. Loin d'être la prison ou le tombeau de l'idée, le mot est ce qui lui donne sa véritable existence rationnelle.",
+        argumentPivot: "Hegel détruit le mythe de l'ineffable en affirmant que la pensée n'existe véritablement et clairement qu'à partir du moment où elle s'incarne dans des mots."
+      },
+      {
+        these: "Les limites logiques du dicible et le domaine du mystique",
+        reference: "Ludwig Wittgenstein, Tractatus logico-philosophicus",
+        developpement: "Dans sa première philosophie, Ludwig Wittgenstein considère que le langage fonctionne comme une image ou une carte logique de la réalité empirique. Les mots ne peuvent décrire avec sens que les faits objectifs du monde, ce qui relève principalement des sciences de la nature. Il en déduit une frontière stricte : « Les limites de mon langage signifient les limites de mon propre monde. » Tout ce qui touche au sens de la vie, à l'éthique, à la morale, à l'esthétique ou à Dieu ne correspond à aucun fait matériel et ne peut donc pas être dit logiquement. Ces dimensions relèvent de ce qu'il nomme le « mystique ». Face à ces questions existentielles fondamentales, le langage descriptif échoue, d'où sa célèbre conclusion : « Sur ce dont on ne peut parler, il faut garder le silence. »",
+        argumentPivot: "Wittgenstein établit que le langage logique ne peut décrire que les faits matériels, repoussant l'éthique et le sens de l'existence dans l'indicible qu'il faut se contenter de montrer."
+      },
+      {
+        these: "La performativité : quand la parole devient action",
+        reference: "J.L. Austin, Quand dire, c'est faire",
+        developpement: "Le philosophe anglais J.L. Austin bouleverse l'approche classique du langage en démontrant que les mots ne servent pas uniquement à décrire passivement le monde ou à communiquer des informations. Il met en lumière l'existence d'énoncés « performatifs », des phrases qui n'ont pas pour fonction d'être vraies ou fausses, mais d'accomplir un acte par le simple fait d'être prononcées. Lorsqu'un maire déclare « Je vous déclare mari et femme », ou qu'un individu affirme « Je le promets », l'énonciation elle-même transforme concrètement la réalité sociale et juridique. La parole n'est plus séparée de l'action : elle coïncide avec elle. Austin prouve ainsi que le langage possède une dimension active et créatrice, capable de modifier l'état des choses et d'engager la responsabilité de celui qui parle.",
+        argumentPivot: "Austin montre que le langage n'est pas qu'un outil de description : à travers les énoncés performatifs, dire c'est littéralement accomplir une action qui modifie la réalité sociale."
+      },
+      {
+        these: "La violence symbolique et le pouvoir social des mots",
+        reference: "Pierre Bourdieu, Ce que parler veut dire",
+        developpement: "Pierre Bourdieu souligne que le langage n'est jamais un instrument de communication neutre : c'est un véritable marché où s'exercent des rapports de domination. L'efficacité d'un discours ne repose pas seulement sur la grammaire ou la logique, mais sur l'autorité sociale de celui qui le prononce. Parler le « bon français », celui des institutions et de l'école, constitue un capital symbolique qui confère du pouvoir et de la légitimité. À l'inverse, ceux qui ne maîtrisent pas cette langue dominante subissent une « violence symbolique » : ils sont dévalorisés, exclus du débat public ou contraints à l'autocensure. Ainsi, le langage reproduit et masque les inégalités sociales. Le pouvoir des mots n'appartient donc pas aux mots eux-mêmes, mais à la position hiérarchique du locuteur dans la société.",
+        argumentPivot: "Bourdieu analyse le langage comme un espace de pouvoir où l'imposition de la langue légitime exerce une violence symbolique, reproduisant silencieusement les inégalités sociales."
+      },
+      {
+        these: "Le langage comme dévoilement : la « maison de l'Être »",
+        reference: "Martin Heidegger, Acheminement vers la parole",
+        developpement: "Pour Martin Heidegger, il faut rompre avec la conception purement instrumentale et utilitaire du langage. L'être humain n'est pas le maître absolu des mots, qui ne seraient que des simples outils à sa disposition. Au contraire, Heidegger affirme que « le langage est la maison de l'Être » et que c'est en réalité le langage qui parle à travers l'homme. La langue structure notre manière d'habiter le monde et de le comprendre. Si le langage quotidien, qualifié de « bavardage », nous éloigne de l'essentiel en figeant le réel dans des formules convenues, la parole authentique, particulièrement celle des poètes, a le pouvoir d'ouvrir de nouvelles dimensions de l'existence. La poésie ne se contente pas de nommer les choses, elle les fait apparaître et dévoile leur vérité profonde.",
+        argumentPivot: "Heidegger refuse de voir le langage comme un outil de communication : il est l'espace originaire où le monde se dévoile, trouvant sa forme la plus pure dans la poésie."
+      },
+      {
+        these: "L'expression charnelle : la parole comme geste et accomplissement",
+        reference: "Maurice Merleau-Ponty, Phénoménologie de la perception",
+        developpement: "Maurice Merleau-Ponty s'oppose à l'idée que la pensée existerait, achevée et parfaite, avant même de trouver ses mots, le langage n'étant qu'un simple vêtement. Pour ce phénoménologue, la parole est profondément enracinée dans notre corps et notre perception. Il compare le langage à un geste. De même que le corps s'oriente dans l'espace, la parole s'oriente vers le sens. Merleau-Ponty distingue la « parole parlée », qui est le langage usuel, institutionnalisé et répétitif, de la « parole parlante », qui est l'acte créateur par lequel l'homme arrache un sens inédit au silence, comme dans la littérature ou l'amour. L'expression linguistique ne traduit pas une pensée antérieure : elle l'accomplit, la fait exister dans le monde et permet une véritable rencontre avec autrui.",
+        argumentPivot: "Merleau-Ponty conçoit la parole comme un geste charnel où la pensée ne précède pas l'expression, mais s'accomplit et prend forme à travers l'acte vivant de parler."
+      },
+      {
+        these: "Le déterminisme politique : la Novlangue comme destruction de la pensée",
+        reference: "George Orwell, 1984",
+        developpement: "Dans son célèbre roman dystopique, George Orwell illustre la dimension éminemment politique du langage à travers l'invention de la « Novlangue ». Ce langage fictif, imposé par un État totalitaire, a pour particularité d'être continuellement appauvri : chaque année, des centaines de mots sont supprimés ou vidés de leurs nuances. Le but de ce rétrécissement linguistique n'est pas de faciliter la communication, mais de rendre la pensée critique littéralement impossible. Si le mot « liberté » perd son sens politique pour ne désigner qu'un concept vide, la rébellion devient impensable. Orwell démontre brillamment que la richesse du vocabulaire est la condition absolue de l'émancipation intellectuelle. Contrôler, appauvrir et simplifier la syntaxe et le lexique, c'est directement emprisonner la pensée et empêcher toute résistance au pouvoir.",
+        argumentPivot: "Orwell avertit que la restriction du vocabulaire et l'appauvrissement de la langue sont des armes totalitaires conçues pour détruire l'esprit critique et rendre la dissidence mentalement impossible."
+      },
+      {
+        these: "Le langage rationnel comme fondement exclusif de la Cité humaine",
+        reference: "Aristote, Les Politiques",
+        developpement: "Dès l'Antiquité, Aristote pose le langage au cœur de la définition de l'être humain, qualifié de « zôon logikon » (animal doué de raison et de parole). Il établit une distinction fondamentale entre la voix (phonè), partagée avec les animaux et servant à exprimer la douleur ou le plaisir, et le discours rationnel (logos), qui est l'apanage exclusif de l'humanité. Le but du langage n'est pas seulement de communiquer des besoins vitaux, mais d'exprimer et de débattre des valeurs morales : le juste et l'injuste, le bien et le mal. C'est cette capacité à échanger rationnellement qui rend possible la communauté politique. Le langage est donc l'outil démocratique et émancipateur qui permet de substituer la loi, le droit et la délibération à la violence pure.",
+        argumentPivot: "Aristote définit l'homme par la possession du logos, une parole rationnelle qui seule permet de débattre du juste et de l'injuste, fondant ainsi l'existence de la vie politique."
+      },
+      {
+        these: "L'agir communicationnel : la parole comme quête de consensus rationnel",
+        reference: "Jürgen Habermas, Théorie de l'agir communicationnel",
+        developpement: "Jürgen Habermas refuse de réduire le langage à un simple instrument de domination ou de manipulation. Selon lui, la fonction première de la parole est l'intercompréhension et la pacification des rapports sociaux. Il distingue « l'agir stratégique », où l'on utilise le discours pour contraindre ou manipuler l'autre afin de satisfaire ses propres intérêts, de « l'agir communicationnel », où des interlocuteurs échangent librement des arguments pour s'entendre sur une vérité ou une norme juste. Dans une démocratie saine, l'espace public doit reposer sur cette éthique de la discussion. Habermas soutient que tout acte de parole sincère porte en lui l'idéal d'un accord rationnel sans contrainte. Ainsi, la véritable force du langage ne réside pas dans la rhétorique trompeuse, mais dans la puissance pacificatrice du meilleur argument.",
+        argumentPivot: "Habermas soutient que la finalité essentielle du langage est l'intercompréhension, offrant par « l'agir communicationnel » un moyen pacifique et rationnel de construire un consensus démocratique."
+      },
+      {
+        these: "Le relativisme linguistique : la langue comme filtre de la réalité",
+        reference: "Edward Sapir et Benjamin Lee Whorf, Linguistique et anthropologie",
+        developpement: "L'hypothèse de Sapir et Whorf, issue de l'anthropologie et de la linguistique, remet en cause l'idée que le langage ne ferait que traduire une réalité objective universelle. Selon leur théorie de la relativité linguistique, c'est la structure même de notre langue maternelle qui détermine, ou du moins influence fortement, notre manière de percevoir et de penser le monde. Les mots et la grammaire agissent comme des lunettes à travers lesquelles nous découpons la réalité. Par exemple, une culture dont la langue ne possède pas de temps verbaux stricts percevra le déroulement de l'existence de manière beaucoup plus fluide qu'une culture obsédée par la chronologie. Ainsi, la langue n'est pas un outil neutre : elle conditionne nos catégories mentales, nos valeurs et notre compréhension intime de l'univers.",
+        argumentPivot: "L'hypothèse de Sapir-Whorf avance que la structure grammaticale et le lexique de notre langue maternelle déterminent activement notre perception du réel et nos catégories de pensée."
+      },
+      {
+        these: "Le structuralisme : l'arbitraire du signe et le découpage du réel",
+        reference: "Ferdinand de Saussure, Cours de linguistique générale",
+        developpement: "Ferdinand de Saussure, fondateur de la linguistique moderne, déconstruit l'idée naïve selon laquelle le langage serait une simple nomenclature, c'est-à-dire une liste d'étiquettes collées sur des choses existant préalablement. Il démontre que le signe linguistique est arbitraire : il n'y a aucun lien naturel ni logique entre le signifiant (la forme sonore du mot) et le signifié (le concept). Plus fondamentalement, Saussure affirme que sans le langage, notre pensée serait une nébuleuse confuse. La langue fonctionne comme un système autonome de différences qui découpe simultanément le son et la pensée. Ce ne sont donc pas les idées ou les objets qui précèdent les mots : c'est la structure interne de chaque langue qui organise et impose à l'être humain sa propre classification de la réalité.",
+        argumentPivot: "Saussure établit que le lien entre le mot et la chose est arbitraire, et que le langage fonctionne comme un système autonome qui découpe et organise activement notre réalité."
+      },
+      {
+        these: "La littérature engagée : nommer, c'est dévoiler et transformer",
+        reference: "Jean-Paul Sartre, Qu'est-ce que la littérature ?",
+        developpement: "Pour Jean-Paul Sartre, l'écriture et la parole ne sont jamais innocentes ni neutres : elles constituent des actes à part entière. Dans sa vision de la littérature engagée, Sartre affirme que l'écrivain ne peut se réfugier dans l'art pour l'art. « Parler, c'est agir ». Le simple fait de nommer une réalité, comme une injustice sociale ou une oppression politique, oblige la conscience humaine à la voir. Le langage arrache les situations au silence et à l'indifférence. Dès lors qu'une situation est formulée et partagée par les mots, personne ne peut plus faire semblant de l'ignorer. L'auteur, tout comme le lecteur, se retrouve en position de responsabilité. Le mot fonctionne donc comme un révélateur explosif qui modifie irrémédiablement notre regard sur le monde et nous somme de prendre position.",
+        argumentPivot: "Sartre défend l'idée que la parole est une action révélatrice : nommer une réalité, c'est la dévoiler à la conscience publique et obliger l'humanité à en prendre la responsabilité."
+      },
+      {
+        these: "La critique de la rhétorique : la manipulation contre la vérité",
+        reference: "Platon, Gorgias",
+        developpement: "Dans le dialogue du Gorgias, Platon s'attaque violemment aux sophistes, ces maîtres de rhétorique de la Grèce antique qui enseignaient l'art de persuader les foules. Platon dénonce cette conception du langage qui réduit la parole à un pur instrument de pouvoir et de manipulation. Le rhéteur ne se soucie absolument pas de la vérité ni du bien commun ; il cherche uniquement à flatter les désirs de son auditoire pour asseoir sa domination politique. Platon compare cette pratique à la pâtisserie, qui donne l'illusion de nourrir alors qu'elle ne fait que flatter le goût, contrairement à la médecine, qui soigne réellement. Face à cette dérive manipulatoire des mots, Platon oppose la dialectique du philosophe : un dialogue rationnel et honnête qui utilise le langage pour découvrir la vérité.",
+        argumentPivot: "Platon critique la rhétorique sophistique comme une flatterie dangereuse qui utilise le pouvoir de persuasion des mots pour manipuler les foules, au détriment de la vérité et de la justice."
+      }
+    ]
   }
 ];
 
@@ -668,12 +763,12 @@ subjects.push(
     notions: ["La liberté", "La conscience"],
     type: "Potentiel",
     ideas: {
-      problematica: "Si nous avons le sentiment profond d'être libres, de faire des choix par nous-mêmes, le déterminisme (scientifique, psychologique, social) ne fait-il pas de cette conscience de liberté une simple ignorance des causes qui nous font agir ?",
+      problematica: "Nous avons l'impression de choisir librement nos actions. Pourtant, nos décisions ne sont-elles pas influencées par notre éducation, notre psychologie ou notre environnement au point que cette liberté soit seulement apparente ?",
       authors: ["B. Spinoza", "J.-P. Sartre", "E. Kant"],
       plan: {
-        these: "Le sentiment intérieur de liberté est puissant et constitutif de l'homme (Descartes, Sartre).",
-        antithese: "Pourtant, cette impression peut masquer un déterminisme absolu où nos choix sont contraints à notre insu (Spinoza, Marx, Freud).",
-        synthese: "La liberté n'est pas une donnée immédiate mais une conquête : elle passe par la connaissance de nos déterminismes pour s'en affranchir (Kant)."
+        these: "L'être humain ressent intérieurement qu'il est libre de choisir et d'agir. Cette impression de liberté semble naturelle et essentielle à la conscience humaine.",
+        antithese: "Cependant, nos choix peuvent être influencés par des causes sociales, psychologiques ou biologiques que nous ne maîtrisons pas. Nous pouvons alors croire être libres alors que nous suivons des déterminismes invisibles.",
+        synthese: "La liberté ne consiste pas à agir sans aucune influence extérieure. Elle devient réelle lorsque l'on prend conscience de ce qui nous détermine afin d'agir de manière plus réfléchie."
       }
     }
   },
@@ -683,12 +778,12 @@ subjects.push(
     notions: ["Le bonheur", "L'État"],
     type: "Potentiel",
     ideas: {
-      problematica: "Le bonheur semble consister dans une plénitude individuelle, parfois troublée par autrui (l'enfer c'est les autres). Cependant, la condition humaine étant sociale, notre accomplissement peut-il se passer de la relation à l'autre ?",
+      problematica: "Le bonheur semble parfois dépendre de notre tranquillité personnelle. Mais peut-on vraiment être heureux sans relations humaines et sans vivre avec les autres ?",
       authors: ["Aristote", "A. Schopenhauer", "Épicure"],
       plan: {
-        these: "Le bonheur exige le repli sur soi et l'indépendance à l'égard de l'agitation sociale pour atteindre l'ataraxie (Stoïciens, Épicure).",
-        antithese: "L'homme est par nature un « animal politique » ; son épanouissement nécessite l'autre, par l'amitié (philia) ou la reconnaissance sociale (Aristote, Hegel).",
-        synthese: "Le bonheur authentique est partagé : autrui n'est pas qu'un moyen, mais le miroir dans lequel la conscience se réalise et s'apaise."
+        these: "Certaines personnes pensent que le bonheur se trouve dans le calme et l'indépendance. S'éloigner des conflits et des contraintes sociales peut apporter une certaine paix intérieure.",
+        antithese: "Pourtant, l'être humain vit naturellement avec les autres et a besoin de relations pour se construire. L'amitié, l'amour et la reconnaissance jouent un rôle essentiel dans l'épanouissement personnel.",
+        synthese: "Le bonheur demande parfois des moments de solitude et de réflexion personnelle. Mais il semble difficile d'être pleinement heureux sans partager sa vie avec les autres."
       }
     }
   },
@@ -698,12 +793,12 @@ subjects.push(
     notions: ["La nature", "La technique", "La science"],
     type: "Potentiel",
     ideas: {
-      problematica: "Le projet de la science moderne a fait de la connaissance un levier de l'action technique (« maîtres et possesseurs de la nature »). Mais l'étendue de notre savoir ne révèle-t-elle pas aussi les limites de notre maîtrise, voire l'illusion de celle-ci face aux dérèglements ?",
+      problematica: "La science permet de mieux comprendre la nature et de développer des techniques puissantes. Mais cette connaissance nous donne-t-elle réellement le contrôle de la nature ?",
       authors: ["R. Descartes", "H. Jonas", "F. Bacon"],
       plan: {
-        these: "Savoir, c'est pouvoir (Bacon). Mieux connaître les lois naturelles permet de s'en rendre maître d'un point de vue technique et utilitaire.",
-        antithese: "Cependant, cette maîtrise instrumentale se retourne contre elle-même ; la nature échappe à notre contrôle, nos techniques engendrent des dysfonctionnements (crise écologique).",
-        synthese: "Connaître la nature doit donc impliquer un devoir éthique : la véritable maîtrise n'est pas l'exploitation, mais la responsabilité (Jonas)."
+        these: "Les progrès scientifiques permettent à l'homme d'utiliser les lois de la nature à son avantage. Grâce à la technique, il peut transformer son environnement et améliorer ses conditions de vie.",
+        antithese: "Cependant, certaines conséquences de la technique échappent au contrôle humain. Les crises écologiques montrent que la nature reste difficile à maîtriser totalement.",
+        synthese: "Connaître la nature donne un grand pouvoir à l'homme, mais ce pouvoir doit être limité et réfléchi. La véritable maîtrise passe aussi par le respect et la responsabilité."
       }
     }
   },
@@ -713,12 +808,12 @@ subjects.push(
     notions: ["L'État", "La liberté", "La justice"],
     type: "Potentiel",
     ideas: {
-      problematica: "L'État impose des lois, contraint les individus et crée le monopole de la violence légitime. Dès lors, son existence est-elle par principe antithétique à l'exercice de la liberté, ou en est-elle, au contraire, la garantie véritable ?",
+      problematica: "L'État impose des lois et des règles à tous. Ces contraintes limitent-elles notre liberté ou permettent-elles au contraire de la protéger ?",
       authors: ["T. Hobbes", "J.-J. Rousseau", "M. Bakounine"],
       plan: {
-        these: "Dans sa nature même, l'État restreint notre liberté naturelle et impose son pouvoir contraignant, frôlant l'oppression (Anarchisme).",
-        antithese: "S'il n'y avait pas d'État, la loi du plus fort règnerait. L'État garantit la sécurité, condition première pour exercer ses libertés (Hobbes).",
-        synthese: "L'État n'est garant de la liberté civile que s'il est l'expression de la volonté générale : obéir à la loi qu'on s'est prescrite est liberté (Rousseau)."
+        these: "L'État impose des règles qui limitent certaines libertés individuelles. Les lois et les sanctions peuvent donner l'impression d'un pouvoir oppressif.",
+        antithese: "Mais sans État, chacun risquerait d'imposer sa force aux autres. Les règles communes permettent de protéger les citoyens et de garantir leurs droits.",
+        synthese: "L'État devient légitime lorsqu'il protège les libertés au lieu de les détruire. Une société juste repose sur des lois acceptées collectivement par les citoyens."
       }
     }
   },
@@ -728,12 +823,12 @@ subjects.push(
     notions: ["La technique", "Le travail", "La liberté"],
     type: "Potentiel",
     ideas: {
-      problematica: "Si la technique vise à automatiser les tâches pour supprimer l'effort pénible, le travail n'est-il pas aussi ce qui forme l'esprit humain, rendant sa suppression par la machine potentiellement aliénante ou déshumanisante ?",
+      problematica: "Les machines et les technologies permettent de réduire les efforts humains. Mais supprimer le travail est-il forcément bénéfique pour l'homme ?",
       authors: ["K. Marx", "G.W.F. Hegel", "H. Arendt"],
       plan: {
-        these: "La technique a pour vocation historique d'alléger la peine des hommes et de les libérer des contraintes de la simple survie biologique.",
-        antithese: "Cependant, confier tout travail laborieux aux machines risque de priver l'homme de sa capacité créatrice active et de le réduire à la passivité consommatrice (Arendt).",
-        synthese: "La libération véritable n'est pas l'abolition totale du travail, mais la libération de l'aliénation grâce à une technique humanisée qui laisse place à l'activité créatrice."
+        these: "La technique permet de réduire les tâches pénibles et répétitives. Elle peut ainsi améliorer les conditions de vie et donner plus de temps libre aux hommes.",
+        antithese: "Cependant, un monde sans travail pourrait rendre l'homme passif et inutile. Le travail est aussi une manière de développer ses capacités et de participer à la société.",
+        synthese: "La technique ne doit pas supprimer toute activité humaine. Elle doit surtout permettre un travail plus libre, plus créatif et moins aliénant."
       }
     }
   },
@@ -743,12 +838,12 @@ subjects.push(
     notions: ["Le travail", "La conscience"],
     type: "Potentiel",
     ideas: {
-      problematica: "Est-ce par la contemplation théorique ou par l'activité pratique que l'homme parvient à se comprendre ? Le travail, en imprimant notre marque consciente dans la matière extérieure, ne nous offre-t-il pas le miroir de notre liberté ?",
+      problematica: "En travaillant, l'homme transforme le monde et crée des objets. Cette activité lui permet-elle aussi de mieux se comprendre lui-même ?",
       authors: ["G.W.F. Hegel", "K. Marx", "J.-P. Sartre"],
       plan: {
-        these: "L'action de travailler externalise nos pensées et matérialise notre liberté, nous permettant de nous contempler dans nos œuvres concrètes (Hegel).",
-        antithese: "Pourtant, dans le cadre du travail aliéné ou taylorisé, l'ouvrier ne se reconnaît pas dans son produit mais s'y sent étranger et dépossédé (Marx).",
-        synthese: "Le travail n'induit une prise de conscience émancipatrice que s'il est une expression libre de soi et non une contrainte automatique."
+        these: "Le travail permet à l'homme de transformer la matière selon ses idées. En voyant le résultat de son activité, il prend conscience de ses capacités.",
+        antithese: "Mais certains travaux répétitifs empêchent l'individu de s'exprimer réellement. Le travailleur peut alors se sentir étranger à ce qu'il produit.",
+        synthese: "Le travail aide à mieux se connaître lorsqu'il laisse une place à l'initiative personnelle. Il devient aliénant lorsqu'il réduit l'homme à une simple fonction mécanique."
       }
     }
   },
@@ -758,12 +853,12 @@ subjects.push(
     notions: ["Le travail", "La nature"],
     type: "Potentiel",
     ideas: {
-      problematica: "Le travail est-il l'essence fondamentale qui distingue l'homme de l'animal par son intelligence fabricatrice, ou n'est-il qu'une modalité contingente qui n'épuise pas la diversité de l'existence humaine (art, jeu, pensée) ?",
+      problematica: "Le travail distingue l'homme de l'animal par sa capacité à transformer le monde. Mais peut-on réduire l'être humain à cette seule activité ?",
       authors: ["H. Bergson", "K. Marx", "H. Arendt"],
       plan: {
-        these: "Par l'outil et l'intelligence de fabrication, le travail est ce qui extrait l'homme de l'animalité pure et forme le socle de la culture (Bergson).",
-        antithese: "Néanmoins, définir l'homme uniquement par le travail productif réduit la condition humaine à la seule dimension de subsistance (Arendt).",
-        synthese: "Le travail fonde la vie sociale humaine mais il doit servir de tremplin pour l'exercice d'activités libres supérieures de l'esprit."
+        these: "Le travail a permis à l'homme de développer des outils, des techniques et des sociétés organisées. Il joue donc un rôle important dans l'histoire humaine.",
+        antithese: "Cependant, l'homme ne vit pas seulement pour produire et travailler. Il possède aussi des besoins artistiques, intellectuels et spirituels.",
+        synthese: "Le travail participe à la construction de l'humanité, mais il ne suffit pas à définir toute la richesse de l'existence humaine. L'homme se réalise également dans la pensée, la culture et les relations."
       }
     }
   },
@@ -773,12 +868,12 @@ subjects.push(
     notions: ["Le travail", "La nature"],
     type: "Potentiel",
     ideas: {
-      problematica: "Travailler exige de discipliner le corps, d'imposer des horaires précis et de dompter les instincts immédiats. Cette rupture artificielle avec les penchants naturels de l'homme est-elle destructrice ou salvatrice ?",
+      problematica: "Le travail demande des efforts, des règles et de la discipline. Va-t-il contre les désirs naturels de l'homme ou permet-il au contraire son développement ?",
       authors: ["S. Freud", "J.-J. Rousseau", "K. Marx"],
       plan: {
-        these: "Le travail est par définition contre-nature car il réprime le principe de plaisir immédiat au profit d'un dur principe de réalité collective (Freud).",
-        antithese: "Cependant, la nature humaine n'est pas fixe mais perfectible. Le travail développe nos facultés rationnelles morales et techniques latentes (Rousseau).",
-        synthese: "Le travail n'est pas une violence gratuite faite à notre nature, mais le moyen privilégié d'accomplir nos possibilités spirituelles de manière cultivée."
+        these: "Le travail oblige l'homme à faire des efforts et à renoncer à certains plaisirs immédiats. Il semble donc aller contre la recherche naturelle du confort et du repos.",
+        antithese: "Mais le travail permet aussi de développer l'intelligence, les compétences et la maîtrise de soi. Grâce à lui, l'homme transforme la nature et progresse.",
+        synthese: "Le travail peut être difficile et exigeant, mais il participe aussi à l'éducation et à l'accomplissement humain. Il ne détruit pas la nature humaine : il la transforme."
       }
     }
   },
@@ -788,12 +883,12 @@ subjects.push(
     notions: ["Le travail", "La nature", "Le devoir"],
     type: "Potentiel",
     ideas: {
-      problematica: "Le travail est-il un levier d'éducation morale et de socialisation par lequel l'homme discipline ses instincts sauvages, ou bien l'organisation économique de la production l'abrutit-elle au point de le priver de son humanité ?",
+      problematica: "Le travail aide-t-il l'homme à se construire moralement et socialement, ou peut-il au contraire le déshumaniser ?",
       authors: ["I. Kant", "K. Marx", "F. Nietzsche"],
       plan: {
-        these: "Le travail éduque à l'effort, discipline la force physique déréglée, et crée une solidarité sociale entre les individus (Kant).",
-        antithese: "Toutefois, la parcellisation taylorienne et l'exploitation privent le travailleur du sens profond de sa tâche, ce qui le déshumanise (Marx).",
-        synthese: "Le travail n'humanise que s'il respecte l'autonomie morale de la personne et s'il est valorisé comme un acte créateur constructif."
+        these: "Le travail apprend à l'homme la discipline, l'effort et le sens des responsabilités. Il permet aussi de vivre avec les autres et de participer à la société.",
+        antithese: "Cependant, certains travaux répétitifs ou pénibles peuvent dégrader les conditions humaines. L'exploitation et la perte de sens dans le travail peuvent rendre l'individu malheureux et aliéné.",
+        synthese: "Le travail rend l'homme plus humain lorsqu'il respecte sa dignité et développe ses capacités. Il devient déshumanisant lorsqu'il réduit la personne à un simple outil de production."
       }
     }
   },
@@ -803,12 +898,12 @@ subjects.push(
     notions: ["Le travail", "La liberté"],
     type: "Potentiel",
     ideas: {
-      problematica: "Originaire de la nécessité matérielle de survivre et d'efforts parfois pénibles, le travail porte-t-il constitutivement la marque d'un asservissement, ou contient-il une force paradoxale de libération de l'homme ?",
+      problematica: "Comme il est souvent pénible et nécessaire pour vivre, le travail est-il forcément une contrainte ?",
       authors: ["G.W.F. Hegel", "K. Marx", "J.-P. Sartre"],
       plan: {
-        these: "Le travail découle de la soumission de l'homme au besoin biologique fondamental de subsister, ce qui l'enchaîne à la matière.",
-        antithese: "Cependant, en apprenant à transformer et discipliner activement la matière, le travailleur acquiert une maîtrise de soi supérieure à l'oisif (Hegel).",
-        synthese: "La servitude dépend de l'organisation politique des conditions de production et de l'exploitation économique, non de l'essence même du travail."
+        these: "Le travail semble être une obligation imposée par les besoins matériels de la vie. L'homme doit travailler pour survivre et satisfaire ses besoins essentiels.",
+        antithese: "Mais le travail permet aussi de développer des compétences et de gagner en autonomie. En transformant le monde par son activité, l'homme peut également se transformer lui-même.",
+        synthese: "Le travail n'est pas forcément une servitude par nature. Il devient oppressant surtout lorsqu'il est marqué par l'exploitation et l'absence de liberté."
       }
     }
   },
@@ -818,12 +913,12 @@ subjects.push(
     notions: ["Le travail", "La liberté"],
     type: "Potentiel",
     ideas: {
-      problematica: "Comment une activité caractérisée par l'effort contraignant et des lois concrètes peut-elle être l'instrument clé de la liberté intellectuelle et économique de l'individu ?",
+      problematica: "Même s'il demande des efforts et des contraintes, le travail peut-il permettre à l'homme de devenir plus libre ?",
       authors: ["G.W.F. Hegel", "K. Marx", "Alain"],
       plan: {
-        these: "Le travail libère l'homme de sa dépendance vis-à-vis des forces naturelles extérieures brutes en construisant un monde humain maîtrisé.",
-        antithese: "Néanmoins, dans le salariat forcé ou répétitif, le travailleur perd sa souveraineté en vendant l'usage laborieux de son corps.",
-        synthese: "La liberté s'acquiert par l'effort intelligent personnel de transformation (Alain) adossé à une réappropriation politique du produit du labeur."
+        these: "Le travail aide l'homme à maîtriser la nature et à satisfaire ses besoins par lui-même. Il peut ainsi lui donner une certaine indépendance matérielle et sociale.",
+        antithese: "Cependant, certains emplois enferment les individus dans la fatigue, la répétition et la dépendance économique. Le travail peut alors devenir une source d'aliénation plutôt qu'un moyen de liberté.",
+        synthese: "Le travail devient libérateur lorsqu'il permet à chacun de développer ses capacités et de garder le contrôle sur son activité. La liberté dépend donc des conditions dans lesquelles on travaille."
       }
     }
   },
@@ -833,12 +928,12 @@ subjects.push(
     notions: ["Le travail", "La liberté", "Le temps"],
     type: "Potentiel",
     ideas: {
-      problematica: "L'obligation constante de travailler pour vivre limite-t-elle irréversiblement l'exercice de nos volontés propres, ou est-elle au contraire la seule activité qui nous permet d'acquérir une authentique liberté concrète ?",
+      problematica: "Le temps consacré au travail empêche-t-il l'homme de vivre librement, ou le travail est-il au contraire une condition de son autonomie ?",
       authors: ["Sénèque", "K. Marx", "Hannah Arendt"],
       plan: {
-        these: "Travailler accapare notre temps spirituel précieux, nous distrait d'une vie civique libre et d'une contemplation philosophique saine (Sénèque).",
-        antithese: "S'il n'y avait pas d'efforts concertés pour transformer le réel, l'homme resterait entièrement dépendant de son environnement naturel hostile.",
-        synthese: "Le travail devient un instrument d'épanouissement libre si la réduction du temps de travail permet le développement autonome de chacun."
+        these: "Le travail occupe une grande partie du temps humain et limite les loisirs. Il peut empêcher l'individu de se consacrer pleinement à ses passions ou à sa vie personnelle.",
+        antithese: "Mais sans travail, l'homme dépendrait totalement des autres ou des ressources naturelles. Le travail permet d'acquérir une autonomie concrète et de construire sa vie.",
+        synthese: "Le travail devient compatible avec la liberté lorsqu'il laisse du temps pour l'épanouissement personnel. L'équilibre entre activité professionnelle et vie personnelle est donc essentiel."
       }
     }
   },
@@ -848,12 +943,12 @@ subjects.push(
     notions: ["Le travail", "Le temps", "Le bonheur"],
     type: "Potentiel",
     ideas: {
-      problematica: "Si le sens véritable de notre temps terrestre réside dans le bonheur, l'échange ou l'esprit, l'énergie dépensée à façonner continuellement des biens périssables n'est-elle pas un regrettable gaspillage existant ?",
+      problematica: "Le travail prend beaucoup de temps dans la vie humaine. Est-ce un sacrifice inutile ou une activité qui donne un sens à notre existence ?",
       authors: ["Aristote", "H. Arendt", "Nietzsche"],
       plan: {
-        these: "Le labeur utilitaire enferme l'homme dans un cycle biologique de subsistance infinie manquant de grandeur spirituelle (Aristote).",
-        antithese: "En revanche, c'est dans le travail que le temps prend une consistance durable par la création d'œuvres matérielles stables.",
-        synthese: "Travailler n'est pas perdre son temps si cette activité permet de cultiver ses compétences rationnelles et coopératives."
+        these: "Le travail peut sembler répétitif et fatigant, surtout lorsqu'il est uniquement fait pour survivre. Il peut alors donner l'impression d'empêcher l'homme de profiter pleinement de la vie.",
+        antithese: "Cependant, le travail permet aussi de créer, d'apprendre et de participer à la société. Il peut donner un sentiment d'utilité et de satisfaction personnelle.",
+        synthese: "Le travail n'est pas une perte de temps lorsqu'il contribue au développement de soi et au bien commun. Tout dépend du sens que l'on donne à son activité."
       }
     }
   },
@@ -863,12 +958,12 @@ subjects.push(
     notions: ["Le travail", "Le devoir", "La liberté"],
     type: "Potentiel",
     ideas: {
-      problematica: "Le travail se résume-t-il à se plier à des ordres de supérieurs, des exigences de rentabilité et des principes physiques rigides, ou suppose-t-il l'initiative de l'intelligence pratique ?",
+      problematica: "Le travail consiste-t-il uniquement à suivre des ordres ou demande-t-il aussi de l'intelligence et de l'initiative ?",
       authors: ["M. Crawford", "K. Marx", "Alain"],
       plan: {
-        these: "L'organisation industrielle moderne mécanise le labeur en contraignant le travailleur à un simple rôle d'obéissance passive et répétitive.",
-        antithese: "Pourtant, se confronter au réel mécanique exige toujours une part d'initiative, de réactivité critique et de savoir-faire vivant (Crawford).",
-        synthese: "Le travail achevé requiert par définition l'autonomie et le jugement critique de l'esprit, que la stricte hiérarchie managériale tente en vain de gommer."
+        these: "Dans certaines organisations, le travail réduit l'individu à exécuter des consignes précises. Le salarié peut alors avoir l'impression de simplement obéir à une hiérarchie.",
+        antithese: "Mais même dans les métiers les plus techniques, il faut réfléchir, s'adapter et résoudre des problèmes. Le travail demande souvent de l'initiative et du savoir-faire personnel.",
+        synthese: "Le travail ne se limite pas à l'obéissance lorsqu'il laisse une place à l'autonomie et à la réflexion. L'intelligence humaine reste nécessaire dans toute activité réelle."
       }
     }
   },
@@ -878,12 +973,12 @@ subjects.push(
     notions: ["Le travail", "Le bonheur"],
     type: "Potentiel",
     ideas: {
-      problematica: "La dépense physique et intellectuelle que demande l'action laborieuse s'oppose-t-elle au bien-être sensible, ou la résolution de problématiques ardues et la fierté de l'œuvre accomplie créent-elles de réelles satisfactions ?",
+      problematica: "Le travail est souvent associé à l'effort et à la fatigue. Peut-il malgré tout devenir une source de satisfaction et de bonheur ?",
       authors: ["C. Fourier", "F. Nietzsche", "K. Marx"],
       plan: {
-        these: "Le travail est vécu comme corvée douloureuse s'il n'est motivé que par la violence silencieuse de la faim naturelle.",
-        antithese: "Cependant, surmonter des difficultés concrètes en voyant mûrir son œuvre procure le bonheur constructif de l'action réussie (Nietzsche).",
-        synthese: "L'activité laborieuse peut générer de réels plaisirs épanouissants si les tâches sont variées, choisies librement et utiles."
+        these: "Le travail est souvent vécu comme une contrainte nécessaire pour gagner sa vie. Lorsqu'il est subi ou répétitif, il peut devenir source de souffrance.",
+        antithese: "Cependant, réussir une tâche, créer quelque chose ou progresser grâce à ses efforts peut procurer du plaisir. Le travail peut aussi donner un sentiment d'utilité et de fierté.",
+        synthese: "Le travail devient agréable lorsqu'il est choisi, reconnu et intéressant. Les conditions de travail jouent donc un rôle important dans le bonheur au travail."
       }
     }
   },
@@ -893,12 +988,12 @@ subjects.push(
     notions: ["Le travail", "L'art", "La raison"],
     type: "Potentiel",
     ideas: {
-      problematica: "Peut-on trouver de réelles gratifications dans l'exercice d'un rôle purement utilitaire sans visée novatrice, originale ou artistique ?",
+      problematica: "Peut-on trouver de la valeur dans un travail répétitif ou utilitaire qui ne laisse pas de place à la création personnelle ?",
       authors: ["H. Arendt", "A. Camus", "S. Weil"],
       plan: {
-        these: "Répéter un geste mécanique de production sans finalité créatrice aliène l'homme en le privant d'imagination consciente (Sisyphe).",
-        antithese: "Toutefois, tout travail de service ou de maintien assure la survie partagée, ce qui lui confère une puissante valeur morale solidaire (Weil).",
-        synthese: "Bien que créer soit souverain, travailler sans créer trouve son orientation noble dans le sentiment de prendre sa place dans l'humanité."
+        these: "Un travail répétitif peut sembler vide de sens lorsqu'il ne permet ni imagination ni innovation. L'individu peut alors avoir l'impression de répéter sans cesse les mêmes gestes.",
+        antithese: "Mais même les tâches simples ou utilitaires sont utiles au fonctionnement de la société. Elles permettent d'aider les autres et de participer à un effort collectif.",
+        synthese: "Le travail peut avoir un sens même sans création artistique ou originale. Sa valeur dépend aussi de l'utilité sociale et de l'engagement personnel qu'il implique."
       }
     }
   },
@@ -908,12 +1003,12 @@ subjects.push(
     notions: ["Le travail", "Le devoir", "La justice"],
     type: "Potentiel",
     ideas: {
-      problematica: "Est-ce la contribution productive et la profession d'un individu qui décident de son mérite dans la cité, ou cela constitue-t-il un réductionnisme utilitariste dangereux ?",
+      problematica: "La société doit-elle juger les individus selon leur métier et leur productivité, ou la valeur humaine dépasse-t-elle le travail ?",
       authors: ["I. Kant", "P. Lafargue", "F. Nietzsche"],
       plan: {
-        these: "La culture contemporaine valorise le travailleur infatigable comme le seul citoyen vraiment méritant et responsable de la cité.",
-        antithese: "Or, la dignité humaine est inaliénable et transcende largement l'utilité productive de l'individu sur le marché (Kant).",
-        synthese: "La valeur intime de l'homme relève de sa conscience morale, le travail n'étant qu'un des multiples modes de participation au monde."
+        these: "Dans de nombreuses sociétés, le travail est considéré comme un signe de mérite et de réussite. Les personnes actives et productives sont souvent davantage valorisées.",
+        antithese: "Cependant, la dignité humaine ne dépend pas seulement de l'utilité économique d'une personne. Réduire un individu à son travail peut être injuste et déshumanisant.",
+        synthese: "Le travail peut participer à la reconnaissance sociale, mais il ne définit pas entièrement la valeur d'un être humain. Chaque personne possède une dignité qui dépasse sa profession."
       }
     }
   },
@@ -923,12 +1018,12 @@ subjects.push(
     notions: ["Le travail", "Le bonheur", "La nature"],
     type: "Potentiel",
     ideas: {
-      problematica: "Né pour préserver l'existence des rigueurs extérieures, le travail se restreint-il par essence à l'utilitaire, ou s'élève-t-il à un besoin social de reconnaissance et d'intellection ?",
+      problematica: "Le travail sert-il seulement à satisfaire les besoins matériels de l'homme ou possède-t-il aussi une dimension sociale et humaine ?",
       authors: ["H. Arendt", "G.W.F. Hegel", "A. Honneth"],
       plan: {
-        these: "Sous l'urgence constante du besoin corporel élémentaire, le labeur apparaît comme une pure répétition pour pérenniser la subsistance biologique.",
-        antithese: "À l'inverse, il est le lieu fondamental de valorisation et de respect au sein de la sphère sociale publique (Honneth).",
-        synthese: "S'il prend naissance dans l'urgence de vivre, le travail acquiert son authenticité dans son pouvoir de liaison humaine sociale."
+        these: "À l'origine, le travail permet surtout de répondre aux besoins essentiels comme manger, se loger ou se protéger. Il apparaît donc d'abord comme une nécessité de survie.",
+        antithese: "Mais le travail permet aussi d'obtenir une place dans la société et la reconnaissance des autres. Il contribue à l'identité personnelle et au lien social.",
+        synthese: "Le travail naît de la nécessité matérielle, mais il peut prendre une dimension plus humaine et sociale. Il devient alors un moyen de participer pleinement à la vie collective."
       }
     }
   },
@@ -938,12 +1033,12 @@ subjects.push(
     notions: ["Le travail", "La liberté", "La conscience"],
     type: "Potentiel",
     ideas: {
-      problematica: "Comment l'activité professionnelle, dominée par les réalités économiques strictes, peut-elle s'émanciper de la simple contrainte financière pour devenir un outil d'affirmation spirituelle ?",
+      problematica: "Même soumis aux contraintes économiques, le travail peut-il devenir une activité d'épanouissement personnel ?",
       authors: ["E. Mounier", "K. Marx", "A. Honneth"],
       plan: {
-        these: "La dure réalité du marché moderne contraint souvent l'ouvrier à s'aliéner dans des labeurs alimentaires purement subis pour assurer sa faim.",
-        antithese: "Pourtant, l'accomplissement professionnel enrichit l'intelligence technique et nourrit l'identité sociale et le sentiment d'utilité.",
-        synthese: "C'est par une transformation des rapports professionnels et de l'environnement humain que l'effort accède à une visée d'épanouissement."
+        these: "Beaucoup de personnes travaillent principalement pour gagner leur vie et assurer leurs besoins. Le travail peut alors sembler uniquement dicté par la nécessité économique.",
+        antithese: "Cependant, certaines activités professionnelles permettent de développer des compétences et de se sentir utile. Le travail peut aussi donner confiance en soi et favoriser la reconnaissance sociale.",
+        synthese: "Le travail dépasse la simple survie lorsqu'il permet à l'individu de s'épanouir et de donner un sens à son activité. Cela dépend largement des conditions humaines et sociales du travail."
       }
     }
   },
@@ -953,12 +1048,12 @@ subjects.push(
     notions: ["Le travail", "Le devoir", "La justice"],
     type: "Potentiel",
     ideas: {
-      problematica: "L'obligation de participer à l'effort de production national est-elle une exigence morale indiscutable pour chaque citoyen, ou la liberté légitime-t-elle le refus réclamé du productivisme ?",
+      problematica: "Chaque individu a-t-il l'obligation morale de travailler pour contribuer à la société, ou chacun est-il libre de refuser cette exigence ?",
       authors: ["I. Kant", "P. Lafargue", "F. Nietzsche"],
       plan: {
-        these: "Participer aux travaux de la communauté est un devoir sacré de réciprocité ; l'oisiveté sans motif s'apparente à du parasitisme injuste.",
-        antithese: "D'un autre côté, célébrer frénétiquement le labeur peut être une méthode d'obéissance docile limitant la saine révolte intellectuelle (Nietzsche).",
-        synthese: "Contribuer équitablement à la subsistance commune relève de la justice, mais cela doit préserver un domaine libre d'études autonomes personnelles."
+        these: "Le travail permet à chacun de participer à la vie collective et de contribuer au bien commun. Refuser tout effort peut être vu comme injuste envers les autres membres de la société.",
+        antithese: "Mais faire du travail une obligation absolue peut limiter la liberté individuelle. Une société centrée uniquement sur la production risque aussi d'oublier les besoins spirituels et intellectuels de l'homme.",
+        synthese: "Le travail peut être considéré comme un devoir de solidarité envers la communauté. Cependant, il doit rester compatible avec la liberté et l'épanouissement personnel."
       }
     }
   },
@@ -968,12 +1063,12 @@ subjects.push(
     notions: ["La technique", "La liberté", "L'État"],
     type: "Potentiel",
     ideas: {
-      problematica: "Conçue pour affranchir l'humain des contraintes naturelles, la technique ne risque-t-elle pas de l'enfermer dans de nouvelles formes de dépendance à la société de consommation ?",
+      problematica: "La technique est censée nous rendre plus libres en facilitant la vie. Mais ne crée-t-elle pas aussi de nouvelles dépendances, notamment à la consommation et aux technologies ?",
       authors: ["R. Descartes", "G. Anders", "G. Simondon"],
       plan: {
-        these: "En maîtrisant la nature par ses outils, l'homme se libère des nécessités biologiques et améliore considérablement ses conditions de vie matérielles.",
-        antithese: "Toutefois, l'usage omniprésent de la technologie moderne aliène grandement l'individu, qui perd son autonomie immédiate et devient massivement dépendant.",
-        synthese: "Une véritable libération nécessite le développement impératif d'une culture technique éclairée, où l'homme conçoit et comprend ses machines plutôt que de simplement les subir."
+        these: "Grâce aux outils et aux machines, l'homme maîtrise mieux la nature. Il souffre moins des contraintes matérielles et améliore ses conditions de vie.",
+        antithese: "Cependant, la technologie peut rendre l'individu dépendant : téléphone, réseaux, machines ou consommation limitent parfois son autonomie.",
+        synthese: "La technique devient vraiment libératrice seulement si l'homme comprend et maîtrise les outils qu'il utilise, au lieu de les subir."
       }
     }
   },
@@ -983,87 +1078,87 @@ subjects.push(
     notions: ["La technique", "La conscience", "Le devoir"],
     type: "Potentiel",
     ideas: {
-      problematica: "Pouvons-nous encore considérer les innovations techniques comme de simples moyens neutres que nous dominons, ou ont-elles acquis une complexité qui nous dépasse ?",
+      problematica: "La technique est-elle simplement un moyen contrôlé par l'homme, ou finit-elle par imposer ses propres règles et dépasser notre contrôle ?",
       authors: ["Aristote", "K. Marx", "M. Heidegger"],
       plan: {
-        these: "À l'origine, la technique, conçue comme simple prolongement du corps, est un instrument docile visant à atteindre des fins librement choisies (Aristote).",
-        antithese: "Avec l'industrialisation, l'homme devient souvent lui-même le rouage d'un système mécanique qui dicte son rythme de production et ses finalités (Marx).",
-        synthese: "La technique moderne impose sa propre rationalité : l'« arraisonnement » global réduit toute chose à un simple stock de ressources exploitables (Heidegger)."
+        these: "Au départ, la technique est un simple outil créé pour aider l'homme à atteindre ses objectifs plus facilement.",
+        antithese: "Avec l'industrialisation, l'homme peut devenir dépendant du système technique et travailler au rythme des machines.",
+        synthese: "La technique moderne influence profondément notre manière de vivre et de penser : elle n'est plus seulement un outil neutre."
       }
     }
   },
   {
     id: "pot-23",
     title: "La technique nous éloigne-t-elle de la nature ?",
-    notions: ["La technique", "La nature", "L'art"],
+    notions: ["La technique", "La nature", "L'État"],
     type: "Potentiel",
     ideas: {
-      problematica: "L'artifice technique constitue-t-il une rupture violente avec notre condition naturelle terrestre, ou est-il l'expression la plus pure de l'essence même de l'humanité ?",
+      problematica: "La technique nous coupe-t-elle de la nature, ou fait-elle au contraire partie de ce qui définit l'être humain ?",
       authors: ["Platon", "H. Jonas", "M. Merleau-Ponty"],
       plan: {
-        these: "Le mythe de Prométhée enseigne que l'homme est naturellement démuni ; l'invention technique est indispensable à sa survie et devient indissociable de sa nature (Platon).",
-        antithese: "Cependant, la puissance démiurgique contemporaine détruit souvent les équilibres écologiques fondamentaux et menace physiquement l'habitat terrestre (Jonas).",
-        synthese: "L'enjeu crucial n'est pas de renouer naïvement avec une nature sauvage, mais d'utiliser l'innovation pour préserver pacifiquement notre environnement vital."
+        these: "L'homme est naturellement fragile : il a besoin de la technique pour survivre et transformer son environnement.",
+        antithese: "Mais aujourd'hui, certaines technologies détruisent les équilibres naturels et menacent l'environnement.",
+        synthese: "Le problème n'est pas la technique elle-même, mais la manière dont nous l'utilisons. Elle peut aussi servir à protéger la nature."
       }
     }
   },
   {
     id: "pot-24",
     title: "Faut-il avoir peur du progrès technique ?",
-    notions: ["La technique", "La conscience", "Le devoir"],
+    notions: ["La technique", "La liberté", "Le devoir"],
     type: "Potentiel",
     ideas: {
-      problematica: "L'innovation doit-elle être aveuglément célébrée comme le moteur du bonheur universel futur, ou justifie-t-elle une grande méfiance face aux menaces d'autodestruction ?",
+      problematica: "Le progrès technique améliore-t-il forcément la vie humaine, ou peut-il aussi devenir dangereux ?",
       authors: ["R. Descartes", "F. Rabelais", "H. Jonas"],
       plan: {
-        these: "Le développement technique a un immense potentiel curatif et émancipateur (progrès de la médecine, confort global) qui justifie un humanisme pro-technique.",
-        antithese: "Néanmoins, les armes de destruction massive et les dérives écologiques prouvent dramatiquement qu'une « science sans conscience n'est que ruine de l'âme » (Rabelais).",
-        synthese: "Ce n'est pas de la technique elle-même qu'il faut se méfier craintivement, mais bien de notre manque dramatique de sagesse éthique pour l'encadrer."
+        these: "Les progrès techniques ont permis d'énormes avancées, notamment dans la médecine, les transports ou le confort quotidien.",
+        antithese: "Mais certaines inventions peuvent être destructrices : armes, pollution, surveillance ou catastrophes écologiques.",
+        synthese: "Le danger ne vient pas de la technique seule, mais du manque de réflexion morale dans son utilisation."
       }
     }
   },
   {
     id: "pot-25",
     title: "La technique échappe-t-elle à la raison ?",
-    notions: ["La technique", "La raison", "L'État"],
+    notions: ["La technique", "La conscience", "L'État"],
     type: "Potentiel",
     ideas: {
-      problematica: "Fruit de l'extrême intelligence rationaliste, la profusion technologique ne finit-elle pas par adopter une dynamique destructrice qui échappe au contrôle du bon sens moral ?",
+      problematica: "La technique est née de la raison humaine. Pourtant, peut-elle finir par fonctionner sans contrôle moral ni réflexion sur ses conséquences ?",
       authors: ["M. Weber", "J. Habermas", "H. Arendt"],
       plan: {
-        these: "La technique est triomphalement l'application méthodique et logique de la rationalité scientifique pour résoudre des problèmes matériels concrets (ingénierie).",
-        antithese: "Cependant, elle engendre une vertigineuse raison « instrumentale » aveugle qui exclut dangereusement toute réflexion profonde sur les fins morales (Weber).",
-        synthese: "Pour éviter l'irrationalisme technocratique systémique, il est impératif que la véritable raison éthique reprenne ses droits publics dans les délibérations."
+        these: "La technique applique la logique scientifique pour résoudre efficacement des problèmes concrets.",
+        antithese: "Mais elle peut devenir purement « instrumentale » : on cherche l'efficacité sans se demander si les objectifs sont bons.",
+        synthese: "Il faut donc accompagner le progrès technique d'une réflexion éthique et politique sur ses finalités."
       }
     }
   },
   {
     id: "pot-26",
     title: "La technique nous libère-t-elle du travail ?",
-    notions: ["La technique", "Le travail", "La liberté"],
+    notions: ["La technique", "La liberté", "Le devoir"],
     type: "Potentiel",
     ideas: {
-      problematica: "Les machines sophistiquées sont-elles les séduisantes prémices d'une libération totale du fardeau laborieux, ou génèrent-elles simplement de nouvelles formes de contraintes ?",
+      problematica: "Les machines permettent-elles vraiment de réduire le travail humain, ou créent-elles de nouvelles formes de contraintes ?",
       authors: ["K. Marx", "H. Arendt", "J. Rifkin"],
       plan: {
-        these: "L'automatisation et la robotisation permettent prodigieusement de s'affranchir des pires tâches physiques aliénantes tout en accroissant exponentiellement la productivité.",
-        antithese: "Paradoxalement, la spécialisation mécanique des machines modernes enferme le travailleur dans de toutes nouvelles servitudes mentales et temporelles épuisantes.",
-        synthese: "Si la machine nous affranchit du labeur de pure survie biologique, nous sommes collectivement mis au défi d'inventer des activités humaines riches de sens (Arendt)."
+        these: "L'automatisation soulage l'homme des tâches les plus pénibles et augmente la productivité.",
+        antithese: "Cependant, le travail moderne peut devenir répétitif, stressant et dépendant des machines ou des rythmes imposés.",
+        synthese: "Si la technique réduit certains efforts physiques, elle nous oblige aussi à repenser le sens du travail humain."
       }
     }
   },
   {
     id: "pot-27",
     title: "La technique peut-elle satisfaire tous nos désirs ?",
-    notions: ["La technique", "Le bonheur", "La raison"],
+    notions: ["La technique", "La conscience", "La liberté"],
     type: "Potentiel",
     ideas: {
-      problematica: "Notre exceptionnelle ingéniosité technique, aisément capable de combler infiniment nos besoins matériels vitaux, peut-elle apaiser la subtile quête spirituelle du désir humain ?",
+      problematica: "La technique peut-elle rendre l'homme pleinement heureux en répondant à tous ses besoins et désirs ?",
       authors: ["Épicure", "A. Schopenhauer", "J. Baudrillard"],
       plan: {
-        these: "En facilitant confortablement l'accès massif au bien-être (alimentation, transports, soins de santé), les formidables innovations ont historiquement aboli quantité de carences.",
-        antithese: "Toutefois, la société frénétique de consommation technicienne attise de faux besoins, stimulant le vide insatiable plutôt que l'apaisement pérenne (Baudrillard).",
-        synthese: "La perfection technique comble les besoins utilitaires immédiats, mais demeure inapte à satisfaire métaphysiquement l'infini du désir (Schopenhauer)."
+        these: "Les progrès techniques améliorent le confort de vie et répondent à beaucoup de besoins matériels.",
+        antithese: "Mais la société de consommation crée sans cesse de nouveaux désirs et entretient l'insatisfaction.",
+        synthese: "La technique satisfait les besoins matériels, mais elle ne peut pas combler les aspirations profondes de l'être humain."
       }
     }
   },
@@ -1073,72 +1168,492 @@ subjects.push(
     notions: ["La technique", "La nature", "La conscience"],
     type: "Potentiel",
     ideas: {
-      problematica: "L'humanité pourrait-elle se débarrasser totalement du filtre technologique pour exister à l'état de nature spontané, ou l'humain est-il ontologiquement un technicien invétéré ?",
+      problematica: "L'être humain peut-il vivre sans technique, ou celle-ci fait-elle partie de sa nature même ?",
       authors: ["Platon", "J.-J. Rousseau", "A. Leroi-Gourhan"],
       plan: {
-        these: "Le retour intellectuel fantasmé à la simplicité radicale et originaire de la nature pourrait sembler un majestueux idéal libérant l'intériorité de l'emprise artificielle matérielle.",
-        antithese: "Néanmoins, depuis l'aube préhistorique, l'évolution de la main et de l'outil est intimement et biologiquement liée à la genèse de l'intelligence humaine (Leroi-Gourhan).",
-        synthese: "S'il est illusoire et impossible d'exister sans technique, nous préservons la primordiale responsabilité éthique de délibérer farouchement sur la puissance de nos choix techniques."
+        these: "Certains rêvent d'un retour à une vie plus simple et plus proche de la nature.",
+        antithese: "Pourtant, depuis la préhistoire, l'homme évolue grâce aux outils et à la technique.",
+        synthese: "Il est impossible de vivre totalement sans technique, mais nous restons responsables des usages que nous en faisons."
       }
     }
   },
   {
     id: "pot-29",
     title: "La technique transforme-t-elle notre rapport au temps ?",
-    notions: ["La technique", "Le temps", "La conscience"],
+    notions: ["La technique", "La liberté", "L'État"],
     type: "Potentiel",
     ideas: {
-      problematica: "L'omniprésence vertigineuse des accélérateurs techniques numériques magnifie-t-elle notre libre expérience du temps ou nous condamne-t-elle inéluctablement à l'urgence perpétuelle tyrannique ?",
+      problematica: "Les technologies modernes nous font-elles gagner du temps, ou nous enferment-elles dans une vie toujours plus rapide ?",
       authors: ["H. Rosa", "H. Arendt", "P. Virilio"],
       plan: {
-        these: "Les spectaculaires avancées de la logistique et de la transmission suppriment radicalement l'attente végétative stérile, nous faisant providentiellement « gagner un temps précieux ».",
-        antithese: "Très curieusement, cette implacable accélération de la rotation sociale nous enferme tragiquement dans l'immédiateté (présentisme), nous confisquant l'épaisseur durable des heures (Rosa).",
-        synthese: "Redonner du temps noble au temps exige de concevoir consciemment les machines non plus comme de formidables vecteurs de précipitation, mais comme de véritables garants de la lenteur libre."
+        these: "Les moyens de communication et de transport permettent d'aller plus vite et d'éviter de nombreuses pertes de temps.",
+        antithese: "Mais cette accélération permanente crée du stress et donne l'impression de manquer toujours de temps.",
+        synthese: "La technique devrait nous aider à mieux vivre le temps, et non à subir une course permanente à la vitesse."
       }
     }
   },
   {
     id: "pot-30",
     title: "La technique menace-t-elle la vérité ?",
-    notions: ["La technique", "La vérité", "La science"],
+    notions: ["La technique", "La conscience", "L'État"],
     type: "Potentiel",
     ideas: {
-      problematica: "Les technologies sophistiquées d'observation garantissent-elles implacablement l'objectivation du monde, ou fabriquent-elles incidemment un nouvel univers de mirages insaisissables (virtuel) ?",
+      problematica: "Les technologies permettent-elles de mieux connaître le réel, ou favorisent-elles aussi les illusions et les manipulations ?",
       authors: ["G. Bachelard", "Platon", "J. Baudrillard"],
       plan: {
-        these: "Dans le brillant champ des sciences pures, l'instrument technique perfectionné corrige les défectuosités naturelles : il réalise formidablement notre esprit objectif et rectifié (Bachelard).",
-        antithese: "Cependant, la prolifération inquiétante des innombrables interfaces visuelles et communicationnelles construit par ailleurs une séduisante et trompeuse matrice d'hyperréalités (Baudrillard).",
-        synthese: "La rigueur méthodique du savant et l'acuité de l'esprit rationnel demeurent le véritable et unique filtre critique indispensable pour ne pas se noyer dans l'illusion informatique généralisée."
+        these: "Les instruments scientifiques améliorent l'observation et rendent les connaissances plus précises.",
+        antithese: "Mais les médias, les images et le numérique peuvent aussi créer de fausses réalités et manipuler l'opinion.",
+        synthese: "La vérité dépend donc surtout de notre esprit critique et de notre capacité à analyser les informations."
       }
     }
   },
   {
     id: "pot-31",
     title: "L'État doit-il limiter le progrès technique ?",
-    notions: ["La technique", "L'État", "La justice"],
+    notions: ["La technique", "L'État", "Le devoir"],
     type: "Potentiel",
     ideas: {
-      problematica: "Le jaillissement ingénieux de l'innovation technologique doit-il prospérer libéralement, ou justifie-t-il l'intervention souveraine sévère du pouvoir politique républicain garant du droit ?",
+      problematica: "Le progrès technique doit-il être totalement libre, ou l'État doit-il intervenir pour protéger la société ?",
       authors: ["H. Jonas", "M. Foucault", "J. Habermas"],
       plan: {
-        these: "Freiner massivement la noble invention conceptuelle équivaudrait à un mortifère renoncement face aux redoutables maux curables de l'humanité démunie (famine, épidémie, etc.).",
-        antithese: "Néanmoins, les applications non politiquement régulées menacent ouvertement les droits démocratiques, étendent insidieusement la surveillance et aggravent l'ordre d'inégalité sociale (Foucault).",
-        synthese: "Souverain et éclairé, l'État juste se doit d'endiguer préventivement les dangers mortels de l'imprévoyance sans entraver stupidement le salutaire génie inventif de laboratoire."
+        these: "Limiter la recherche pourrait empêcher de résoudre de grands problèmes comme les maladies ou les crises alimentaires.",
+        antithese: "Mais sans règles, certaines technologies menacent les libertés, renforcent les inégalités ou développent la surveillance.",
+        synthese: "L'État doit encadrer les dangers du progrès technique tout en laissant place à l'innovation utile."
       }
     }
   },
   {
     id: "pot-32",
     title: "Le progrès technique garantit-il le bonheur ?",
-    notions: ["La technique", "Le bonheur", "La raison"],
+    notions: ["La technique", "La liberté", "La conscience"],
     type: "Potentiel",
     ideas: {
-      problematica: "Si le savoir empirique et technique a libéré l'esprit des souffrances physiques flagrantes, est-il suffisant pour instaurer par lui-même la plénitude intérieure et la joie de l'âme humaine ?",
+      problematica: "Le progrès technique suffit-il à rendre l'homme heureux ?",
       authors: ["J.-J. Rousseau", "Épicure", "J.S. Mill"],
       plan: {
-        these: "Le triomphal dépassement technique historique a évincé nombre d'angoisses terrestres primitives (douleur, dénuement), posant remarquablement les bases objectives d'un certain bonheur temporel.",
-        antithese: "Hélas, l'accumulation effrénée d'outils fastueux génère le dérèglement de l'illusion des biens (frivolité), laissant intiment l'esprit dans un dénuement et un profond tourment métaphysique.",
-        synthese: "L'aisance technique déblaie formidablement le long chemin en effaçant d'immenses souffrances, cependant le couronnement intime du bonheur de l'âme incombe exclusivement à la sagesse intime."
+        these: "Les avancées techniques ont amélioré les conditions de vie et réduit beaucoup de souffrances.",
+        antithese: "Cependant, le confort matériel ne suffit pas toujours à apporter le bonheur intérieur.",
+        synthese: "La technique peut améliorer la vie, mais le bonheur dépend aussi de la sagesse, des relations humaines et du sens donné à l'existence."
+      }
+    }
+  },
+  {
+    id: "pot-33",
+    title: "Le langage n’est-il qu’un outil ?",
+    notions: ["Le langage", "La technique"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Le langage est-il un simple moyen de communication ou possède-t-il une nature plus profonde qui nous définit ?",
+      authors: ["Aristote", "J.-J. Rousseau", "L. Wittgenstein"],
+      plan: {
+        these: "Souvent, le langage est perçu comme un simple instrument permettant de transmettre des informations. L'être humain l'utilise au quotidien pour exprimer ses besoins et organiser la société de manière efficace.",
+        antithese: "Cependant, cette vision omet que le langage structure aussi notre façon de penser et de comprendre le monde. Les mots que nous employons influencent directement notre perception de la réalité et nos émotions.",
+        synthese: "Le langage a bien une dimension utilitaire pour faciliter la communication. Toutefois, il dépasse largement le statut de simple outil pour devenir ce qui façonne notre vie intérieure et notre humanité."
+      }
+    }
+  },
+  {
+    id: "pot-34",
+    title: "Le langage est-il propre à l'être humain ?",
+    notions: ["Le langage", "La nature"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Les méthodes de communication des animaux peuvent-elles être considérées comme un véritable langage ?",
+      authors: ["R. Descartes", "K. von Frisch", "E. Benveniste"],
+      plan: {
+        these: "De nombreux animaux utilisent des signaux sonores ou corporels pour communiquer entre eux. Ils parviennent facilement à alerter d'un danger ou à exprimer un besoin immédiat.",
+        antithese: "Mais le langage humain est riche, créatif et permet d'exprimer des idées abstraites. Contrairement aux animaux, l'être humain peut discuter du passé, du futur ou d'événements imaginaires.",
+        synthese: "Les animaux possèdent une communication basique orientée vers la survie. Le langage articulé ou symbolique reste une spécificité purement humaine qui permet de transmettre une culture."
+      }
+    }
+  },
+  {
+    id: "pot-35",
+    title: "Peut-on penser sans les mots ?",
+    notions: ["Le langage", "La conscience", "La raison"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "La pensée précède-t-elle le langage, ou la conscience est-elle indissociable des mots ?",
+      authors: ["R. Descartes", "G.W.F. Hegel", "H. Bergson"],
+      plan: {
+        these: "L'expérience quotidienne nous donne parfois l'impression d'avoir une idée en tête sans trouver le mot juste. Cela suggère qu'une pensée pure pourrait exister indépendamment des mots pour la formuler.",
+        antithese: "Pourtant, une idée qui ne peut pas être formulée clairement reste floue, vague et incomplète. C'est en choisissant les mots appropriés que notre esprit parvient à structurer et à achever sa réflexion.",
+        synthese: "Les mots et la pensée ne sont pas simplement liés, ils se développent ensemble. Les mots fournissent à notre esprit le cadre indispensable pour construire des raisonnements clairs et élaborés."
+      }
+    }
+  },
+  {
+    id: "pot-36",
+    title: "Les mots nous permettent-ils de nous comprendre ?",
+    notions: ["Le langage", "La conscience"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Le langage garantit-il la compréhension mutuelle, ou est-il par nature source de malentendus ?",
+      authors: ["J.-J. Rousseau", "F. Nietzsche", "J. Habermas"],
+      plan: {
+        these: "Les mots sont le moyen le plus direct et efficace pour partager nos pensées avec les autres. Grâce à un vocabulaire commun, nous pouvons exprimer nos intentions et coopérer au sein de la société.",
+        antithese: "Cependant, chaque individu associe aux mots des émotions et des vécus strictement personnels qui échappent aux autres. Le langage peut alors facilement devenir une source d'erreurs, d'incompréhensions et de malentendus profonds.",
+        synthese: "S'ils restent l'outil privilégié de l'échange humain, les mots sont souvent imparfaits pour transmettre toute notre intériorité. Une véritable compréhension demande un effort d'écoute, d'empathie et parfois d'interprétation pour dépasser le sens littéral."
+      }
+    }
+  },
+  {
+    id: "pot-37",
+    title: "Faut-il maîtriser les mots pour maîtriser sa pensée ?",
+    notions: ["Le langage", "La conscience", "La raison"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Un langage structuré est-il la condition d'une pensée claire et rigoureuse ?",
+      authors: ["N. Boileau", "G.W.F. Hegel", "F. de Saussure"],
+      plan: {
+        these: "Un vocabulaire riche permet d'exprimer des nuances précises et de clarifier ses propres idées. Celui qui possède beaucoup de mots parvient à organiser son esprit avec logique et rigueur intellectuelle.",
+        antithese: "Toutefois, l'intelligence ne se limite pas à des mots, puisque l'intuition ou l'expression artistique sont des formes de pensée puissantes. De plus, une rhétorique brillante peut parfois masquer l'absence véritable de fond ou de réflexion sincère.",
+        synthese: "La pensée peut s'exprimer au-delà des mots par l'art, les mathématiques ou le ressenti instinctif. Malgré tout, maîtriser la langue offre un avantage fondamental pour donner de l'ordre et de la profondeur à notre réflexion quotidienne."
+      }
+    }
+  },
+  {
+    id: "pot-38",
+    title: "Le langage révèle-t-il la pensée ou la détermine-t-il ?",
+    notions: ["Le langage", "La conscience"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Les mots ne font-ils que traduire la pensée, ou la modèlent-ils profondément ?",
+      authors: ["F. de Saussure", "L. Wittgenstein", "E. Sapir"],
+      plan: {
+        these: "Le langage est souvent vu comme une simple traduction de ce qui se passe dans la tête de l'individu. L'être humain semble façonner ses idées librement avant de choisir les mots adéquats pour les révéler.",
+        antithese: "Cependant, la langue maternelle fournit des catégories mentales qui orientent profondément notre vision du monde. Nos pensées sont inconsciemment conditionnées par le vocabulaire et les règles grammaticales que nous employons.",
+        synthese: "Le langage offre à chacun la possibilité d'exprimer sa propre conscience face au monde. Néanmoins, il fixe toujours un cadre culturel et mental qui structure secrètement la manière dont nous réfléchissons."
+      }
+    }
+  },
+  {
+    id: "pot-39",
+    title: "Les mots peuvent-ils enfermer la pensée ?",
+    notions: ["Le langage", "La vérité"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "En donnant un cadre à la pensée, les mots finissent-ils par figer notre perception du réel ?",
+      authors: ["H. Bergson", "F. Nietzsche", "G. Orwell"],
+      plan: {
+        these: "Le vocabulaire fixe et catégorise le monde pour le rendre plus facilement compréhensible. En imposant des étiquettes générales, les mots figent souvent la réalité qui est plus complexe et mouvante.",
+        antithese: "Heureusement, la littérature et la poésie prouvent que nous pouvons réinventer le langage. Par les métaphores et une utilisation créative des mots, nous parvenons à exprimer des émotions originales et inédites.",
+        synthese: "Utilisée mécaniquement, la langue peut figer la créativité et emprisonner notre jugement. Mais si nous en explorons toute la richesse, la parole redevient un espace ouvert où la pensée s'évade librement."
+      }
+    }
+  },
+  {
+    id: "pot-40",
+    title: "Le langage crée-t-il la réalité ?",
+    notions: ["Le langage", "La vérité"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Le langage ne fait-il que décrire la réalité existante, ou contribue-t-il à la fabriquer ?",
+      authors: ["J.L. Austin", "P. Bourdieu", "E. Kant"],
+      plan: {
+        these: "À première vue, les mots servent simplement à nommer des choses qui existent déjà autour de nous. Le monde matériel existerait de manière identique même si aucun humain n'était là pour en parler.",
+        antithese: "Par contre, dans le domaine social et relationnel, dire des mots revient parfois à faire naître de nouvelles réalités. Par exemple, prononcer certains mots lors d'un mariage transforme instantanément la vie des personnes et leur identité.",
+        synthese: "Le monde matériel existe bien indépendamment de nous, mais les mots donnent un sens humain à cette réalité. La parole humaine façonne nos valeurs, nos relations sociales et la façon dont nous percevons collectivement l'univers."
+      }
+    }
+  },
+  {
+    id: "pot-41",
+    title: "Peut-on tout dire ?",
+    notions: ["Le langage", "La vérité", "L'État"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Notre expression trouve-t-elle ses limites dans l'indicible ou dans les interdits sociaux ?",
+      authors: ["L. Wittgenstein", "S. Freud", "M. Foucault"],
+      plan: {
+        these: "Les êtres humains ressentent souvent la capacité d'exprimer n'importe quelle pensée grâce à l'immensité du vocabulaire. D'un point de vue moral ou politique, la liberté d'expression pousse à croire que tout sujet peut être discuté.",
+        antithese: "Pourtant, certaines expériences très intimes ou des souffrances extrêmes défient toute description linguistique. Le sentiment d'indicible nous montre régulièrement que certains mystères ou douleurs résistent aux mots et au langage.",
+        synthese: "Le langage tend idéalement à déchiffrer tous les aspects de la condition humaine. Cependant, il rencontre toujours des limites face au silence intérieur des émotions intenses ou face au respect de la pudeur d'autrui."
+      }
+    }
+  },
+  {
+    id: "pot-42",
+    title: "Y a-t-il des choses indicibles ?",
+    notions: ["Le langage", "La conscience"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Existe-t-il des limites linguistiques ou conceptuelles qui nous empêchent de tout partager avec notre prochain ?",
+      authors: ["H. Bergson", "L. Wittgenstein", "M. Merleau-Ponty"],
+      plan: {
+        these: "Il semble exister des expériences traumatisantes ou extatiques que les mots ordinaires sont incapables de restituer fidèlement. Les événements d'une cruauté indicible ou les élans mystiques dépassent les limites de toute formulation verbale.",
+        antithese: "À l'inverse, l'être humain peut s'appuyer sur l'art, la poésie ou le récit pour s'approcher de l'inexprimable. En explorant continuellement de nouvelles formes d'expression, nous parvenons progressivement à contourner ces limites du sens.",
+        synthese: "Bien sûr, il reste une part de mystère impénétrable au cœur de l'expérience humaine. Néanmoins, l'effort pour traduire en mots ce qui semble inavouable reste notre plus belle conquête pour combattre le silence."
+      }
+    }
+  },
+  {
+    id: "pot-43",
+    title: "Le langage nous rapproche-t-il de la vérité ?",
+    notions: ["Le langage", "La vérité"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Le langage est-il le support indispensable de la vérité ou l'outil privilégié de l'illusion ?",
+      authors: ["Platon", "R. Descartes", "J. Baudrillard"],
+      plan: {
+        these: "Grâce au langage, les êtres humains partagent leurs découvertes et corrigent leurs erreurs logiques. La langue commune offre ainsi l'instrument nécessaire pour élaborer collectivement des certitudes ou des connaissances rigoureuses.",
+        antithese: "Pourtant, à cause de son absence de précision immédiate, la langue peut aussi fausser nos perceptions et propager des illusions. Des personnes mal intentionnées utilisent d'ailleurs des mots vagues pour séduire, manipuler ou imposer de fausses convictions.",
+        synthese: "Le langage n'est donc pas la vérité elle-même, mais il constitue le seul outil permettant à la raison de la rechercher. Son usage honnête et éclairé demeure indispensable pour partager une analyse juste et vérifier la réalité des faits."
+      }
+    }
+  },
+  {
+    id: "pot-44",
+    title: "Les mots ont-ils un sens par eux-mêmes ?",
+    notions: ["Le langage", "La raison"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "La signification d'un mot est-elle inhérente à sa nature, ou relève-t-elle de pures conventions culturelles ?",
+      authors: ["Platon", "F. de Saussure", "L. Wittgenstein"],
+      plan: {
+        these: "Dans la vie quotidienne, nous constatons que les termes d'un dictionnaire possèdent des définitions précises. Les mots semblent alors détenir une signification objective que chacun peut apprendre lors de son éducation.",
+        antithese: "Toutefois, l'étude des langues rappelle que le lien entre le mot et l'objet qu'il désigne est purement arbitraire et conventionnel. Le véritable sens du mot provient toujours de notre culture et du contexte relationnel particulier dans lequel on le prononce.",
+        synthese: "Aucun mot n'incarne par magie la chose matérielle qu'il nomme, puisque son sens dépend d'un accord humain. Les mots tirent entièrement leur pertinence et leur puissance de la volonté d'une société à partager l'information de manière claire."
+      }
+    }
+  },
+  {
+    id: "pot-45",
+    title: "Faut-il toujours dire la vérité ?",
+    notions: ["Le langage", "La vérité", "Le devoir"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Dire la vérité est-il un devoir inconditionnel, ou le mensonge peut-il être parfois moralement justifié ?",
+      authors: ["E. Kant", "B. Constant", "N. Machiavel"],
+      plan: {
+        these: "La morale affirme souvent qu'il est indispensable d'être honnête, car le mensonge détruit la confiance entre les individus. Pour des penseurs comme Emmanuel Kant, dire systématiquement la vérité est un devoir moral universel et inconditionnel.",
+        antithese: "Toutefois, une honnêteté brutale peut parfois causer des blessures inutiles ou mettre des innocents en danger. Dans certaines situations tragiques, adoucir la réalité ou dissimuler l'information devient paradoxalement un acte de protection et de compassion.",
+        synthese: "La confiance imposant une base d'honnêteté, il est crucial de privilégier la vérité dans nos échanges quotidiens. Cependant, la délicatesse et le discernement moral autorisent le silence ou le mensonge lorsque parler vrai devient cruel ou destructeur."
+      }
+    }
+  },
+  {
+    id: "pot-46",
+    title: "Les mots créent-ils la réalité ou la décrivent-ils seulement ?",
+    notions: ["Le langage", "La vérité"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Le langage est-il un miroir de la réalité ou un moule qui lui donne sa forme concrète ?",
+      authors: ["J.L. Austin", "M. Foucault", "E. Kant"],
+      plan: {
+        these: "Au premier abord, les mots apparaissent comme de simples étiquettes destinées à nommer une nature qui nous précède. Le monde matériel s'organiserait de manière identique même si aucun humain n'était là pour prononcer le moindre son.",
+        antithese: "Malgré tout, notre conscience du monde est profondément découpée par les différentes classifications grammaticales et le vocabulaire imposés. De plus, par les actes institutionnels, prononcer un verdict ou une promesse modifie très concrètement la réalité sociale.",
+        synthese: "Les mots partent toujours de la représentation d'une réalité extérieure objective à décrire afin d'organiser le réel. En retour, les classifications de ces mots forgent nos préjugés culturels et influencent la construction future de notre réalité politique collective."
+      }
+    }
+  },
+  {
+    id: "pot-47",
+    title: "Les mots nous éloignent-ils de la réalité des choses ?",
+    notions: ["Le langage", "La nature", "La conscience"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "En nous offrant des concepts généraux pour catégoriser le monde, le langage occulte-t-il la singularité de la réalité ?",
+      authors: ["H. Bergson", "F. Nietzsche", "A. Schopenhauer"],
+      plan: {
+        these: "En utilisant des mots généraux, nous masquons la richesse unique de chaque objet ou de chaque événement réel. Le mot tend inévitablement à figer et à simplifier une réalité qui est pourtant en perpétuel changement pour faciliter nos routines.",
+        antithese: "Mais c'est précisément grâce au langage que nous organisons le monde chaotique autour de nous avec une certaine logique. Les créateurs, de leur côté, utilisent subtilement la richesse des mots pour nous dévoiler la beauté invisible des petites choses.",
+        synthese: "Employé de manière paresseuse, le langage s'interpose comme un écran appauvrissant entre nous et la richesse du grand monde. Exploité d'une façon plus évocatrice et plus créative, il devient l'outil le plus puissant pour rendre au réel toute sa profondeur initiale."
+      }
+    }
+  },
+  {
+    id: "pot-48",
+    title: "Faut-il exiger du langage qu'il soit parfaitement clair ?",
+    notions: ["Le langage", "La raison"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "La clarté absolue est-elle l'idéal inaccessible ou indésirable de la communication linguistique ?",
+      authors: ["R. Descartes", "S. Mallarmé", "L. Wittgenstein"],
+      plan: {
+        these: "La précision du vocabulaire est essentielle pour éviter les malentendus et organiser sereinement le savoir scientifique. Parler avec clarté permet de transmettre les informations sans équivoque et avec une efficacité optimale dans une société libre.",
+        antithese: "Néanmoins, vouloir tout réduire à une clarté mathématique absolue risquerait d'abolir la poésie, les nuances ironiques et la séduction humaine. L'humour, l'amour ou l'art ont souvent besoin d'un léger mystère pour retranscrire toute la part indicible de notre pensée complexe.",
+        synthese: "Pour la science et les échanges vitaux du quotidien, la clarté rigoureuse du langage est une exigence morale irremplaçable. Cependant, tolérer des frontières artistiques plus souples et moins directes est indispensable pour préserver la magie littéraire et la beauté de l'existence."
+      }
+    }
+  },
+  {
+    id: "pot-49",
+    title: "La rhétorique est-elle l'ennemie de la vérité ?",
+    notions: ["Le langage", "La vérité", "L'État"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "L'art de séduire par les mots représente-t-il une menace pour la logique ou un soutien utile à la vérité ?",
+      authors: ["Platon", "Aristote", "Cicéron"],
+      plan: {
+        these: "Depuis les philosophes grecs, l'art de bien parler est souvent vu comme une manipulation dangereuse qui flatte les passions plutôt que la raison. Un bon orateur peut utiliser des arguments charmeurs pour convaincre la foule d'une opinion totalement fausse ou de mesures très injustes.",
+        antithese: "Mais un discours logiquement vrai a parfois du mal à convaincre les citoyens s'il est présenté de façon ennuyeuse ou abstraite. La rhétorique est donc nécessaire pour défendre efficacement les idées justes et emporter l'adhésion d'une société endormie.",
+        synthese: "Lorsqu'elle n'est motivée que par la recherche du pouvoir égoïste, la rhétorique manipule et trompe inévitablement la population sincère. Associée à une quête sincère du bien commun, elle redevient une arme précieuse pour donner de l'impact à la stricte vérité des faits."
+      }
+    }
+  },
+  {
+    id: "pot-50",
+    title: "Dire la vérité, est-ce toujours bien parler ?",
+    notions: ["Le langage", "La vérité"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "L'expression de la vérité brute se suffit-elle à elle-même ou exige-t-elle une exigence de forme oratoire respectueuse ?",
+      authors: ["B. Pascal", "J.-J. Rousseau", "I. Kant"],
+      plan: {
+        these: "Les penseurs rationnels affirment que le seul but de la parole est de transmettre la réalité sans aucun détour de forme. Un discours est donc considéré comme parfaitement réussi s'il est logiquement vrai et respectueux des faits observables.",
+        antithese: "Toutefois, une vérité brute, crachée avec mépris ou brutalité, perd sa force et se transforme en humiliation destructrice. Bien parler implique également de respecter son public par une grande empathie et un choix minutieux des délicates formulations employées.",
+        synthese: "Respecter scrupuleusement la vérité des faits constitue évidemment le fondement éthique indispensable d'une expression légitime. Néanmoins, exprimer efficacement et respectueusement cette vérité requiert bien souvent une grande intelligence sociale ainsi qu'un tact mesuré."
+      }
+    }
+  },
+  {
+    id: "pot-51",
+    title: "Parler, est-ce agir ?",
+    notions: ["Le langage", "L'État"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "La parole se sépare-t-elle de l'action physique ou s'accomplit-elle concrètement tel un acte réel du quotidien ?",
+      authors: ["J.L. Austin", "H. Arendt", "P. Bourdieu"],
+      plan: {
+        these: "Souvent, nous distinguons vivement les mots et les actes en considérant que parler revient simplement à décrire ou débattre. Bavarder semble être une occupation intellectuelle inoffensive qui ne produit concrètement aucun véritable changement direct dans le monde physique.",
+        antithese: "Cependant, la théorie des actes de langage montre très bien que jurer, ordonner ou juger ne décrit rien, mais agit directement. L'ordre formel d'un général militaire ou le verdict terrible d'un tribunal modifient incontestablement la situation vécue par des centaines d'individus concernés.",
+        synthese: "Les mots ne sont jamais une matière totalement inerte ou un simple vent sonore pour amuser les tribunes tranquilles. Bien utilisée, la parole constitue notre premier levier d'action pour engager notre responsabilité et infléchir le destin des événements politiques."
+      }
+    }
+  },
+  {
+    id: "pot-52",
+    title: "Le langage est-il un outil de pouvoir ?",
+    notions: ["Le langage", "L'État"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Le langage sert-il une égalité démocratique idéale ou structure-t-il systématiquement une asymétrie de prestige ?",
+      authors: ["P. Bourdieu", "M. Foucault", "G. Orwell"],
+      plan: {
+        these: "Naturellement, le vocabulaire reste l'instrument simple avec lequel nous cherchons à interagir pacifiquement sans rapports de force explicites. L'éducation l'enseigne aux plus jeunes comme une aide magique pour tisser des compromis faciles ou pour partager rapidement d'utiles informations scolaires.",
+        antithese: "Pourtant, ceux qui possèdent l'aisance verbale supérieure s'en servent depuis toujours pour endoctriner ou dominer l'opinion populaire. La belle culture, le vocabulaire savant de l'élite ou l'art oratoire incisif permettent systématiquement de s'imposer sur ses adversaires politiques démunis linguistiquement.",
+        synthese: "Bien qu'il se veuille avant tout unificateur et neutre, le maniement supérieur du discours suscite inévitablement un avantage de pouvoir indéniable. Démocratiser l'étude des rouages du langage demeure par conséquent le moyen indispensable pour prémunir chaque futur citoyen de l'emprise intellectuelle autoritaire."
+      }
+    }
+  },
+  {
+    id: "pot-53",
+    title: "Le langage est-il un instrument de domination ?",
+    notions: ["Le langage", "L'État", "La liberté"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Assujettis au langage de nos dirigeants, sommes-nous fatalement opprimés ou pouvons-nous y trouver le moyen de résister ?",
+      authors: ["N. Chomsky", "R. Barthes", "G. Orwell"],
+      plan: {
+        these: "Le langage sert bien souvent aux régimes stricts et aux dirigeants pour asseoir leur autorité morale sur les populations obéissantes. En utilisant des termes flatteurs ou rassurants, les autorités peuvent facilement masquer la grande violence de leurs réformes restrictives impopulaires.",
+        antithese: "Néanmoins, le langage est également l'outil fondamental de toute protestation sociale justifiée et de la liberté d'expression combative moderne. Les journalistes vaillants et les philosophes engagés l'emploient sans cesse vigoureusement pour dénoncer durement l'oppression et affranchir ainsi la conscience populaire.",
+        synthese: "La structure du discours peut assurément enfermer les citoyens dociles dans un conformisme inquiétant et une adoration insidieuse du chef. Affûter sa rigueur dialectique reste malgré tout le moyen individuel le plus efficace pour résister intellectuellement aux dangereux excès d'une propagande étatique dissimulée."
+      }
+    }
+  },
+  {
+    id: "pot-54",
+    title: "La maîtrise de la langue donne-t-elle du pouvoir ?",
+    notions: ["Le langage", "L'État"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Posséder un grand vocabulaire et l'art de l'éloquence suffit-il pour contrôler ou charmer de manière indiscutable les masses ?",
+      authors: ["P. Bourdieu", "Cicéron", "M. Foucault"],
+      plan: {
+        these: "Savoir s'exprimer avec précision confère incontestablement une très grande force politique, parce qu'elle permet de convaincre plus aisément la majorité indécise. L'acquisition d'un vocabulaire étendu et d'une syntaxe limpide devient presque toujours le meilleur passeport du respect et de l'influence.",
+        antithese: "Toutefois, l'habileté rhétorique froide ne garantit ni la moralité ni la véracité des thèses soutenues par le locuteur instruit. Par ailleurs, des discours candides très spontanés, quoiqu'imparfaits grammaticalement, réussissent de temps à autre à faire trembler des empereurs par la magie saisissante de la conviction pure.",
+        synthese: "Le maniement habile et élégant du langage académique assure indiscutablement un atout terrifiant pour remporter l'attention publique de prestige. Mais, s'il n'est pas secondé par la vérité sincère du cœur, il se transforme à long terme en un vulgaire dispositif sectaire, incapable de gagner la grande confiance du peuple profond."
+      }
+    }
+  },
+  {
+    id: "pot-55",
+    title: "Les mots ont-ils un pouvoir sur les choses ?",
+    notions: ["Le langage", "La technique", "La vérité"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Au-delà de leur nature symbolique, les paroles possèdent-elles une véritable force d'altération matérielle ou juridique applicable au réel ?",
+      authors: ["J.L. Austin", "Platon", "A. Schopenhauer"],
+      plan: {
+        these: "Intuitivement, exprimer une volonté par la parole ne modifie en rien la structure des objets physiques de la nature. Mettre toutes ses forces pour ordonner à la pluie de s'arrêter n'a absolument aucun impact sur la réalité climatique.",
+        antithese: "En revanche, dans le monde social des institutions humaines, les déclarations officielles possèdent un véritable pouvoir de transformation concret. Dès qu'un juge prononce solennellement un verdict d'emprisonnement, la réalité physique et la liberté de mouvement d'un individu s'en trouvent instantanément modifiées.",
+        synthese: "Le verbe humain reste totalement impuissant face aux lois inébranlables de la matière ou du monde végétal non doué d'intelligence. Toutefois, dès lors qu'il touche un être capable de partager des conventions culturelles communes, le langage influence souverainement toutes nos réalités quotidiennes et juridiques."
+      }
+    }
+  },
+  {
+    id: "pot-56",
+    title: "Faut-il se méfier des mots ?",
+    notions: ["Le langage", "La raison", "La conscience"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Les mots méritent-ils notre confiance instinctive pour bâtir un dialogue équitable ou nous obligent-ils à la plus grande vigilance ?",
+      authors: ["R. Descartes", "J. Baudrillard", "G. Orwell"],
+      plan: {
+        these: "Le langage offre un moyen merveilleux de formuler la pensée pour collaborer et s'enrichir des sagesses des générations qui nous ont précédés sur terre. Cultiver une suspicion maladive constante à l'égard de toute parole conduirait désespérément à l'isolement complet de l'individu solitaire.",
+        antithese: "Malgré leurs vertus formidables, les expressions des orateurs cachent bien souvent des arrière-pensées d'une manipulation subtile et discrète. Les publicitaires doués ou les propagateurs politiques misent consciencieusement sur notre vulnérabilité à certains nobles vocables, afin de tromper en douceur la vigilance passive du consommateur candide.",
+        synthese: "Bien qu'il structure harmonieusement l'aventure intellectuelle partagée, le discours ambiant requiert toujours un minimum de clairvoyance et de prudence responsable. Exercer rigoureusement sa propre réflexion personnelle reste le remède d'urgence pour ne pas être envoûté par toutes ces paroles charmantes mais perfidement intéressées."
+      }
+    }
+  },
+  {
+    id: "pot-57",
+    title: "Le langage nous unit-il ou nous divise-t-il ?",
+    notions: ["Le langage", "L'État"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Vocation naturelle de tout outil de médiation, le dialogue produit-il par miracle l'alliance communautaire ou attise-t-il les pires luttes sociales ?",
+      authors: ["J.-J. Rousseau", "P. Bourdieu", "H. Arendt"],
+      plan: {
+        these: "Partager une même langue permet à une société de communiquer, de coopérer et de transmettre facilement sa culture fraternelle. Un vocabulaire commun forme un ciment spirituel capable de rassembler durablement des personnes venant d'horizons très variés.",
+        antithese: "Toutefois, la non-maîtrise d'une langue produit des barrières immenses qui alimentent le racisme et le rejet de l'étranger. Même au sein d'une nation, les cruelles inégalités de vocabulaire entre différentes classes sociales créent du mépris et d'insurmontables divisions quotidiennes.",
+        synthese: "La parole, symbole du rassemblement humain supérieur, échoue malheureusement parfois à réconcilier la population sans effort soutenu et réciproque de bonne volonté. Elle exige en réalité beaucoup d'empathie, ainsi qu'une éducation solide, pour accueillir chaque différence sans faire du niveau de langue un instrument d'exclusion discriminatoire."
+      }
+    }
+  },
+  {
+    id: "pot-58",
+    title: "Le langage nous permet-il de mieux comprendre autrui ?",
+    notions: ["Le langage", "La conscience"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "L'articulation du verbe perfore-t-elle notre subjectivité close pour assurer une communion solidaire authentique face à nos mystères respectifs ?",
+      authors: ["E. Lévinas", "M. Merleau-Ponty", "H. Bergson"],
+      plan: {
+        these: "La parole reste notre meilleur moyen pour communiquer nos attentes, débattre sereinement et partager nos émotions avec notre entourage. Un dialogue honnête dissipe souvent les malentendus et offre un pont irremplaçable pour se rapprocher de la réalité intime des autres.",
+        antithese: "Malgré cela, les mots demeurent souvent imparfaits pour exprimer spontanément les traumatismes profonds qui emprisonnent l'esprit dans le silence. De plus, l'hypocrisie et les manipulations rhétoriques empêchent constamment d'avoir accès aux véritables intentions dissimulées sous de beaux mensonges polis.",
+        synthese: "Le langage crée indéniablement le seul véritable accès durable vers les pensées des autres êtres humains pour éviter l'isolement radical. Néanmoins, atteindre une compréhension profonde demande nécessairement beaucoup d'intelligence émotionnelle pour décrypter l'attitude non verbale et toutes les subtilités non prononcées."
+      }
+    }
+  },
+  {
+    id: "pot-59",
+    title: "Le langage crée-t-il des malentendus ?",
+    notions: ["Le langage", "La vérité"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Naturellement imprécis ou sujet à l'interprétation, le langage abrite-t-il les pires blocages de nos plus formidables ambitions collaboratives ?",
+      authors: ["F. de Saussure", "L. Wittgenstein", "S. Freud"],
+      plan: {
+        these: "Puisque chaque individu projette ses propres références sur les mots, les erreurs d'interprétation et les quiproquos semblent inévitables. L'usage d'un vocabulaire imprécis déclenche régulièrement des frustrations ou des conflits stériles dans nos interactions quotidiennes et professionnelles.",
+        antithese: "Toutefois, ces confusions ne sont souvent que la première étape indispensable pour se confronter à la perception différente d'autrui. C'est en faisant continuellement l'effort de se justifier, de corriger son langage et de réexpliquer, que l'être humain parfait véritablement son intelligence des autres.",
+        synthese: "Les mots, porteurs d'approximations imparfaites, piègent régulièrement la communication spontanée innocente au profit de malentendus frustrants et douloureux. En revanche, accepter de poursuivre l'effort patient de la traduction respectueuse ou de la clarification apaisée, c'est triompher de ces obstacles inévitables pour retrouver une précieuse unité sociale."
+      }
+    }
+  },
+  {
+    id: "pot-60",
+    title: "La parole nous rend-elle libres ?",
+    notions: ["Le langage", "La liberté", "L'État"],
+    type: "Potentiel",
+    ideas: {
+      problematica: "Bénéfice éclatant de notre intellect, la compétence oratoire suffira-t-elle toujours pour se soustraire aux tyrans discrets de notre temps ?",
+      authors: ["J.L. Austin", "H. Arendt", "R. Barthes"],
+      plan: {
+        these: "Savoir exprimer sa pensée avec une grande clarté permet de débattre, de s'opposer aux injustices et de revendiquer ses droits fondamentaux. Celui qui maîtrise sa parole peut plus facilement s'extirper des influences oppressantes et affirmer courageusement son indépendance d'esprit face au reste du public passif.",
+        antithese: "Cependant, la langue que nous employons véhicule des stéréotypes et des valeurs politiques que nous intériorisons souvent inconsciemment depuis l'enfance. De ce fait, nous restons largement conditionnés par ce discours dominant, qui dessine secrètement les limites strictes de ce qu'il est possible de penser.",
+        synthese: "Le langage nous transmet involontairement l'empreinte d'une culture et de multiples jugements moraux qui conditionnent et encadrent nos choix profonds. Cependant, l'usage critique du discours demeure fondamentalement notre meilleure arme intellectuelle pour repérer ces chaînes invisibles et bâtir fermement l'indépendance de nos futures convictions idéologiques émancipatrices."
       }
     }
   }

@@ -207,6 +207,13 @@ const NOTION_THEMES: Record<Notion, {
   },
 };
 
+const normalizeString = (str: string): string => {
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
+};
+
 export default function App() {
   const [activeTab, setActiveTab] = useState<ExamType>('Annale');
   const [searchQuery, setSearchQuery] = useState('');
@@ -228,11 +235,11 @@ export default function App() {
       }
 
       // 2. Search Match
-      const query = searchQuery.toLowerCase();
+      const query = normalizeString(searchQuery);
       const matchesSearch =
-        subject.title.toLowerCase().includes(query) ||
-        subject.location?.toLowerCase().includes(query) ||
-        subject.year?.toString().includes(query);
+        normalizeString(subject.title).includes(query) ||
+        (subject.location ? normalizeString(subject.location).includes(query) : false) ||
+        (subject.year ? subject.year.toString().includes(query) : false);
       if (!matchesSearch) return false;
 
       // 3. Notion Match
@@ -259,17 +266,17 @@ export default function App() {
 
   const filteredNotions = useMemo(() => {
     if (!searchQuery.trim()) return NOTIONS;
-    const q = searchQuery.toLowerCase().trim();
+    const q = normalizeString(searchQuery.trim());
     return NOTIONS.filter((notion) => {
-      if (notion.toLowerCase().includes(q)) return true;
+      if (normalizeString(notion).includes(q)) return true;
       const thesisData = THESES_LIBRARY.find((t) => t.notion === notion);
       if (!thesisData) return false;
       return thesisData.angles.some((angle) => {
         return (
-          angle.these.toLowerCase().includes(q) ||
-          angle.reference.toLowerCase().includes(q) ||
-          angle.developpement.toLowerCase().includes(q) ||
-          angle.argumentPivot.toLowerCase().includes(q)
+          normalizeString(angle.these).includes(q) ||
+          normalizeString(angle.reference).includes(q) ||
+          normalizeString(angle.developpement).includes(q) ||
+          normalizeString(angle.argumentPivot).includes(q)
         );
       });
     });
@@ -669,13 +676,13 @@ export default function App() {
                       );
                     }
 
-                    const q = searchQuery.toLowerCase().trim();
+                    const q = normalizeString(searchQuery.trim());
                     const filteredAngles = q 
                       ? thesisData.angles.filter(angle => 
-                          angle.these.toLowerCase().includes(q) ||
-                          angle.reference.toLowerCase().includes(q) ||
-                          angle.developpement.toLowerCase().includes(q) ||
-                          angle.argumentPivot.toLowerCase().includes(q)
+                          normalizeString(angle.these).includes(q) ||
+                          normalizeString(angle.reference).includes(q) ||
+                          normalizeString(angle.developpement).includes(q) ||
+                          normalizeString(angle.argumentPivot).includes(q)
                         )
                       : thesisData.angles;
 
