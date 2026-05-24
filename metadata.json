@@ -1,0 +1,6 @@
+{
+  "name": "PhiloBac",
+  "description": "Application de révision pour le Bac de Philosophie. Consultation d'annales et de sujets probables avec pistes de réflexion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
