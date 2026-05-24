@@ -25,54 +25,186 @@ const NOTION_COLORS: Record<Notion, string> = {
   "La vérité": "bg-pink-50 text-pink-600 border-pink-100",
 };
 
-const familyStyles: Record<string, {
+const NOTION_THEMES: Record<Notion, {
   badge: string;
   definitionBox: string;
   definitionText: string;
   contexteBox: string;
-  contexteTitle: string;
   highlightWord: string;
   pivotBox: string;
-  pivotTitle: string;
   thesisHeaderBg: string;
-  backBtn: string;
+  hoverBorder: string;
 }> = {
-  nature_science: {
+  "L'art": {
+    badge: "bg-blue-50 text-blue-700 border-blue-100",
+    definitionBox: "bg-blue-50/60 text-blue-950 border border-blue-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-blue-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-blue-700 italic font-bold",
+    pivotBox: "bg-blue-50/45 border border-blue-100 text-blue-950",
+    thesisHeaderBg: "bg-blue-50/30 border-b border-blue-100/85",
+    hoverBorder: "hover:border-blue-300",
+  },
+  "Le bonheur": {
     badge: "bg-emerald-50 text-emerald-700 border-emerald-100",
     definitionBox: "bg-emerald-50/60 text-emerald-950 border border-emerald-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-emerald-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
-    contexteTitle: "text-emerald-850 font-bold",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
     highlightWord: "text-emerald-700 italic font-bold",
     pivotBox: "bg-emerald-50/45 border border-emerald-100 text-emerald-950",
-    pivotTitle: "text-emerald-700",
-    thesisHeaderBg: "bg-emerald-50/30 border-b border-emerald-100/80",
-    backBtn: "text-emerald-600 hover:text-emerald-800",
+    thesisHeaderBg: "bg-emerald-50/30 border-b border-emerald-100/85",
+    hoverBorder: "hover:border-emerald-300",
   },
-  etat_justice: {
+  "La conscience": {
+    badge: "bg-purple-50 text-purple-700 border-purple-100",
+    definitionBox: "bg-purple-50/60 text-purple-950 border border-purple-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-purple-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-purple-700 italic font-bold",
+    pivotBox: "bg-purple-50/45 border border-purple-100 text-purple-950",
+    thesisHeaderBg: "bg-purple-50/30 border-b border-purple-100/85",
+    hoverBorder: "hover:border-purple-300",
+  },
+  "Le devoir": {
+    badge: "bg-orange-50 text-orange-700 border-orange-100",
+    definitionBox: "bg-orange-50/60 text-orange-950 border border-orange-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-orange-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-orange-700 italic font-bold",
+    pivotBox: "bg-orange-50/45 border border-orange-100 text-orange-950",
+    thesisHeaderBg: "bg-orange-50/30 border-b border-orange-100/85",
+    hoverBorder: "hover:border-orange-300",
+  },
+  "L'État": {
+    badge: "bg-rose-50 text-rose-700 border-rose-100",
+    definitionBox: "bg-rose-50/60 text-rose-950 border border-rose-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-rose-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-rose-700 italic font-bold",
+    pivotBox: "bg-rose-50/45 border border-rose-100 text-rose-950",
+    thesisHeaderBg: "bg-rose-50/30 border-b border-rose-100/85",
+    hoverBorder: "hover:border-rose-300",
+  },
+  "L'inconscient": {
+    badge: "bg-amber-50 text-amber-700 border-amber-100",
+    definitionBox: "bg-amber-50/60 text-amber-950 border border-amber-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-amber-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-amber-700 italic font-bold",
+    pivotBox: "bg-amber-50/45 border border-amber-100 text-amber-950",
+    thesisHeaderBg: "bg-amber-50/30 border-b border-amber-100/85",
+    hoverBorder: "hover:border-amber-300",
+  },
+  "La justice": {
     badge: "bg-indigo-50 text-indigo-700 border-indigo-100",
     definitionBox: "bg-indigo-50/60 text-indigo-950 border border-indigo-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-indigo-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
-    contexteTitle: "text-indigo-850 font-bold",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
     highlightWord: "text-indigo-700 italic font-bold",
     pivotBox: "bg-indigo-50/45 border border-indigo-100 text-indigo-950",
-    pivotTitle: "text-indigo-700",
-    thesisHeaderBg: "bg-indigo-50/30 border-b border-indigo-100/80",
-    backBtn: "text-indigo-600 hover:text-indigo-800",
+    thesisHeaderBg: "bg-indigo-50/30 border-b border-indigo-100/85",
+    hoverBorder: "hover:border-indigo-300",
   },
-  conscience_culture: {
+  "Le langage": {
+    badge: "bg-cyan-50 text-cyan-700 border-cyan-100",
+    definitionBox: "bg-cyan-50/60 text-cyan-950 border border-cyan-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-cyan-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-cyan-700 italic font-bold",
+    pivotBox: "bg-cyan-50/45 border border-cyan-100 text-cyan-950",
+    thesisHeaderBg: "bg-cyan-50/30 border-b border-cyan-100/85",
+    hoverBorder: "hover:border-cyan-300",
+  },
+  "La liberté": {
+    badge: "bg-sky-50 text-sky-700 border-sky-100",
+    definitionBox: "bg-sky-50/60 text-sky-950 border border-sky-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-sky-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-sky-700 italic font-bold",
+    pivotBox: "bg-sky-50/45 border border-sky-100 text-sky-950",
+    thesisHeaderBg: "bg-sky-50/30 border-b border-sky-100/85",
+    hoverBorder: "hover:border-sky-300",
+  },
+  "La nature": {
+    badge: "bg-green-50 text-green-700 border-green-100",
+    definitionBox: "bg-green-50/60 text-green-950 border border-green-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-green-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-green-700 italic font-bold",
+    pivotBox: "bg-green-50/45 border border-green-100 text-green-950",
+    thesisHeaderBg: "bg-green-50/30 border-b border-green-100/85",
+    hoverBorder: "hover:border-green-300",
+  },
+  "La raison": {
+    badge: "bg-teal-50 text-teal-700 border-teal-100",
+    definitionBox: "bg-teal-50/60 text-teal-950 border border-teal-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-teal-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-teal-700 italic font-bold",
+    pivotBox: "bg-teal-50/45 border border-teal-100 text-teal-950",
+    thesisHeaderBg: "bg-teal-50/30 border-b border-teal-100/85",
+    hoverBorder: "hover:border-teal-300",
+  },
+  "La religion": {
     badge: "bg-violet-50 text-violet-700 border-violet-100",
     definitionBox: "bg-violet-50/60 text-violet-950 border border-violet-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-violet-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
-    contexteTitle: "text-violet-850 font-bold",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
     highlightWord: "text-violet-700 italic font-bold",
     pivotBox: "bg-violet-50/45 border border-violet-100 text-violet-950",
-    pivotTitle: "text-violet-700",
-    thesisHeaderBg: "bg-violet-50/30 border-b border-violet-100/80",
-    backBtn: "text-violet-600 hover:text-violet-800",
-  }
+    thesisHeaderBg: "bg-violet-50/30 border-b border-violet-100/85",
+    hoverBorder: "hover:border-violet-300",
+  },
+  "La science": {
+    badge: "bg-fuchsia-50 text-fuchsia-700 border-fuchsia-100",
+    definitionBox: "bg-fuchsia-50/60 text-fuchsia-950 border border-fuchsia-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-fuchsia-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-fuchsia-700 italic font-bold",
+    pivotBox: "bg-fuchsia-50/45 border border-fuchsia-100 text-fuchsia-950",
+    thesisHeaderBg: "bg-fuchsia-50/30 border-b border-fuchsia-100/85",
+    hoverBorder: "hover:border-fuchsia-300",
+  },
+  "La technique": {
+    badge: "bg-red-50 text-red-700 border-red-100",
+    definitionBox: "bg-red-50/60 text-red-950 border border-red-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-red-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-red-700 italic font-bold",
+    pivotBox: "bg-red-50/45 border border-red-100 text-red-950",
+    thesisHeaderBg: "bg-red-50/30 border-b border-red-100/85",
+    hoverBorder: "hover:border-red-300",
+  },
+  "Le temps": {
+    badge: "bg-slate-100 text-slate-700 border-slate-200",
+    definitionBox: "bg-slate-100/60 text-slate-950 border border-slate-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-slate-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-slate-700 italic font-bold",
+    pivotBox: "bg-slate-50/45 border border-slate-100 text-slate-950",
+    thesisHeaderBg: "bg-slate-100/30 border-b border-slate-200/80",
+    hoverBorder: "hover:border-slate-300",
+  },
+  "Le travail": {
+    badge: "bg-yellow-50 text-yellow-700 border-yellow-100",
+    definitionBox: "bg-yellow-50/60 text-yellow-950 border border-yellow-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-yellow-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-yellow-700 italic font-bold",
+    pivotBox: "bg-yellow-50/45 border border-yellow-100 text-yellow-950",
+    thesisHeaderBg: "bg-yellow-50/30 border-b border-yellow-100/85",
+    hoverBorder: "hover:border-yellow-300",
+  },
+  "La vérité": {
+    badge: "bg-pink-50 text-pink-700 border-pink-100",
+    definitionBox: "bg-pink-50/60 text-pink-950 border border-pink-200/80 shadow-sm backdrop-blur-sm",
+    definitionText: "text-pink-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    highlightWord: "text-pink-700 italic font-bold",
+    pivotBox: "bg-pink-50/45 border border-pink-100 text-pink-950",
+    thesisHeaderBg: "bg-pink-50/30 border-b border-pink-100/85",
+    hoverBorder: "hover:border-pink-300",
+  },
 };
 
 export default function App() {
@@ -124,6 +256,24 @@ export default function App() {
     }
     setSelectedNotions(next);
   };
+
+  const filteredNotions = useMemo(() => {
+    if (!searchQuery.trim()) return NOTIONS;
+    const q = searchQuery.toLowerCase().trim();
+    return NOTIONS.filter((notion) => {
+      if (notion.toLowerCase().includes(q)) return true;
+      const thesisData = THESES_LIBRARY.find((t) => t.notion === notion);
+      if (!thesisData) return false;
+      return thesisData.angles.some((angle) => {
+        return (
+          angle.these.toLowerCase().includes(q) ||
+          angle.reference.toLowerCase().includes(q) ||
+          angle.developpement.toLowerCase().includes(q) ||
+          angle.argumentPivot.toLowerCase().includes(q)
+        );
+      });
+    });
+  }, [searchQuery]);
 
   return (
     <div className="flex flex-col lg:flex-row h-screen w-full bg-[#F9FAFB] font-sans text-slate-800 overflow-hidden selection:bg-slate-200">
@@ -441,33 +591,35 @@ export default function App() {
               </div>
 
               {!selectedThesisNotion ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                  {NOTIONS.map((notion) => {
-                    const hasData = THESES_LIBRARY.some(t => t.notion === notion);
-                    const metadata = NOTION_INTRO_DATA[notion];
-                    const family = metadata?.family || "conscience_culture";
-                    const styles = familyStyles[family];
-                    return (
-                      <button
-                        key={notion}
-                        onClick={() => setSelectedThesisNotion(notion)}
-                        className={`flex flex-col text-left p-4 rounded-xl border ${hasData ? 'border-slate-200 bg-white hover:shadow-sm' : 'border-slate-100 bg-slate-50/50 opacity-60 hover:opacity-100'} ${
-                          hasData && family === 'nature_science' ? 'hover:border-emerald-300' :
-                          hasData && family === 'etat_justice' ? 'hover:border-indigo-300' :
-                          hasData ? 'hover:border-violet-300' : ''
-                        } transition-all`}
-                      >
-                        <span className={`text-xs font-bold mb-2 px-2 py-0.5 rounded border inline-block w-fit ${styles?.badge || 'bg-slate-100 text-slate-500 border-slate-200'}`}>
-                          {notion}
-                        </span>
-                        <div className="flex items-center justify-between w-full mt-1">
-                          <span className="text-sm font-semibold text-slate-700">Explorer la notion</span>
-                          <ChevronRight className="w-4 h-4 text-slate-400" />
-                        </div>
-                      </button>
-                    )
-                  })}
-                </div>
+                filteredNotions.length === 0 ? (
+                  <div className="p-8 text-center border border-slate-200 border-dashed rounded-xl bg-white/50">
+                    <p className="text-sm font-medium text-slate-500">Aucune notion ou thèse ne correspond à votre recherche.</p>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    {filteredNotions.map((notion) => {
+                      const hasData = THESES_LIBRARY.some(t => t.notion === notion);
+                      const theme = NOTION_THEMES[notion];
+                      return (
+                        <button
+                          key={notion}
+                          onClick={() => setSelectedThesisNotion(notion)}
+                          className={`flex flex-col text-left p-4 rounded-xl border ${hasData ? 'border-slate-200 bg-white hover:shadow-sm' : 'border-slate-100 bg-slate-50/50 opacity-60 hover:opacity-100'} ${
+                            hasData && theme ? theme.hoverBorder : ''
+                          } transition-all`}
+                        >
+                          <span className={`text-xs font-bold mb-2 px-2 py-0.5 rounded border inline-block w-fit ${theme?.badge || 'bg-slate-100 text-slate-500 border-slate-200'}`}>
+                            {notion}
+                          </span>
+                          <div className="flex items-center justify-between w-full mt-1">
+                            <span className="text-sm font-semibold text-slate-700">Explorer la notion</span>
+                            <ChevronRight className="w-4 h-4 text-slate-400" />
+                          </div>
+                        </button>
+                      )
+                    })}
+                  </div>
+                )
               ) : (
                 <div className="space-y-8">
                   <button 
@@ -479,25 +631,25 @@ export default function App() {
 
                   {(() => {
                     const metadata = NOTION_INTRO_DATA[selectedThesisNotion];
-                    const family = metadata?.family || "conscience_culture";
-                    const styles = familyStyles[family];
+                    const theme = NOTION_THEMES[selectedThesisNotion];
 
                     return (
                       <div className="space-y-6">
-                        <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight">
+                        <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight flex items-center gap-3">
+                          <span className={`w-3.5 h-3.5 rounded-full inline-block ${theme?.badge.split(' ')[0]}`} />
                           {selectedThesisNotion}
                         </h1>
 
-                        <div className={`p-5 rounded-xl ${styles.definitionBox}`}>
-                          <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold mb-2">Définition</p>
-                          <blockquote className={styles.definitionText}>
+                        <div className={`p-5 rounded-xl ${theme?.definitionBox}`}>
+                          <p className="text-[10px] uppercase tracking-widest text-slate-550 font-bold mb-2">Définition</p>
+                          <blockquote className={theme?.definitionText}>
                             « {metadata?.definition} »
                           </blockquote>
                         </div>
 
-                        <div className={`${styles.contexteBox} p-5 rounded-xl`}>
+                        <div className={`${theme?.contexteBox} p-5 rounded-xl`}>
                           <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-2">Contexte & Étymologie</p>
-                          <p className="text-sm leading-relaxed font-medium text-slate-750">
+                          <p className="text-sm leading-relaxed font-semibold text-slate-700">
                             {metadata?.contexte}
                           </p>
                         </div>
@@ -507,9 +659,7 @@ export default function App() {
 
                   {(() => {
                     const thesisData = THESES_LIBRARY.find(t => t.notion === selectedThesisNotion);
-                    const metadata = NOTION_INTRO_DATA[selectedThesisNotion];
-                    const family = metadata?.family || "conscience_culture";
-                    const styles = familyStyles[family];
+                    const theme = NOTION_THEMES[selectedThesisNotion];
 
                     if (!thesisData || thesisData.angles.length === 0) {
                       return (
@@ -519,14 +669,32 @@ export default function App() {
                       );
                     }
 
+                    const q = searchQuery.toLowerCase().trim();
+                    const filteredAngles = q 
+                      ? thesisData.angles.filter(angle => 
+                          angle.these.toLowerCase().includes(q) ||
+                          angle.reference.toLowerCase().includes(q) ||
+                          angle.developpement.toLowerCase().includes(q) ||
+                          angle.argumentPivot.toLowerCase().includes(q)
+                        )
+                      : thesisData.angles;
+
+                    if (filteredAngles.length === 0) {
+                      return (
+                        <div className="p-8 text-center border border-slate-200 border-dashed rounded-xl bg-white/50">
+                          <p className="text-sm font-semibold text-slate-500">Aucune thèse ne correspond à votre recherche pour cette notion.</p>
+                        </div>
+                      );
+                    }
+
                     return (
                       <div className="space-y-6 pt-4">
                         <h2 className="text-lg font-bold text-slate-800 tracking-tight">
-                          Thèses & Arguments Pivots
+                          {q ? "Thèses filtrées correspondantes" : "Thèses & Arguments Pivots"}
                         </h2>
-                        {thesisData.angles.map((angle, idx) => (
+                        {filteredAngles.map((angle, idx) => (
                           <div key={idx} className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                            <div className={`p-5 border-b border-slate-100 ${styles.thesisHeaderBg}`}>
+                            <div className={`p-5 border-b border-slate-100 ${theme?.thesisHeaderBg}`}>
                               <h3 className="text-lg font-bold text-slate-900 mb-1">{angle.these}</h3>
                               <p className="text-xs font-semibold text-slate-600 flex items-center gap-1.5">
                                 <User className="w-3.5 h-3.5 shrink-0 text-slate-500" /> {angle.reference}
@@ -538,13 +706,13 @@ export default function App() {
                                 <p className="text-sm leading-relaxed text-slate-700 font-medium">
                                   {angle.developpement.split(/(«[^»]+»|"[^"]+")/g).map((part, i) => {
                                     if (part.startsWith('«') || part.startsWith('"')) {
-                                      return <em key={i} className={styles.highlightWord}>{part}</em>;
+                                      return <em key={i} className={theme?.highlightWord}>{part}</em>;
                                     }
                                     return part;
                                   })}
                                 </p>
                               </div>
-                              <div className={`rounded-lg p-4 ${styles.pivotBox}`}>
+                              <div className={`rounded-lg p-4 ${theme?.pivotBox}`}>
                                 <p className="text-[10px] uppercase tracking-widest text-slate-550 font-bold mb-2">L'Argument Pivot</p>
                                 <p className="text-sm font-bold leading-snug">
                                   {angle.argumentPivot}
