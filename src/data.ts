@@ -707,90 +707,89 @@ export const NOTIONS: Notion[] = [
 ];
 
 export const NOTION_INTRO_DATA: Record<Notion, NotionMetadata> = {
-  "L'art": {
-    definition: "L'art désigne la création humaine d'objets, de formes ou d'expériences conçues pour émouvoir la sensibilité, solliciter l'imagination et stimuler la réflexion, se distinguant de l'utilité pratique immédiate par son ambition esthétique.",
-    contexte: "Le terme dérive du latin ars qui désignait d'abord l'adresse technique et le travail de l'artisan. L'époque moderne a séparé les beaux-arts de l'artisanat. L'art exprime la liberté de l'esprit humain capable de projeter son intériorité dans la matière. À travers l'œuvre, l'artiste réinvente notre rapport au monde et propose un sens spirituel universel.",
-    family: "conscience_culture"
-  },
-  "Le bonheur": {
-    definition: "Le bonheur se définit traditionnellement comme un état de satisfaction globale, complet et durable, caractérisé par un sentiment de plénitude, de paix intérieure et d'harmonie avec soi-même et avec son environnement de vie.",
-    contexte: "Venu du vieux français heur (la chance ou le bon augure), le bonheur interroge le but suprême de l'existence. Les philosophies antiques le lient à la sagesse pratique et à l'exercice de la vertu. Pour les Modernes, il devient une quête subjective et privée, souvent confondue avec l'accumulation de plaisirs passagers ou compromise par l'insatiabilité intrinsèque du désir humain.",
-    family: "conscience_culture"
-  },
   "La conscience": {
-    definition: "La conscience est la faculté de l'intelligence qui permet à un sujet de se représenter ses propres états psychologiques, ses actes, ses valeurs éthiques, ainsi que la réalité extérieure avec laquelle il entretient des relations.",
-    contexte: "Du latin cum-scientia (accompagné de savoir). Elle constitue le socle de l'identité personnelle et de la subjectivité moderne depuis le cogito de Descartes. Elle définit également le sens moral, c'est-à-dire le tribunal intérieur du bien et du mal. Par sa nature intentionnelle, elle est toujours une tension vers quelque chose de distinct d'elle-même.",
-    family: "conscience_culture"
+    "definition": "La conscience est la capacité du sujet à se représenter ses propres états mentaux, ses actes et le monde extérieur, lui permettant de dire 'Je'.",
+    "contexte": "Souvent comparée à une lumière intérieure, la conscience nous distingue des objets inertes : nous ne nous contentons pas d'exister, nous savons que nous existons. Pour Descartes, elle est la première certitude ('Je pense, donc je suis'), le socle de toute connaissance. Cependant, la conscience n'est pas seulement une introspection passive ; elle est, selon Husserl, 'intentionnelle', c’est-à-dire toujours tournée vers un objet. Elle joue également un rôle moral fondamental, agissant comme un juge intérieur qui évalue la valeur de nos actions. Néanmoins, elle n'est pas infaillible et peut être trompée par nos désirs ou nos illusions, ce qui limite parfois la transparence du sujet à lui-même."
   },
-  "Le devoir": {
-    definition: "Le devoir désigne l'obligation morale absolue qui s'impose à la conscience d'un individu comme une règle d'action impérative, indépendamment de ses penchants personnels, de ses intérêts égoïstes ou de ses désirs de bonheur.",
-    contexte: "Issu du latin debere (devoir une dette). Le devoir n'est pas une contrainte extérieure subie par la force, mais une obligation acceptée de l'intérieur par une volonté autonome. Kant en fait le cœur de la moralité à travers l'impératif catégorique : agir par pur respect pour la loi rationnelle universelle, faisant du devoir le critère ultime de la dignité humaine.",
-    family: "etat_justice"
-  },
-  "L'État": {
-    definition: "L'État est l'institution politique et juridique souveraine exerçant le pouvoir suprême et détenant le monopole légitime de la contrainte physique sur l'ensemble d'une population régie par un territoire géographique défini.",
-    contexte: "Du latin status, évoquant l'ordre stable. Né de l'exigence de dépasser la violence généralisée de l'état de nature (comme le théorise Hobbes via le contrat social), l'État doit garantir la sécurité collective, la paix publique et l'intérêt général. Son défi permanent réside dans l'équilibre fragile entre la préservation de son autorité nécessaire et le respect des libertés constitutionnelles individuelles.",
-    family: "etat_justice"
-  },
+
   "L'inconscient": {
-    definition: "L'inconscient désigne l'ensemble des forces, des pulsions, des désirs refoulés et des souvenirs cachés qui échappent de fait au contrôle de l'esprit conscient mais qui continuent à déterminer de façon décisive nos pensées, rêves et conduites.",
-    contexte: "Forgé en creux contre la souveraineté du cogito, l'inconscient devient un concept solide avec l'avènement de la psychanalyse freudienne. Il rompt l'illusion d'une transparence absolue du sujet à lui-même, révélant que « le moi n'est pas maître dans sa propre maison ». Il interroge ainsi la possibilité même d'une liberté totale et d'une pleine responsabilité morale.",
-    family: "conscience_culture"
+    "definition": "L'inconscient désigne une partie du psychisme qui échappe à la conscience, contenant des désirs, souvenirs et pulsions refoulés qui influencent nos comportements.",
+    "contexte": "Avant Freud, on pensait que l'homme était maître de ses pensées. La découverte de l'inconscient vient bouleverser cette idée en suggérant que 'le moi n'est pas maître dans sa propre maison'. Nos rêves, nos lapsus ou certains symptômes seraient les manifestations de conflits internes cachés. Si cette notion permet de soigner des troubles psychiques en explorant le passé du patient, elle pose un défi philosophique majeur. En effet, si des forces cachées nous dirigent, peut-on encore être considérés comme libres et responsables de nos actes ? Certains philosophes, comme Alain ou Sartre, critiquent d'ailleurs l'inconscient, y voyant une excuse pour fuir notre responsabilité morale en nous faisant passer pour des victimes de notre propre psychisme."
   },
-  "La justice": {
-    definition: "La justice est à la fois l'idéal éthique exigeant de rendre à chacun ce qui lui revient de droit (équité et égalité) et l'appareil institutionnel officiel chargé de faire respecter les lois en vigueur.",
-    contexte: "Liée au latin justitia et au radical jus (le droit positif). La justice balance entre la stricte conformité à la loi écrite (égalité arithmétique) et l'exigence d'une équité morale plus humaine (égalité proportionnelle). Elle cherche à harmoniser les intérêts particuliers pour rendre possible une coexistence pacifique, s'opposant constamment aux dérives de l'injustice arbitraire ou de la force brute.",
-    family: "etat_justice"
-  },
-  "Le langage": {
-    definition: "Le langage est le système structuré de signes, de symboles articulés et de règles syntaxiques qui permet la transmission d'informations, l'expression de la pensée abstraite et la socialisation au sein de l'humanité.",
-    contexte: "Du latin lingua. Le langage est le véhicule indispensable de la raison (logos grec). Cependant, il présente une double face : outil parfait de communication et d'accès à la vérité, il peut aussi trahir notre pensée intime par des mots génériques simplificateurs, ou devenir un redoutable pouvoir de manipulation rhétorique et politique lorsqu'il est mis au service du mensonge.",
-    family: "conscience_culture"
-  },
-  "La liberté": {
-    definition: "La liberté est la condition d'un être autonome doué de raison qui agit conformément à sa propre volonté réfléchie, sans être entravé par des forces de contrainte extérieures ni déterminé passivement par des pulsions internes.",
-    contexte: "Dérivé du latin libertas. Elle s'oppose à la fois à l'aliénation de la servitude sociale et au déterminisme absolu des lois physiques. On distingue le libre arbitre cartésien (capacité souveraine de choix) de la liberté d'indifférence, et de l'autonomie éthique kantienne, qui consiste à obéir librement à la loi morale que la raison s'est elle-même prescrite.",
-    family: "etat_justice"
-  },
+
   "La nature": {
-    definition: "La nature désigne la totalité de la réalité matérielle visible régie par des lois universelles objectives et biologiques, qui se développe de façon spontanée en dehors de toute intervention de la volonté ou de l'industrie humaine.",
-    contexte: "Dérivé du latin natura (les forces de naissance). Elle s'oppose formellement au domaine de l'artifice, de l'histoire et de la culture. Elle peut être perçue de multiples manières : comme un cosmos harmonieux dont l'homme doit s'inspirer moralement, comme une force sauvage hostile qu'il faut exploiter par la technique, ou comme une entité vulnérable exigeant protection.",
-    family: "nature_science"
+    "definition": "La nature désigne l'ensemble du monde physique régi par des lois universelles, existant indépendamment de l'action humaine, ainsi que l'essence d'un être, c'est-à-dire ce qu'il est par naissance.",
+    "contexte": "Historiquement, la nature a d'abord été perçue comme une puissance sacrée ou un ordre harmonieux (le Cosmos). À l'époque moderne, avec Galilée et Descartes, elle devient un objet d'étude scientifique, une 'machine' que l'homme cherche à maîtriser. Cette vision a permis des progrès techniques immenses, mais a aussi conduit à une exploitation excessive des ressources. En l'homme, la distinction entre nature (ce qui est inné) et culture (ce qui est acquis) est centrale. Si nous sommes des êtres biologiques, nous sommes aussi des êtres de culture qui transforment leur environnement. Aujourd'hui, l'urgence écologique nous force à repenser notre rapport à la nature : non plus comme des maîtres, mais comme des partenaires dépendants d'un équilibre fragile."
   },
-  "La raison": {
-    definition: "La raison est la faculté de l'entendement humain permettant de relier logiquement des concepts, de démontrer des vérités scientifiques, d'analyser méthodiquement les causes et les conséquences pour guider nos jugements moraux.",
-    contexte: "Provient du latin ratio (la mesure, la proportion et le calcul). Traduisant le logos grec, elle s'oppose aux passions irrationnelles et aux préjugés trompeurs de l'opinion. Elle cherche à ordonner le désordre apparent des phénomènes naturels sous des principes intelligibles. Elle se veut universelle, établissant un terrain commun d'entente et de discussion pacifique pour toute l'humanité.",
-    family: "nature_science"
+
+  "Le bonheur": {
+    "definition": "Le bonheur est un état de satisfaction complète, durable et stable, contrairement au plaisir qui est éphémère et lié à une sensation immédiate.",
+    "contexte": "Tout le monde cherche le bonheur, mais sa définition reste subjective et fuyante. Pour les Grecs anciens, comme Épicure ou les Stoïciens, le bonheur s'obtient par la sagesse : il s'agit de limiter ses désirs ou d'accepter l'ordre du monde pour atteindre la tranquillité de l'âme. À l'inverse, dans nos sociétés modernes, le bonheur est souvent confondu avec la consommation et l'accumulation de biens. Pourtant, le bonheur ne semble pas être un but que l'on atteint une fois pour toutes, mais plutôt une quête. Kant souligne d'ailleurs que le bonheur est un 'idéal de l'imagination' plutôt que de la raison : nous savons que nous le voulons, mais nous ignorons souvent ce qui nous rendrait réellement heureux sur le long terme."
   },
-  "La religion": {
-    definition: "La religion se définit traditionnellement comme un ensemble de croyances, de dogmes et de rites qui relient les êtres humains à un principe supérieur, sacré ou divin.",
-    contexte: "Le terme vient du latin religio (scrupule, lien, rassemblement). Il souligne le rapport triple : à l'absolu, aux autres (communauté) et à soi-même. C'est une expérience universelle présente depuis les sociétés premières jusqu'aux monothéismes modernes.",
-    family: "conscience_culture"
-  },
-  "La science": {
-    definition: "La science est le processus de construction méthodique de connaissances universelles, vérifiables et rigoureusement structurées, validées par des démonstrations rationnelles rigoureuses ou des expériences pratiques répétables.",
-    contexte: "Venu du latin scientia (le savoir formel). Elle s'émancipe de la simple croyance ou de la doxa commune. À travers sa forme moderne mathématisée, elle cherche à dévoiler les causes réelles de la nature. Elle remet en question nos intuitions naïves, posant la question de savoir si elle nous livre la réalité ultime ou de simples modèles d'explications commodes.",
-    family: "nature_science"
-  },
-  "La technique": {
-    definition: "La technique désigne l'ensemble des procédés matériels, des instruments, des machines et des règles opératoires mis au service de la transformation active de l'environnement physique et de l'efficacité de l'effort humain.",
-    contexte: "Dérivé de la technè grecque (savoir d'action, métier). Outil d'adaptation d'un homme biologiquement indéfendable à la naissance, elle amplifie notre pouvoir sur le réel. À l'âge moderne et industriel, son développement autonome et la sacralisation de la performance font douter de notre maîtrise finale sur elle, transformant l'habileté épanouissante en un risque de déshumanisation.",
-    family: "nature_science"
-  },
-  "Le temps": {
-    definition: "Le temps est la dimension continue et irréversible au sein de laquelle se succèdent les moments, constituant le cadre universel où s'inscrivent le changement des choses, la durée intérieure et l'existence mortelle.",
-    contexte: "Du latin tempus. Il pose de redoutables apories métaphysiques (Augustin note ainsi que le passé n'est plus, le futur n'est pas, et le présent s'évanouit). Il est la mesure de notre condition de mortels éphémères. Par la mémoire et les projets, l'homme habite le temps historiquement de manière consciente, cherchant à donner un sens à son devenir inéluctable.",
-    family: "conscience_culture"
-  },
+
   "Le travail": {
-    definition: "Le travail est l'activité humaine consciente d'effort physique ou intellectuel méthodique visant à transformer la nature brute dans le but de produire des richesses, de subvenir à nos besoins fondamentaux et d'élever notre condition sociale.",
-    contexte: "Issu de tripalium (un instrument de contrainte et de torture de l'Antiquité). D'abord stigmatisé comme un fardeau servile excluant des devoirs nobles de citoyenneté, il est sacralisé à l'époque moderne et industrielle comme facteur de développement historique et d'accomplissement personnel. Le travail aliène ou libère selon qu'il respecte le travailleur ou l'instrumentalise.",
-    family: "etat_justice"
+    "definition": "Le travail est l'activité humaine consciente et transformatrice de la nature, visant à produire des biens ou des services utiles à la société.",
+    "contexte": "Le mot 'travail' vient du latin 'tripalium', un instrument de torture, soulignant sa dimension de pénibilité et de contrainte. Cependant, au-delà de l'effort, le travail est un puissant vecteur de socialisation et de réalisation de soi. Selon Hegel, c'est par le travail que l'homme humanise le monde et prend conscience de ses capacités. Pourtant, Marx dénonce l'aliénation du travailleur dans le système industriel : quand le travail est découpé en tâches absurdes et dénué de sens, l'individu ne se reconnaît plus dans ce qu'il produit. Aujourd'hui, avec l'automatisation, la place du travail dans notre identité est remise en question : doit-il rester le centre de nos vies ou redevenir un simple moyen de subsistance ?"
   },
+
+  "L'État": {
+    "definition": "L'État est l'ensemble des institutions politiques, juridiques et administratives qui organisent la vie d'une société sur un territoire donné.",
+    "contexte": "L'État est né de la nécessité de sortir de 'l'état de nature', une situation imaginaire où l'absence de lois mènerait à la guerre de tous contre tous. Pour garantir la sécurité, les citoyens acceptent de céder une partie de leur liberté à une autorité souveraine. Pour Hobbes, l'État doit être fort pour maintenir l'ordre, tandis que pour Rousseau, il doit exprimer la 'volonté générale' pour être légitime. Si l'État protège les individus, il peut aussi devenir une menace pour les libertés s'il devient totalitaire ou trop bureaucratique. Le défi des démocraties modernes est donc de maintenir un équilibre entre l'autorité nécessaire à la paix sociale et le respect des droits fondamentaux de chaque citoyen."
+  },
+
+  "La justice": {
+    "definition": "La justice est à la fois une institution chargée d'appliquer les lois et une vertu morale visant à rendre à chacun ce qui lui est dû.",
+    "contexte": "La justice se décline en deux formes : l'égalité arithmétique (donner la même chose à tous) et l'égalité proportionnelle ou équité (donner selon les besoins ou les mérites). Il existe souvent un conflit entre le 'droit positif' (les lois écrites d'un pays) et le 'droit naturel' (un sentiment universel de ce qui est juste). Parfois, une loi peut être légale mais profondément injuste, comme dans le cas de la ségrégation. La justice a alors pour mission de corriger les inégalités du sort ou de la naissance. Elle ne se limite pas à punir les fautes, mais cherche à établir un ordre social équilibré où les droits de chacun sont respectés, garantissant ainsi la paix et la cohésion de la communauté."
+  },
+
+  "Le devoir": {
+    "definition": "Le devoir est une obligation morale que l'individu s'impose à lui-même, dictée par la raison et indépendante des désirs personnels ou des intérêts extérieurs.",
+    "contexte": "Contrairement à la contrainte physique (on m'oblige par la force), le devoir repose sur le consentement : je choisis de suivre une règle parce que je la juge juste. Kant est le grand théoricien du devoir ; selon lui, une action n'est vraiment morale que si elle est accomplie par respect pour la loi, et non par intérêt ou par sympathie. C'est l'impératif catégorique : 'Agis comme si la maxime de ton action devait être érigée en loi universelle'. Cependant, cette vision rigide peut poser problème dans des situations complexes où deux devoirs s'affrontent (par exemple, mentir pour sauver une vie). Le devoir nous place donc face à notre responsabilité : il est le signe de notre liberté d'agir au-delà de nos instincts."
+  },
+
+  "La raison": {
+    "definition": "La raison est la faculté de l'esprit qui permet de penser de manière cohérente, de juger, de distinguer le vrai du faux et le bien du mal.",
+    "contexte": "La raison est ce qui définit l'humain comme un 'animal raisonnable'. Elle est l'outil principal de la science pour établir des vérités universelles et de la philosophie pour organiser la pensée. Elle nous permet de dépasser nos passions et nos opinions subjectives pour atteindre un accord avec autrui. Pourtant, l'histoire a montré que la raison peut être mise au service de la destruction (comme dans les guerres technologiques). Il faut donc distinguer la raison 'calculatrice' (efficace mais froide) de la raison 'morale' (prudente et sage). Si elle est notre guide le plus sûr pour comprendre le monde, elle doit aussi reconnaître ses propres limites face à ce qui lui échappe, comme le sentiment ou la foi."
+  },
+
+  "La liberté": {
+    "definition": "La liberté est la capacité de l'individu à agir selon sa propre volonté, sans être contraint par des forces extérieures ou des déterminismes internes.",
+    "contexte": "On distingue souvent la liberté 'négative' (absence d'obstacles) de la liberté 'positive' (autonomie, capacité à se donner ses propres lois). Pour les déterministes, la liberté est une illusion : nos choix seraient dictés par notre éducation, notre biologie ou notre environnement. À l'opposé, Sartre affirme que l'homme est 'condamné à être libre' : n'ayant pas d'essence prédéfinie, il est entièrement responsable de ce qu'il fait de sa vie. Cependant, la liberté absolue n'existe pas en société ; elle s'arrête là où commence celle des autres. La vraie liberté consiste alors à agir en connaissance de cause, en assumant les conséquences de nos choix tout en respectant le cadre des lois qui garantissent la coexistence entre les citoyens."
+  },
+
+  "Le langage": {
+    "definition": "Le langage est un système de signes (mots, gestes, sons) permettant d'exprimer une pensée et de communiquer avec autrui au sein d'une communauté.",
+    "contexte": "Le langage n'est pas qu'un simple outil de transmission d'informations ; il structure notre pensée. Sans mots, nos idées resteraient floues. Il nous permet de nommer le monde, de le classer et de partager des concepts abstraits. Cependant, le langage peut aussi être une barrière : les mots sont parfois impuissants à traduire la profondeur de nos sentiments ('le silence est d'or'). De plus, il peut devenir un instrument de pouvoir et de manipulation, comme dans la propagande ou la publicité, où l'on cherche à influencer les esprits plutôt qu'à les éclairer. La philosophie du langage s'interroge donc sur le lien entre les mots et la réalité : le langage décrit-il le monde tel qu'il est, ou construit-il sa propre réalité ?"
+  },
+
   "La vérité": {
-    definition: "La vérité est la correspondance rigoureuse et adéquate entre un énoncé formulé par notre esprit ou notre logique rationnelle et la réalité des faits constatés objectivement dans l'univers réel.",
-    contexte: "Du latin veritas. Distincte de la réalité brute (qui existe simplement), la vérité se joue dans notre parole rationnelle et critique à son sujet. Elle requiert la franchise, le doute critique contre les préjugés confortables et la démonstration. Elle s'oppose au mensonge volontaire, à l'erreur intellectuelle passive, et aux séductions illusoires.",
-    family: "nature_science"
+    "definition": "La vérité est l'adéquation entre un discours (ou une pensée) et la réalité. Elle s'oppose à l'erreur, au mensonge et à l'illusion.",
+    "contexte": "Chercher la vérité est le but ultime de la science et de la philosophie. Il existe plusieurs types de vérités : la vérité formelle (logique, mathématique) et la vérité matérielle (fondée sur l'observation des faits). La vérité est souvent difficile à atteindre car nous sommes limités par nos sens, nos préjugés ou nos émotions. De plus, elle peut être dérangeante, ce qui nous pousse parfois à préférer l'illusion, plus confortable. Pourtant, la vérité a une valeur morale et politique essentielle : sans elle, aucune confiance ni aucun débat démocratique n'est possible. Si la science progresse en rectifiant des erreurs passées, la vérité reste un idéal vers lequel l'esprit humain tend sans jamais être certain de l'avoir définitivement conquise."
+  },
+
+  "La science": {
+    "definition": "La science est un mode de connaissance rationnel et méthodique qui cherche à expliquer les phénomènes par des lois universelles et vérifiables.",
+    "contexte": "La science se distingue de l'opinion par sa rigueur : elle repose sur l'observation, l'expérimentation et la preuve mathématique. Elle vise l'objectivité, en essayant d'éliminer les sentiments personnels du chercheur. Depuis la révolution scientifique du XVIIe siècle, elle a transformé notre vision de l'univers et amélioré nos conditions de vie. Cependant, la science n'est pas une vérité absolue et figée ; elle progresse par 'ruptures épistémologiques', en remplaçant d'anciennes théories par de nouvelles plus précises (Popper parle de 'falsifiabilité'). Aujourd'hui, se pose la question de l'éthique scientifique : la science nous donne le pouvoir de modifier le vivant ou le climat, mais elle ne nous dit pas si nous devons le faire. Elle a besoin de la philosophie pour éclairer ses usages."
+  },
+
+  "La technique": {
+    "definition": "La technique désigne l'ensemble des procédés, outils et méthodes inventés par l'homme pour maîtriser la nature, transformer la matière et atteindre efficacement une fin utile.",
+    "contexte": "La technique, issue du technè grec désignant un savoir-faire pratique, est d’abord une réponse à la vulnérabilité biologique de l’être humain, lui permettant de survivre et d’agir sur le monde en prolongeant ses capacités. Cependant, avec l’époque moderne et la révolution industrielle, elle a cessé d’être un simple moyen au service de l’homme pour se développer selon sa propre logique d’efficacité et de productivité. Ce culte de la performance risque alors de faire perdre à l’humain sa maîtrise sur la technique, transformant une habileté vivante et épanouissante en source de déshumanisation. Ainsi, si la technique nous a libérés des contraintes naturelles, elle nous confronte désormais au défi de préserver notre liberté à son égard."
+  },
+
+  "L'art": {
+    "definition": "L'art est une activité humaine visant à créer des œuvres esthétiques qui expriment une vision du monde, des émotions ou des idées, sans viser une utilité pratique immédiate.",
+    "contexte": "À la différence de l'artisan qui fabrique un objet utile, l'artiste crée une œuvre unique qui vise la beauté ou l'expression d'une vérité sensible. L'art nous permet de voir le monde différemment, de sortir de la routine et de la perception utilitaire des choses. Kant définit le beau comme ce qui provoque une 'satisfaction désintéressée'. L'art peut aussi avoir une dimension engagée, critiquant la société ou explorant les profondeurs de l'âme humaine. Au fil des siècles, les critères de l'art ont évolué : du classicisme cherchant l'harmonie, nous sommes passés à l'art moderne et contemporain qui privilégie parfois le concept, le choc ou l'originalité. En fin de compte, l'art est ce qui donne un sens poétique à notre existence."
+  },
+
+  "La religion": {
+    "definition": "La religion se définit traditionnellement comme un ensemble de croyances, de dogmes et de rites qui relient les êtres humains (une communauté d'individus) à un principe supérieur, sacré ou divin.",
+    "contexte": "Étymologiquement, 'religare' signifie lier : la religion lie les hommes entre eux et l'homme au divin. Il souligne le rapport triple : à l'absolu, aux autres (communauté) et à soi-même. C'est une expérience universelle présente depuis les sociétés premières jusqu'aux monothéismes modernes. Elle offre des réponses aux questions existentielles sur l'origine du monde, le sens de la vie et la mort, là où la science s'arrête. Pour certains, elle est une source de morale et de réconfort ; pour d'autres, comme Marx, elle est 'l'opium du peuple', un outil de manipulation qui détourne des réalités sociales. En philosophie, on interroge souvent le rapport entre la foi (croire sans preuve) et la raison (chercher à comprendre). Dans nos sociétés laïques, la religion est devenue une affaire privée, mais elle continue d'influencer profondément les cultures, les valeurs et les débats éthiques contemporains, montrant que le besoin de sacré reste présent."
+  },
+
+  "Le temps": {
+    "definition": "Le temps est la dimension continue et irréversible dans laquelle s'écoulent les événements, du passé vers le futur, en passant par le présent.",
+    "contexte": "Le temps est l'un des plus grands mystères de la pensée. Saint Augustin notait que si personne ne lui demandait ce qu'est le temps, il le savait, mais s'il devait l'expliquer, il ne le savait plus. On distingue le temps objectif des horloges (mesurable et linéaire) et le temps subjectif (la durée vécue), qui semble s'accélérer dans l'ennui ou ralentir dans la joie. L'homme est le seul être conscient de sa propre finitude : savoir que le temps passe, c'est savoir que l'on va mourir. Cette conscience nous pousse soit à l'angoisse, soit à l'action pour donner du sens à notre existence éphémère. Le défi humain consiste à habiter le présent sans rester prisonnier des regrets du passé ou des inquiétudes de l'avenir."
   }
 };
 
