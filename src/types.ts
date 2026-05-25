@@ -34,7 +34,7 @@ export interface ThesisNotion {
 export interface NotionMetadata {
   definition: string;
   contexte: string;
-  family: "nature_science" | "etat_justice" | "conscience_culture";
+  family?: "nature_science" | "etat_justice" | "conscience_culture";
 }
 
 export interface SubjectIdeas {

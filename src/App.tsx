@@ -215,7 +215,8 @@ const normalizeString = (str: string): string => {
 };
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<ExamType>('Annale');
+  const [activeTab, setActiveTab] = useState<ExamType>('Theses');
+  const [darkMode, setDarkMode] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedNotions, setSelectedNotions] = useState<Set<Notion>>(new Set());
   const [selectedYear, setSelectedYear] = useState<string>('all');
@@ -283,13 +284,15 @@ export default function App() {
   }, [searchQuery]);
 
   return (
-    <div className="flex flex-col lg:flex-row h-screen w-full bg-[#F9FAFB] font-sans text-slate-800 overflow-hidden selection:bg-slate-200">
+    <div className={`flex flex-col lg:flex-row h-screen w-full font-sans overflow-hidden selection:bg-slate-200 transition-colors duration-200 ${
+      darkMode ? 'dark bg-slate-950 text-slate-100' : 'bg-[#F9FAFB] text-slate-805'
+    }`}>
       
       {/* Sidebar - Desktop */}
-      <aside className="w-full lg:w-64 bg-white border-r border-slate-200 flex flex-col h-auto lg:h-full shrink-0 z-20 overflow-y-auto hidden lg:flex">
+      <aside className="w-full lg:w-64 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800/80 flex flex-col h-auto lg:h-full shrink-0 z-20 overflow-y-auto hidden lg:flex">
         <div className="p-6">
-          <h1 className="text-xl font-bold tracking-tight text-slate-900 flex items-center gap-2">
-            <div className="w-8 h-8 bg-slate-900 rounded flex items-center justify-center text-white text-xs font-serif">Φ</div>
+          <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+            <div className="w-8 h-8 bg-slate-900 dark:bg-slate-100 rounded flex items-center justify-center text-white dark:text-slate-900 text-xs font-serif">Φ</div>
             PhiloBac
           </h1>
         </div>
@@ -298,24 +301,24 @@ export default function App() {
           
           {/* Navigation / Tabs */}
           <div>
-            <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-3 px-2">Navigation</p>
+            <p className="text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-bold mb-3 px-2">Navigation</p>
             <ul className="space-y-1">
               <li>
                 <button
-                  onClick={() => { setActiveTab('Annale'); setIsMobileMenuOpen(false); }}
+                  onClick={() => { setActiveTab('Theses'); setIsMobileMenuOpen(false); }}
                   className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
-                    activeTab === 'Annale' ? 'bg-slate-100 text-slate-900 font-medium' : 'text-slate-500 hover:bg-slate-50 font-medium'
+                    activeTab === 'Theses' ? 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-medium' : 'text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800/40 font-medium'
                   }`}
                 >
-                  <Layers className="w-4 h-4" />
-                  Explorer les annales
+                  <BookOpen className="w-4 h-4 text-emerald-500" />
+                  Bibliothèque des Thèses
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => { setActiveTab('Potentiel'); setIsMobileMenuOpen(false); }}
                   className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
-                    activeTab === 'Potentiel' ? 'bg-slate-100 text-slate-900 font-medium' : 'text-slate-500 hover:bg-slate-50 font-medium'
+                    activeTab === 'Potentiel' ? 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-medium' : 'text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800/40 font-medium'
                   }`}
                 >
                   <Sparkles className="w-4 h-4 text-amber-500" />
@@ -324,13 +327,13 @@ export default function App() {
               </li>
               <li>
                 <button
-                  onClick={() => { setActiveTab('Theses'); setIsMobileMenuOpen(false); }}
+                  onClick={() => { setActiveTab('Annale'); setIsMobileMenuOpen(false); }}
                   className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
-                    activeTab === 'Theses' ? 'bg-slate-100 text-slate-900 font-medium' : 'text-slate-500 hover:bg-slate-50 font-medium'
+                    activeTab === 'Annale' ? 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-medium' : 'text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800/40 font-medium'
                   }`}
                 >
-                  <BookOpen className="w-4 h-4 text-emerald-500" />
-                  Bibliothèque des Thèses
+                  <Layers className="w-4 h-4" />
+                  Explorer les annales
                 </button>
               </li>
             </ul>
@@ -339,9 +342,9 @@ export default function App() {
           {/* Filter by Notion */}
           <div>
             <div className="flex items-center justify-between mb-3 px-2">
-              <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold m-0">Notions ({NOTIONS.length})</p>
+              <p className="text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-400 font-bold m-0">Notions ({NOTIONS.length})</p>
               {selectedNotions.size > 0 && (
-                <button onClick={() => setSelectedNotions(new Set())} className="text-[10px] text-slate-500 hover:text-slate-800 font-bold uppercase transition-colors">
+                <button onClick={() => setSelectedNotions(new Set())} className="text-[10px] text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white font-bold uppercase transition-colors">
                   Vider
                 </button>
               )}
@@ -355,8 +358,8 @@ export default function App() {
                     onClick={() => toggleNotion(notion)}
                     className={`px-2 py-1 text-[10px] font-bold rounded border transition-all ${
                       isSelected 
-                        ? 'border-slate-900 bg-slate-900 text-white shadow-sm' 
-                        : 'bg-white text-slate-500 border-slate-200 hover:border-slate-300 hover:bg-slate-50'
+                        ? 'border-slate-900 dark:border-slate-100 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 shadow-sm' 
+                        : 'bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-700/80 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50'
                     }`}
                   >
                     {notion}
@@ -367,12 +370,12 @@ export default function App() {
           </div>
 
           <div className="pt-2">
-            <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-3 px-2">Filtre Temporel</p>
+            <p className="text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-400 font-semibold mb-3 px-2">Filtre Temporel</p>
             <div className="px-2">
               <select
                 value={selectedYear}
                 onChange={(e) => setSelectedYear(e.target.value)}
-                className="w-full bg-slate-50 border border-slate-200 text-sm rounded-md py-2 px-3 text-slate-600 focus:outline-none focus:ring-2 focus:ring-slate-200 focus:border-slate-300 transition-all font-medium appearance-none"
+                className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm rounded-md py-2 px-3 text-slate-600 dark:text-slate-350 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:focus:ring-slate-800 focus:border-slate-300 dark:focus:border-slate-600 transition-all font-medium appearance-none"
               >
                 <option value="all">Toutes les années</option>
                 <option value="2026">Session 2026</option>
@@ -403,16 +406,16 @@ export default function App() {
               animate={{ x: 0 }}
               exit={{ x: '-100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed left-0 top-0 bottom-0 w-80 max-w-[85vw] bg-white border-r border-slate-200 flex flex-col z-50 overflow-y-auto lg:hidden p-6"
+              className="fixed left-0 top-0 bottom-0 w-80 max-w-[85vw] bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 flex flex-col z-50 overflow-y-auto lg:hidden p-6"
             >
               <div className="flex items-center justify-between mb-8">
-                <h1 className="text-xl font-bold tracking-tight text-slate-900 flex items-center gap-2">
-                  <div className="w-8 h-8 bg-slate-900 rounded flex items-center justify-center text-white text-xs font-serif">Φ</div>
+                <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+                  <div className="w-8 h-8 bg-slate-900 dark:bg-slate-100 rounded flex items-center justify-center text-white dark:text-slate-900 text-xs font-serif">Φ</div>
                   PhiloBac
                 </h1>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="rounded-lg p-1.5 hover:bg-slate-100 text-slate-500 hover:text-slate-900 text-sm font-bold"
+                  className="rounded-lg p-1.5 hover:bg-slate-100 dark:hover:bg-slate-850 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:text-white text-sm font-bold"
                 >
                   ✕
                 </button>
@@ -421,24 +424,24 @@ export default function App() {
               <div className="space-y-8 pb-10">
                 {/* Mobile Navigation */}
                 <div>
-                  <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-3">Navigation</p>
+                  <p className="text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-bold mb-3">Navigation</p>
                   <ul className="space-y-1">
                     <li>
                       <button
-                        onClick={() => { setActiveTab('Annale'); setIsMobileMenuOpen(false); }}
+                        onClick={() => { setActiveTab('Theses'); setIsMobileMenuOpen(false); }}
                         className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
-                          activeTab === 'Annale' ? 'bg-slate-100 text-slate-900 font-semibold' : 'text-slate-500 font-medium'
+                          activeTab === 'Theses' ? 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-semibold' : 'text-slate-500 dark:text-slate-400 font-medium'
                         }`}
                       >
-                        <Layers className="w-4 h-4" />
-                        Explorer les annales
+                        <BookOpen className="w-4 h-4 text-emerald-500" />
+                        Bibliothèque des Thèses
                       </button>
                     </li>
                     <li>
                       <button
                         onClick={() => { setActiveTab('Potentiel'); setIsMobileMenuOpen(false); }}
                         className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
-                          activeTab === 'Potentiel' ? 'bg-slate-100 text-slate-900 font-semibold' : 'text-slate-500 font-medium'
+                          activeTab === 'Potentiel' ? 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-semibold' : 'text-slate-500 dark:text-slate-400 font-medium'
                         }`}
                       >
                         <Sparkles className="w-4 h-4 text-amber-500" />
@@ -447,13 +450,13 @@ export default function App() {
                     </li>
                     <li>
                       <button
-                        onClick={() => { setActiveTab('Theses'); setIsMobileMenuOpen(false); }}
+                        onClick={() => { setActiveTab('Annale'); setIsMobileMenuOpen(false); }}
                         className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
-                          activeTab === 'Theses' ? 'bg-slate-100 text-slate-900 font-semibold' : 'text-slate-500 font-medium'
+                          activeTab === 'Annale' ? 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-semibold' : 'text-slate-500 dark:text-slate-400 font-medium'
                         }`}
                       >
-                        <BookOpen className="w-4 h-4 text-emerald-500" />
-                        Bibliothèque des Thèses
+                        <Layers className="w-4 h-4" />
+                        Explorer les annales
                       </button>
                     </li>
                   </ul>
@@ -462,9 +465,9 @@ export default function App() {
                 {/* Mobile Notion Selection */}
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold m-0">Notions ({NOTIONS.length})</p>
+                    <p className="text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-bold m-0">Notions ({NOTIONS.length})</p>
                     {selectedNotions.size > 0 && (
-                      <button onClick={() => setSelectedNotions(new Set())} className="text-[10px] text-slate-500 hover:text-slate-800 font-bold uppercase transition-colors">
+                      <button onClick={() => setSelectedNotions(new Set())} className="text-[10px] text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white font-bold uppercase transition-colors">
                         Vider
                       </button>
                     )}
@@ -478,8 +481,8 @@ export default function App() {
                           onClick={() => toggleNotion(notion)}
                           className={`px-2.5 py-1 text-[11px] font-bold rounded border transition-all ${
                             isSelected 
-                              ? 'border-slate-900 bg-slate-900 text-white' 
-                              : 'bg-white text-slate-500 border-slate-200'
+                              ? 'border-slate-900 dark:border-slate-100 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-990' 
+                              : 'bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50'
                           }`}
                         >
                           {notion}
@@ -491,11 +494,11 @@ export default function App() {
 
                 {/* Mobile Year Filter */}
                 <div>
-                  <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-3">Filtre Temporel</p>
+                  <p className="text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-bold mb-3">Filtre Temporel</p>
                   <select
                     value={selectedYear}
                     onChange={(e) => setSelectedYear(e.target.value)}
-                    className="w-full bg-slate-50 border border-slate-200 text-sm rounded-md py-2.5 px-3 text-slate-600 focus:outline-none focus:ring-2 focus:ring-slate-200 font-medium"
+                    className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm rounded-md py-2.5 px-3 text-slate-600 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:focus:ring-slate-800 font-medium"
                   >
                     <option value="all">Toutes les années</option>
                     <option value="2026">Session 2026</option>
@@ -506,6 +509,22 @@ export default function App() {
                     <option value="2021">Session 2021</option>
                   </select>
                 </div>
+
+                {/* Mobile Dark Mode Toggle */}
+                <div className="pt-6 border-t border-slate-100 dark:border-slate-800">
+                  <p className="text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-550 font-bold mb-3">Affichage</p>
+                  <button
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="w-full flex items-center justify-between px-3 py-2.5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-md text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors"
+                  >
+                    <span className="flex items-center gap-2">
+                      {darkMode ? '☀️ Mode clair' : '🌙 Mode nuit'}
+                    </span>
+                    <span className="text-[10px] uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                      {darkMode ? 'Actif' : 'Inactif'}
+                    </span>
+                  </button>
+                </div>
               </div>
             </motion.aside>
           </>
@@ -514,28 +533,28 @@ export default function App() {
 
       {/* Main Content Area */}
       <main className="flex-1 flex flex-col h-full lg:overflow-hidden relative">
-        
+
         {/* Mobile Header (replaces sidebar top on mobile) */}
-        <header className="lg:hidden h-16 bg-white border-b border-slate-200 flex items-center justify-between px-6 shrink-0 sticky top-0 z-30">
-          <div className="flex items-center gap-2">
+        <header className="lg:hidden h-16 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-3 shrink-0 sticky top-0 z-30">
+          <div className="flex items-center gap-2 shrink-0">
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className="mr-1 p-1 rounded hover:bg-slate-100 text-slate-700 font-bold flex items-center gap-1 text-sm border border-slate-200"
+              className="px-2.5 py-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold flex items-center gap-1 text-sm border border-slate-200 dark:border-slate-800"
             >
-              ☰ <span className="text-[10px] uppercase tracking-wide font-sans">Filtres</span>
+              ☰ <span className="hidden sm:inline text-[10px] uppercase tracking-wide font-sans">Filtres</span>
             </button>
-            <div className="w-6 h-6 bg-slate-900 rounded flex items-center justify-center text-white text-[10px] font-serif">Φ</div>
-            <h1 className="text-lg font-bold tracking-tight text-slate-900">PhiloBac</h1>
+            <div className="w-6 h-6 bg-slate-900 dark:bg-slate-800 rounded flex flex-shrink-0 items-center justify-center text-white dark:text-slate-200 text-[10px] font-serif">Φ</div>
+            <h1 className="hidden sm:block text-base font-bold tracking-tight text-slate-900 dark:text-white">PhiloBac</h1>
           </div>
-          <div className="flex gap-2">
-            <button onClick={() => setActiveTab('Annale')} className={`px-2 py-1.5 rounded text-[11px] font-bold ${activeTab === 'Annale' ? 'bg-slate-100 text-slate-900' : 'text-slate-500'}`}>Annales</button>
-            <button onClick={() => setActiveTab('Potentiel')} className={`px-2 py-1.5 rounded text-[11px] font-bold ${activeTab === 'Potentiel' ? 'bg-amber-100 text-amber-700' : 'text-slate-500'}`}>Potentiels</button>
-            <button onClick={() => setActiveTab('Theses')} className={`px-2 py-1.5 rounded text-[11px] font-bold ${activeTab === 'Theses' ? 'bg-emerald-100 text-emerald-700' : 'text-slate-500'}`}>Thèses</button>
+          <div className="flex gap-1.5 overflow-x-auto scrollbar-hide shrink-0 pl-3 md:pl-0 snap-x">
+            <button onClick={() => setActiveTab('Theses')} className={`px-2.5 py-1.5 rounded text-[11px] font-bold whitespace-nowrap snap-start shrink-0 ${activeTab === 'Theses' ? 'bg-emerald-100 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400' : 'text-slate-500 dark:text-slate-400'}`}>Thèses</button>
+            <button onClick={() => setActiveTab('Potentiel')} className={`px-2.5 py-1.5 rounded text-[11px] font-bold whitespace-nowrap snap-start shrink-0 ${activeTab === 'Potentiel' ? 'bg-amber-100 dark:bg-amber-950/40 text-amber-700 dark:text-amber-400' : 'text-slate-500 dark:text-slate-400'}`}>Potentiels</button>
+            <button onClick={() => setActiveTab('Annale')} className={`px-2.5 py-1.5 rounded text-[11px] font-bold whitespace-nowrap snap-start shrink-0 ${activeTab === 'Annale' ? 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100' : 'text-slate-500 dark:text-slate-400'}`}>Annales</button>
           </div>
         </header>
 
         {/* Top Header Panel (Desktop) */}
-        <header className="hidden lg:flex h-16 bg-white border-b border-slate-200 items-center justify-between px-8 shrink-0 z-10 w-full relative">
+        <header className="hidden lg:flex h-16 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 items-center justify-between px-8 shrink-0 z-10 w-full relative">
           <div className="flex items-center gap-4 flex-1">
             <div className="relative w-full max-w-md">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
@@ -544,19 +563,22 @@ export default function App() {
                 placeholder="Rechercher un sujet, une notion..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 bg-slate-50 border border-transparent rounded-lg text-sm text-slate-900 focus:bg-white focus:ring-2 focus:ring-slate-200 focus:border-slate-300 transition-all outline-none"
+                className="w-full pl-10 pr-4 py-2 bg-slate-50 dark:bg-slate-800 border border-transparent rounded-lg text-sm text-slate-900 dark:text-white focus:bg-white dark:focus:bg-slate-900 focus:ring-2 focus:ring-slate-200 dark:focus:ring-slate-800 focus:border-slate-300 dark:focus:border-slate-700 transition-all outline-none"
               />
             </div>
           </div>
           <div className="flex items-center gap-3">
-             <button className="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition-colors">
-               Mode Examen
+             <button
+               onClick={() => setDarkMode(!darkMode)}
+               className="px-4 py-2 bg-slate-900 hover:bg-slate-805 dark:bg-slate-800 dark:hover:bg-slate-700 text-white dark:text-slate-100 text-xs font-bold rounded-lg transition-colors border border-transparent dark:border-slate-700 flex items-center gap-2"
+             >
+               {darkMode ? '☀️ Mode clair' : '🌙 Mode nuit'}
              </button>
           </div>
         </header>
 
         {/* Search & Filter Bar for Mobile (Since top bar search is desktop-only) */}
-        <div className="p-4 bg-white border-b border-slate-100 lg:hidden flex gap-2">
+        <div className="p-4 bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 lg:hidden flex gap-2">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
             <input
@@ -564,13 +586,13 @@ export default function App() {
               placeholder="Rechercher sujet/notion..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-3 py-2 bg-slate-100 border-transparent rounded-lg text-xs text-slate-900 outline-none"
+              className="w-full pl-9 pr-3 py-2 bg-slate-100 dark:bg-slate-800 border-transparent rounded-lg text-xs text-slate-900 dark:text-white outline-none"
             />
           </div>
           {selectedYear !== 'all' && (
             <button 
               onClick={() => setSelectedYear('all')}
-              className="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-lg text-xs font-semibold flex items-center gap-1 hover:bg-slate-200"
+              className="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-lg text-xs font-semibold flex items-center gap-1 hover:bg-slate-205 dark:hover:bg-slate-700"
             >
               Ans: {selectedYear} ✕
             </button>
@@ -578,7 +600,7 @@ export default function App() {
           {selectedNotions.size > 0 && (
             <button 
               onClick={() => setSelectedNotions(new Set())}
-              className="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-lg text-xs font-semibold flex items-center gap-1 hover:bg-slate-200"
+              className="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-lg text-xs font-semibold flex items-center gap-1 hover:bg-slate-205 dark:hover:bg-slate-700"
             >
               Notions ({selectedNotions.size}) ✕
             </button>
@@ -591,16 +613,16 @@ export default function App() {
           {activeTab === 'Theses' ? (
             <div className="max-w-4xl mx-auto pb-12">
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2 mb-2">
+                <h2 className="text-2xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2 mb-2">
                   <BookOpen className="w-6 h-6 text-emerald-500" /> Bibliothèque des Thèses
                 </h2>
-                <p className="text-sm text-slate-500 font-medium">Pour chaque notion du programme, explorez les grandes thèses et arguments pivots à mobiliser en dissertation.</p>
+                <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">Pour chaque notion du programme, explorez les grandes thèses et arguments pivots à mobiliser en dissertation.</p>
               </div>
 
               {!selectedThesisNotion ? (
                 filteredNotions.length === 0 ? (
-                  <div className="p-8 text-center border border-slate-200 border-dashed rounded-xl bg-white/50">
-                    <p className="text-sm font-medium text-slate-500">Aucune notion ou thèse ne correspond à votre recherche.</p>
+                  <div className="p-8 text-center border border-slate-200 dark:border-slate-800 border-dashed rounded-xl bg-white dark:bg-slate-900/50">
+                    <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Aucune notion ou thèse ne correspond à votre recherche.</p>
                   </div>
                 ) : (
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -611,7 +633,7 @@ export default function App() {
                         <button
                           key={notion}
                           onClick={() => setSelectedThesisNotion(notion)}
-                          className={`flex flex-col text-left p-4 rounded-xl border ${hasData ? 'border-slate-200 bg-white hover:shadow-sm' : 'border-slate-100 bg-slate-50/50 opacity-60 hover:opacity-100'} ${
+                          className={`flex flex-col text-left p-4 rounded-xl border ${hasData ? 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:shadow-sm' : 'border-slate-100 dark:border-slate-850 bg-slate-50/50 dark:bg-slate-900/30 opacity-60 hover:opacity-100'} ${
                             hasData && theme ? theme.hoverBorder : ''
                           } transition-all`}
                         >
@@ -619,7 +641,7 @@ export default function App() {
                             {notion}
                           </span>
                           <div className="flex items-center justify-between w-full mt-1">
-                            <span className="text-sm font-semibold text-slate-700">Explorer la notion</span>
+                            <span className="text-sm font-semibold text-slate-700 dark:text-slate-200">Explorer la notion</span>
                             <ChevronRight className="w-4 h-4 text-slate-400" />
                           </div>
                         </button>
@@ -631,7 +653,7 @@ export default function App() {
                 <div className="space-y-8">
                   <button 
                     onClick={() => setSelectedThesisNotion(null)}
-                    className="text-xs font-bold text-slate-500 hover:text-slate-900 flex items-center gap-1 transition-colors"
+                    className="text-xs font-bold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white flex items-center gap-1 transition-colors"
                   >
                     ← Retour aux notions
                   </button>
@@ -642,21 +664,21 @@ export default function App() {
 
                     return (
                       <div className="space-y-6">
-                        <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight flex items-center gap-3">
+                        <h1 className="text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-3">
                           <span className={`w-3.5 h-3.5 rounded-full inline-block ${theme?.badge.split(' ')[0]}`} />
                           {selectedThesisNotion}
                         </h1>
 
-                        <div className={`p-5 rounded-xl ${theme?.definitionBox}`}>
-                          <p className="text-[10px] uppercase tracking-widest text-slate-550 font-bold mb-2">Définition</p>
-                          <blockquote className={theme?.definitionText}>
+                        <div className={`p-5 rounded-xl ${theme?.definitionBox} dark:bg-slate-900/40 dark:border-slate-800 dark:text-slate-200`}>
+                          <p className="text-[10px] uppercase tracking-widest text-slate-550 dark:text-slate-400 font-bold mb-2">Définition</p>
+                          <blockquote className={`${theme?.definitionText} dark:text-slate-100`}>
                             « {metadata?.definition} »
                           </blockquote>
                         </div>
 
-                        <div className={`${theme?.contexteBox} p-5 rounded-xl`}>
-                          <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-2">Contexte & Étymologie</p>
-                          <p className="text-sm leading-relaxed font-semibold text-slate-700">
+                        <div className={`${theme?.contexteBox} p-5 rounded-xl dark:bg-slate-900/10 dark:border-slate-800 dark:text-slate-300`}>
+                          <p className="text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-bold mb-2">Contexte & Étymologie</p>
+                          <p className="text-sm leading-relaxed font-semibold text-slate-700 dark:text-slate-300">
                             {metadata?.contexte}
                           </p>
                         </div>
@@ -670,8 +692,8 @@ export default function App() {
 
                     if (!thesisData || thesisData.angles.length === 0) {
                       return (
-                         <div className="p-8 text-center border border-slate-200 border-dashed rounded-xl bg-white/50">
-                           <p className="text-sm font-medium text-slate-500">Les thèses pour cette notion sont en cours de rédaction.</p>
+                         <div className="p-8 text-center border border-slate-200 dark:border-slate-800 border-dashed rounded-xl bg-white/50 dark:bg-slate-900/50">
+                           <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Les thèses pour cette notion sont en cours de rédaction.</p>
                          </div>
                       );
                     }
@@ -688,39 +710,39 @@ export default function App() {
 
                     if (filteredAngles.length === 0) {
                       return (
-                        <div className="p-8 text-center border border-slate-200 border-dashed rounded-xl bg-white/50">
-                          <p className="text-sm font-semibold text-slate-500">Aucune thèse ne correspond à votre recherche pour cette notion.</p>
+                        <div className="p-8 text-center border border-slate-200 dark:border-slate-800 border-dashed rounded-xl bg-white/50 dark:bg-slate-900/50">
+                          <p className="text-sm font-semibold text-slate-500 dark:text-slate-400">Aucune thèse ne correspond à votre recherche pour cette notion.</p>
                         </div>
                       );
                     }
 
                     return (
                       <div className="space-y-6 pt-4">
-                        <h2 className="text-lg font-bold text-slate-800 tracking-tight">
+                        <h2 className="text-lg font-bold text-slate-800 dark:text-slate-200 tracking-tight">
                           {q ? "Thèses filtrées correspondantes" : "Thèses & Arguments Pivots"}
                         </h2>
                         {filteredAngles.map((angle, idx) => (
-                          <div key={idx} className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                            <div className={`p-5 border-b border-slate-100 ${theme?.thesisHeaderBg}`}>
-                              <h3 className="text-lg font-bold text-slate-900 mb-1">{angle.these}</h3>
-                              <p className="text-xs font-semibold text-slate-600 flex items-center gap-1.5">
-                                <User className="w-3.5 h-3.5 shrink-0 text-slate-500" /> {angle.reference}
+                          <div key={idx} className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <div className={`p-5 border-b border-slate-100 dark:border-slate-800/60 ${theme?.thesisHeaderBg} dark:bg-slate-900/30`}>
+                              <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-1">{angle.these}</h3>
+                              <p className="text-xs font-semibold text-slate-600 dark:text-slate-400 flex items-center gap-1.5">
+                                <User className="w-3.5 h-3.5 shrink-0 text-slate-500 dark:text-slate-400" /> {angle.reference}
                               </p>
                             </div>
                             <div className="p-5 space-y-4">
                               <div>
-                                <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-2">Développement</p>
-                                <p className="text-sm leading-relaxed text-slate-700 font-medium">
+                                <p className="text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-bold mb-2">Développement</p>
+                                <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300 font-medium">
                                   {angle.developpement.split(/(«[^»]+»|"[^"]+")/g).map((part, i) => {
                                     if (part.startsWith('«') || part.startsWith('"')) {
-                                      return <em key={i} className={theme?.highlightWord}>{part}</em>;
+                                      return <em key={i} className={`${theme?.highlightWord} dark:text-amber-400`}>{part}</em>;
                                     }
                                     return part;
                                   })}
                                 </p>
                               </div>
-                              <div className={`rounded-lg p-4 ${theme?.pivotBox}`}>
-                                <p className="text-[10px] uppercase tracking-widest text-slate-550 font-bold mb-2">L'Argument Pivot</p>
+                              <div className={`rounded-lg p-4 ${theme?.pivotBox} dark:bg-slate-950/40 dark:border-slate-800 dark:text-slate-250`}>
+                                <p className="text-[10px] uppercase tracking-widest text-slate-550 dark:text-slate-400 font-bold mb-2">L'Argument Pivot</p>
                                 <p className="text-sm font-bold leading-snug">
                                   {angle.argumentPivot}
                                 </p>
@@ -738,11 +760,11 @@ export default function App() {
             <>
               {/* Section Title */}
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 pb-2 gap-4">
-                <h2 className="text-lg font-bold text-slate-900 tracking-tight">
+                <h2 className="text-lg font-bold text-slate-900 dark:text-white tracking-tight">
                   {activeTab === 'Annale' ? 'Dernières annales & archives' : 'Sujets probables (Inédits)'}
                 </h2>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-white border border-slate-200 rounded-full text-[11px] font-medium text-slate-600 shadow-sm">{filteredSubjects.length} résultats</span>
+                  <span className="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-[11px] font-medium text-slate-600 dark:text-slate-300 shadow-sm">{filteredSubjects.length} résultats</span>
                 </div>
               </div>
 
@@ -924,27 +946,27 @@ function SubjectCard({ subject, onViewPistes }: SubjectCardProps) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -12 }}
       transition={{ duration: 0.15 }}
-      className="bg-white p-5 md:p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col h-full"
+      className="bg-white dark:bg-slate-900 p-5 md:p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all flex flex-col h-full"
     >
       <div className="flex justify-between items-start mb-3 gap-2">
-        <span className="text-[10px] font-bold text-slate-400 tracking-wider uppercase flex-1 mt-0.5">
+        <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 tracking-wider uppercase flex-1 mt-0.5">
           {subject.year && <span>{subject.year}</span>}
           {subject.year && subject.location && <span> • </span>}
           {subject.location && <span>{subject.location}</span>}
         </span>
-        <span className={`px-2 py-0.5 text-[10px] font-bold rounded shrink-0 ${isPotentiel ? 'bg-amber-50 text-amber-600 border border-amber-100' : 'bg-indigo-50 text-indigo-600 border border-indigo-100'}`}>
+        <span className={`px-2 py-0.5 text-[10px] font-bold rounded shrink-0 ${isPotentiel ? 'bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 border border-amber-100 dark:border-amber-900/30' : 'bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900/30'}`}>
           {subject.type}
         </span>
       </div>
       
-      <h3 className="text-[1.05rem] md:text-[1.125rem] font-semibold leading-relaxed mb-4 text-slate-800 italic grow">
+      <h3 className="text-[1.05rem] md:text-[1.125rem] font-semibold leading-relaxed mb-4 text-slate-800 dark:text-slate-100 italic grow">
         « {subject.title} »
       </h3>
       
-      <div className="flex flex-col gap-4 mt-auto border-t border-slate-50 pt-4">
+      <div className="flex flex-col gap-4 mt-auto border-t border-slate-50 dark:border-slate-800/80 pt-4">
         <div className="flex flex-wrap gap-1.5">
           {subject.notions.map((n) => (
-            <span key={n} className={`px-2 py-0.5 text-[10px] font-bold rounded border ${NOTION_COLORS[n] || 'bg-slate-100 text-slate-500 border-slate-200'}`}>
+            <span key={n} className={`px-2 py-0.5 text-[10px] font-bold rounded border ${NOTION_COLORS[n] || 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-705'}`}>
               {n}
             </span>
           ))}
@@ -953,7 +975,7 @@ function SubjectCard({ subject, onViewPistes }: SubjectCardProps) {
         {hasPistes && (
           <button
             onClick={() => onViewPistes(subject)}
-            className="w-full py-2 bg-slate-50 text-slate-600 text-xs font-bold rounded border border-slate-100 hover:bg-slate-100 transition-colors flex items-center justify-center gap-1.5"
+            className="w-full py-2 bg-slate-50 dark:bg-slate-800/60 text-slate-600 dark:text-slate-300 text-xs font-bold rounded border border-slate-105 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center gap-1.5"
           >
             Voir les pistes ↗
           </button>
