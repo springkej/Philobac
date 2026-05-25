@@ -683,6 +683,208 @@ export const THESES_LIBRARY: ThesisNotion[] = [
         argumentPivot: "La pensée grecque montre que la maîtrise du temps ne consiste pas à mesurer la quantité des heures (*Chronos*), mais à cultiver l'attention pour saisir l'occasion propice à l'action juste (*Kairos*)."
       },
     ]
+  },
+  {
+    notion: "La conscience",
+    angles: [
+      {
+        these: "La conscience comme certitude première et indubitable : le Cogito",
+        reference: "René Descartes, Méditations métaphysiques",
+        developpement: "Dans ses Méditations métaphysiques, René Descartes recourt au doute méthodique pour remettre en question toutes ses croyances et perceptions, afin de trouver une vérité absolue. Il réalise que même s'il doute de l'existence du monde ou de son propre corps, il ne peut douter du fait qu'il est en train de douter, et donc de penser. De là naît la célèbre intuition du Cogito : « Je pense, donc je suis ». La conscience de soi apparaît alors comme la certitude fondatrice de toute connaissance, une transparence totale à soi-même. Le sujet se découvre d'abord comme une « chose pensante » (res cogitans), indépendante du monde matériel. Cette découverte fait de la conscience une donnée immédiate, évidente et inébranlable, sur laquelle l'édifice du savoir humain peut être reconstruit avec assurance.",
+        argumentPivot: "L'acte même de douter prouve l'existence du sujet pensant, faisant de la conscience de soi la première vérité indubitable sur laquelle fonder toute certitude."
+      },
+      {
+        these: "La conscience et la mémoire comme fondements de l'identité personnelle",
+        reference: "John Locke, Essai sur l'entendement humain",
+        developpement: "Dans son Essai sur l'entendement humain, John Locke soutient que ce qui fait qu'une personne reste la même à travers le temps n'est ni son corps, ni une âme immatérielle abstraite, mais sa conscience. Pour Locke, la conscience accompagne continuellement chacune de nos pensées et de nos actions. Grâce à la faculté de la mémoire, cette conscience peut s'étendre aux actions passées, reliant ainsi le « moi » d'hier au « moi » d'aujourd'hui. C'est donc cette continuité réflexive qui fonde l'identité personnelle ainsi que la responsabilité morale et juridique. Si un individu perdait totalement et irréversiblement le souvenir d'une partie de sa vie, il ne serait plus, pour cette période, la même personne. Ainsi, se connaître, c'est se reconnaître dans le temps à travers le fil de sa mémoire.",
+        argumentPivot: "L'identité d'une personne ne repose pas sur une substance matérielle ou spirituelle cachée, mais sur la stricte continuité de la conscience réflexive et de la mémoire dans le temps."
+      },
+      {
+        these: "L'intentionnalité : toute conscience est conscience de quelque chose",
+        reference: "Edmund Husserl, Méditations cartésiennes",
+        developpement: "Le philosophe Edmund Husserl révolutionne notre compréhension en affirmant que la conscience n'est jamais repliée sur elle-même : elle est fondamentalement « intentionnelle ». Cela signifie que « toute conscience est conscience de quelque chose ». Elle n'est pas un réceptacle passif dans lequel entreraient des images du monde, mais un acte, un dynamisme toujours projeté vers l'extérieur pour viser un objet (réel, perçu ou imaginé). Par conséquent, on ne peut séparer le sujet qui pense du monde qu'il perçoit. La conscience n'existe qu'en se rapportant à ce qui n'est pas elle. Cette approche phénoménologique démontre que pour se comprendre, le sujet ne doit pas s'isoler du monde, mais observer la manière dont il interagit avec son environnement et lui donne concrètement du sens.",
+        argumentPivot: "La conscience n'est pas une substance close, mais un mouvement projectif constant vers l'extérieur : elle n'existe qu'en visant intentionnellement des objets différents d'elle-même."
+      },
+      {
+        these: "Le « je pense » comme condition unificatrice de toute expérience",
+        reference: "Emmanuel Kant, Critique de la raison pure",
+        developpement: "Dans la Critique de la raison pure, Emmanuel Kant explique que la conscience de soi, nommée le « je pense », est la condition absolue de toute connaissance. Nous recevons en permanence une multitude d'impressions sensibles éparpillées (couleurs, sons, formes). Pour que ces sensations deviennent une expérience cohérente, il faut un sujet capable de les relier et de se dire « c'est moi qui perçois cela ». Le « je pense » doit donc pouvoir accompagner toutes mes représentations pour les unifier. Cependant, Kant précise que cette conscience ne nous permet pas de nous connaître tels que nous sommes intrinsèquement (la « chose en soi »). Nous ne nous saisissons qu'à travers la manière dont nous apparaissons à nous-mêmes, c'est-à-dire comme des phénomènes subjectifs inscrits dans la temporalité.",
+        argumentPivot: "La conscience transcendantale (le « je pense ») est la structure formelle qui unifie nos perceptions pour rendre l'expérience possible, sans pour autant nous livrer la vérité absolue de notre être intérieur."
+      },
+      {
+        these: "La conscience de soi comme construction historique et sociale par la reconnaissance",
+        reference: "G.W.F. Hegel, Phénoménologie de l'esprit",
+        developpement: "Dans la Phénoménologie de l'esprit, Hegel démontre que la conscience de soi n'est pas une donnée immédiate et solitaire. Pour prendre véritablement conscience d'elle-même, une conscience a impérativement besoin d'être reconnue par une autre conscience. C'est l'enjeu de la célèbre dialectique du maître et de l'esclave. La rencontre originelle entre deux sujets prend la forme d'une lutte. L'un préfère la liberté à la vie et devient le maître ; l'autre cède par peur et devient l'esclave. Pourtant, c'est l'esclave qui atteindra une conscience de soi supérieure : en travaillant et en transformant la matière pour autrui, il objective son esprit, découvre sa puissance créatrice et s'émancipe concrètement. La conscience véritable se forge donc dans l'action, le travail et la confrontation à l'altérité.",
+        argumentPivot: "La conscience de soi ne s'obtient pas par l'introspection solitaire, mais exige la reconnaissance d'autrui et s'accomplit concrètement à travers le travail transformateur du monde."
+      },
+      {
+        these: "La conscience comme reflet des conditions matérielles et sociales",
+        reference: "Karl Marx, L'Idéologie allemande",
+        developpement: "Karl Marx renverse la conception idéaliste traditionnelle selon laquelle l'esprit dirigerait le monde. Dans L'Idéologie allemande, il affirme que « ce n'est pas la conscience qui détermine la vie, mais la vie qui détermine la conscience ». Nos pensées, nos valeurs et notre identité sont directement façonnées par nos conditions matérielles d'existence et notre place dans les rapports de production. La conscience est donc un produit éminemment social. Dans une société capitaliste, elle peut même devenir une « fausse conscience » ou idéologie : les individus intériorisent les croyances dominantes, masquant l'exploitation réelle. L'émancipation véritable exige alors de passer à une « conscience de classe » active, qui ne s'obtient pas par l'introspection solitaire, mais par l'action collective et la lutte politique.",
+        argumentPivot: "Nos idées et notre conscience ne sont pas des données pures de l'esprit libre, mais le reflet direct de notre situation socio-économique et des conditions matérielles de notre époque."
+      },
+      {
+        these: "La conscience comme néant, liberté absolue et dépassement continu",
+        reference: "Jean-Paul Sartre, L'Être et le Néant",
+        developpement: "Dans L'Être et le Néant, Jean-Paul Sartre définit la conscience (le « pour-soi ») comme un vide, un néant fondamental, par opposition aux objets matériels figés (l'« en-soi »). Parce qu'elle n'est rien au départ, la conscience n'a pas de nature prédéfinie : « l'existence précède l'essence ». Cette vacuité fait d'elle une liberté radicale. Le sujet n'est jamais figé ; il est un perpétuel projet, toujours en devenir. Cependant, cette liberté engendre une profonde angoisse face à la responsabilité écrasante de nos choix. Pour fuir ce vertige, la conscience recourt souvent à la « mauvaise foi », se mentant à elle-même en prétendant être déterminée par son passé ou son caractère. Pourtant, aucune excuse psychologique ou sociale ne peut abolir cette liberté inaliénable du sujet conscient.",
+        argumentPivot: "La conscience humaine n'est pas une chose mais un néant en perpétuel projet, ce qui la rend irréductiblement libre, responsable et incapable de coïncider avec une nature figée."
+      },
+      {
+        these: "La conscience comme durée, mémoire et élan vital",
+        reference: "Henri Bergson, L'Énergie spirituelle",
+        developpement: "Pour Henri Bergson, la conscience ne se résume pas à une succession d'états figés, mais s'éprouve comme un flux continu appelé la « durée ». Dans ce courant ininterrompu, le passé, le présent et le futur s'entremêlent. Bergson affirme que « toute conscience est mémoire » : elle conserve le passé pour éclairer le présent et anticiper l'avenir. Sans cette conservation, nous serions enfermés dans un présent machinal et sans but. De plus, la conscience est intrinsèquement liée au choix. Elle s'éveille avec une grande acuité face à l'inattendu, lorsqu'une décision doit être prise, rompant avec les automatismes corporels et l'habitude. Elle est cette force créatrice et cet élan vital qui permet à l'être humain d'agir librement et d'inventer des solutions inédites face aux défis de l'existence.",
+        argumentPivot: "Bergson identifie la conscience à la mémoire et à l'anticipation, soulignant qu'elle surgit de manière lumineuse lorsqu'un individu est confronté à un choix libre et inattendu."
+      },
+      {
+        these: "La conscience décentrée et dominée par l'inconscient",
+        reference: "Sigmund Freud, Introduction à la psychanalyse",
+        developpement: "Sigmund Freud inflige une blessure narcissique majeure à la philosophie du sujet en postulant l'existence de l'inconscient. Il démontre que la conscience n'est que la pointe émergée d'un immense iceberg psychique. L'essentiel de notre vie mentale, fait de pulsions enfouies et de désirs refoulés, échappe totalement à notre lucidité. La conscience est régulièrement trompée par de puissants mécanismes de défense. Elle se limite souvent à rationaliser après coup des actes dont les vrais motifs lui échappent, comme le prouvent les rêves, les lapsus ou les symptômes névrotiques. L'affirmation selon laquelle « le moi n'est pas maître dans sa propre maison » détruit l'illusion cartésienne d'une transparence à soi. La véritable connaissance nécessite désormais un travail psychanalytique ardu pour déchiffrer cette opacité fondatrice.",
+        argumentPivot: "Freud détruit l'illusion de la pleine maîtrise de soi en révélant que la conscience n'est qu'une instance de surface, largement manipulée par les forces et les désirs obscurs de l'inconscient."
+      },
+      {
+        these: "La conscience comme surface trompeuse, simplificatrice et tardive",
+        reference: "Friedrich Nietzsche, Le Gai Savoir",
+        developpement: "Pour Friedrich Nietzsche, la conscience est loin d'être la faculté suprême de l'homme. C'est au contraire un organe superficiel, tardif et trompeur, apparu sous la pression des nécessités de communication sociale. Dans Le Gai Savoir, il soutient que la véritable intelligence réside dans la sagesse du corps et les dynamiques pulsionnelles inconscientes. La conscience ne fait que traduire ces forces vitales en mots, les simplifiant et les falsifiant. Elle nous procure l'illusion flatteuse du libre arbitre et de la raison souveraine, alors que nous sommes fondamentalement agis par nos instincts inavoués. Loin d'être l'essence de l'individu, la conscience est un masque réducteur, un outil de grégarité qui voile l'infinie richesse et la complexité chaotique de la vie qui bouillonne en nous.",
+        argumentPivot: "Nietzsche dévalue la conscience en la décrivant comme un réseau de communication tardif et superficiel, conçu par le besoin d'interaction sociale, qui falsifie la réalité de nos instincts corporels profonds."
+      },
+      {
+        these: "La conscience morale comme instinct divin et infaillible",
+        reference: "Jean-Jacques Rousseau, Émile ou De l'éducation",
+        developpement: "Dans Émile ou De l'éducation, Jean-Jacques Rousseau célèbre la conscience non pas comme une simple faculté intellectuelle, mais comme un principe moral naturel. Il la décrit passionnément comme un « instinct divin, immortelle et céleste voix ». Contrairement à la raison, qui peut être trompeuse, calculatrice et corrompue par l'égoïsme social, la conscience morale est innée, immédiate et infaillible. Elle nous pousse à aimer le bien et à repousser le mal avec spontanéité. Rousseau affirme que si nous faisons taire l'agitation mondaine et les préjugés, nous pouvons entendre distinctement cette voix intérieure apaisante. C'est cette pureté originelle du sentiment moral qui constitue la véritable grandeur de l'être humain, le guidant infailliblement vers la justice et la vertu sans nécessiter de longs discours.",
+        argumentPivot: "Rousseau oppose la raison calculatrice à la conscience morale, qu'il conçoit comme un sentiment naturel et un instinct divin offrant à l'homme un guide infaillible pour le bien."
+      },
+      {
+        these: "La conscience incarnée : le corps-sujet comme ancrage au monde",
+        reference: "Maurice Merleau-Ponty, Phénoménologie de la perception",
+        developpement: "Maurice Merleau-Ponty s'oppose fermement au dualisme cartésien qui sépare un esprit pensant abstrait d'un corps matériel. Dans la Phénoménologie de la perception, il affirme que la conscience est fondamentalement incarnée. Je ne suis pas une pensée qui habiterait un corps de l'extérieur ; je *suis* mon corps vivant. C'est par ce « corps propre » que nous accédons au monde et aux autres. Avant d'être une rationalité capable de formuler des idées abstraites, la conscience est d'abord motrice et perceptive. Elle s'exprime dans notre façon d'habiter l'espace, de sentir et de s'orienter. On ne peut donc pas se comprendre en s'isolant dans une introspection intellectuelle pure. Notre identité profonde se déploie inévitablement à travers notre corporéité, nos habitudes physiques et notre immersion charnelle.",
+        argumentPivot: "Contestant l'idée d'une pensée pure désincarnée, Merleau-Ponty démontre que notre conscience est indissociable de notre corps, faisant de la perception notre mode premier de présence au monde."
+      },
+      {
+        these: "La conscience de notre misère et la grandeur du « roseau pensant »",
+        reference: "Blaise Pascal, Pensées",
+        developpement: "Dans ses Pensées, Blaise Pascal décrit la conscience humaine comme la source d'un terrible paradoxe. D'un côté, l'homme est physiquement vulnérable, écrasé par l'immensité de l'univers et condamné à la maladie et à la mort. De l'autre, c'est justement la conscience de cette fragilité qui fait sa dignité absolue. La célèbre métaphore du « roseau pensant » illustre parfaitement cette idée : « Quand l'univers l'écraserait, l'homme serait encore plus noble que ce qui le tue, parce qu'il sait qu'il meurt ». La conscience nous arrache à l'aveuglement naturel de l'animal. Cependant, cette lucidité tragique est si angoissante que les humains s'en détournent par le « divertissement » perpétuel. Si elle nous confronte au néant, la pensée consciente demeure notre unique noblesse véritable.",
+        argumentPivot: "Si la conscience révèle à l'homme son insignifiance face à l'univers et l'angoisse de sa propre mort, elle constitue paradoxalement sa plus grande noblesse et ce qui l'élève au-dessus de la matière."
+      },
+      {
+        these: "La conscience comme illusion du libre arbitre et ignorance des causes",
+        reference: "Baruch Spinoza, Éthique",
+        developpement: "Baruch Spinoza propose une critique radicale en affirmant que notre conscience immédiate est la source principale de l'illusion du libre arbitre. Dans l'Éthique, il écrit que « les hommes se croient libres parce qu'ils sont conscients de leurs désirs et ignorants des causes qui les déterminent ». C'est comme si une pierre jetée en l'air, devenue soudain consciente, croyait se mouvoir par sa propre volonté en ignorant l'impulsion initiale du bras. Nous ressentons directement nos actes, nos choix et nos passions, mais nous restons aveugles à la chaîne de causalités naturelles ou psychologiques qui les a provoqués. Pour Spinoza, la véritable émancipation ne consiste pas à glorifier ce libre arbitre imaginaire, mais à utiliser la raison pour comprendre les causes réelles qui nous déterminent.",
+        argumentPivot: "Spinoza démontre que la conscience produit la puissante illusion du libre arbitre : nous percevons nos désirs de façon évidente, tout en ignorant totalement les causes réelles qui nous poussent à agir."
+      },
+      {
+        these: "La dissolution du moi : la conscience comme simple faisceau de perceptions",
+        reference: "David Hume, Traité de la nature humaine",
+        developpement: "Contre la tradition philosophique qui pose un « moi » permanent, l'empiriste David Hume affirme que l'introspection ne révèle aucune entité stable. Dans le Traité de la nature humaine, il explique que lorsqu'il observe son intériorité psychique, il ne saisit jamais un « moi » pur. Il ne rencontre qu'une succession de perceptions éphémères : une sensation de froid, une émotion fugace, une douleur ou un grand plaisir. La conscience n'est donc pas un socle solide en arrière-plan, mais un théâtre mouvant, un simple « faisceau de perceptions » qui s'enchaînent à grande vitesse. Pour Hume, l'idée d'une identité personnelle fixe et continue dans le temps n'est qu'une illusion rassurante, générée par l'habitude, l'imagination et la mémoire qui relient ces expériences totalement fragmentées.",
+        argumentPivot: "Hume réfute l'idée d'un sujet substantiel en montrant que l'introspection ne révèle jamais de « moi » permanent, mais seulement un flux mouvant de perceptions éphémères reliées par l'imagination."
+      },
+      {
+        these: "La conscience indirecte : l'identité narrative et le détour de l'interprétation",
+        reference: "Paul Ricœur, Soi-même comme un autre",
+        developpement: "Paul Ricœur refuse l'idée d'une conscience transparente et immédiate telle que pensée par Descartes. Pour lui, le sujet est d'abord opaque à lui-même : pour se comprendre, il doit effectuer un grand détour par les signes, les symboles culturels et les récits. Dans Soi-même comme un autre, Ricœur forge le concept majeur d'« identité narrative ». Nous n'accédons à nous-mêmes qu'en nous racontant, en structurant les événements épars de notre vie sous la forme d'une histoire humaine cohérente. Le sujet se découvre à travers les livres qu'il lit, l'histoire de sa société et ses propres choix. La connaissance de soi n'est donc jamais une intuition directe, mais un long travail d'interprétation herméneutique, où le moi s'appréhende comme le personnage d'un récit en perpétuelle écriture.",
+        argumentPivot: "Ricœur démontre que la connaissance de soi n'est jamais immédiate, mais exige le long détour interprétatif du langage, des symboles et de l'histoire, forgeant ainsi notre « identité narrative »."
+      },
+      {
+        these: "L'absence de pensée : quand la perte de la conscience réflexive mène à la banalité du mal",
+        reference: "Hannah Arendt, Eichmann à Jérusalem",
+        developpement: "Hannah Arendt établit un lien essentiel entre la conscience réflexive (le dialogue silencieux de l'esprit avec lui-même) et l'intégrité morale. En observant Adolf Eichmann, responsable de la logistique de la Shoah, Arendt n'y voit pas un monstre démoniaque, mais un bureaucrate terrifiant de normalité. Dans Eichmann à Jérusalem, elle énonce le concept de « banalité du mal ». Le trait dominant du criminel est une stricte absence de pensée : l'incapacité radicale à faire retour sur lui-même ou à envisager le point de vue d'autrui. Il obéissait aux ordres comme une machine. Arendt nous avertit : la conscience morale n'est pas acquise, elle exige un exercice constant. Le refus d'activer sa conscience critique suffit à faire basculer des hommes ordinaires dans l'abîme du mal absolu.",
+        argumentPivot: "À travers la notion de « banalité du mal », Arendt montre que les pires atrocités ne naissent pas d'une volonté sadique, mais de l'absence de pensée et du refus de faire usage de sa conscience morale."
+      }
+    ]
+  },
+  {
+    notion: "L'inconscient",
+    angles: [
+      {
+        these: "L'inconscient perceptif : les « petites perceptions »",
+        reference: "Gottfried Wilhelm Leibniz, Nouveaux Essais sur l'entendement humain",
+        developpement: "Dans les Nouveaux Essais sur l'entendement humain, Leibniz remet en cause l'idée selon laquelle nous aurions conscience de tout ce qui se passe dans notre esprit. Il développe la théorie des « petites perceptions ». Selon lui, nous recevons en permanence une infinité d'impressions sensorielles trop faibles, trop brèves ou trop confuses pour être saisies individuellement par notre conscience. Par exemple, lorsque nous entendons le bruit d'une vague, nous entendons en réalité le bruit de chaque goutte d'eau qui la compose, sans en avoir l'aperception distincte. L'inconscient prend ici la forme d'un état perceptif confus. Cette découverte est fondamentale, car elle montre que le psychisme humain ne se réduit pas à la conscience claire et qu'il existe une continuité invisible entre l'inconscient et le conscient.",
+        argumentPivot: "Leibniz démontre qu'une infinité de petites perceptions échappent à notre attention claire, prouvant ainsi que l'activité réceptive de l'esprit est bien plus vaste que ce que notre conscience parvient à saisir."
+      },
+      {
+        these: "L'inconscient comme force aveugle : le primat de la Volonté",
+        reference: "Arthur Schopenhauer, Le Monde comme volonté et comme représentation",
+        developpement: "Dans Le Monde comme volonté et comme représentation, Arthur Schopenhauer propose une conception radicale où l'intellect conscient n'est qu'un outil superficiel au service d'une force aveugle et irrationnelle : la Volonté. Pour Schopenhauer, cette Volonté est l'essence même de tout ce qui existe. Chez l'être humain, elle se manifeste sous la forme de pulsions et de désirs insatiables qui nous poussent à agir à notre insu. La conscience n'est qu'une simple surface, semblable à l'écorce d'un arbre, tandis que la véritable machinerie psychique opère dans les profondeurs ténébreuses de notre être. Dès lors, le sujet se fait des illusions en croyant diriger sa vie par la seule force de sa raison. En réalité, nos choix et nos motivations profondes sont dictés par cet inconscient pulsionnel et vital.",
+        argumentPivot: "Schopenhauer affirme que l'intellect conscient n'est qu'un épiphénomène superficiel soumis à la Volonté, une force pulsionnelle aveugle et irrationnelle qui dirige secrètement toutes nos actions."
+      },
+      {
+        these: "L'inconscient vital et corporel : le corps comme « grande raison »",
+        reference: "Friedrich Nietzsche, Par-delà bien et mal",
+        developpement: "Dans Par-delà bien et mal et Le Gai Savoir, Friedrich Nietzsche déconstruit le mythe d'une conscience souveraine et transparente. Selon lui, la conscience n'est qu'un organe tardif, superficiel et imparfait, apparu uniquement pour les nécessités de la communication sociale. La véritable profondeur de l'être humain se trouve dans le corps et ses pulsions. Nietzsche affirme que le corps est une « grande raison » inconsciente qui gouverne silencieusement notre existence. Nos pensées conscientes ne sont que le symptôme, l'interprétation ou la traduction tardive des luttes de pouvoir qui opposent nos instincts à l'intérieur de nous-mêmes. Par conséquent, croire au libre arbitre et à la maîtrise de soi relève de l'illusion : le « Je » rationnel est une simple fiction grammaticale inventée pour masquer la domination de nos forces inconscientes.",
+        argumentPivot: "Nietzsche soutient que la conscience est une invention tardive et superficielle, et que nos pensées ne sont que les symptômes trompeurs d'une lutte souterraine entre nos pulsions corporelles inconscientes."
+      },
+      {
+        these: "L'inconscient mémoriel : la conservation intégrale du passé",
+        reference: "Henri Bergson, L'Énergie spirituelle",
+        developpement: "Dans L'Énergie spirituelle et Matière et Mémoire, Henri Bergson explore une autre dimension de l'inconscient : celle de la mémoire. Il contredit l'idée selon laquelle un souvenir que nous avons oublié cesserait d'exister. Bergson distingue la mémoire-habitude, inscrite dans le corps, et la « mémoire pure », qui conserve l'intégralité de notre passé sous une forme virtuelle et inconsciente. Pour Bergson, la conscience est sélective : elle agit comme un filtre pragmatique orienté vers l'action présente et ne laisse passer que les souvenirs utiles à notre situation actuelle. Tout le reste de notre vécu est maintenu dans l'obscurité de l'inconscient. Ainsi, l'inconscient bergsonien n'est pas le fruit d'un refoulement moral, mais le réservoir inépuisable de notre passé qui survit en nous, prêt à resurgir si la conscience relâche son attention.",
+        argumentPivot: "Bergson conçoit l'inconscient comme la conservation intégrale de notre passé dans la « mémoire pure », la conscience ne sélectionnant que les souvenirs strictement nécessaires à notre action présente."
+      },
+      {
+        these: "La blessure narcissique : le refoulement psychique",
+        reference: "Sigmund Freud, Introduction à la psychanalyse",
+        developpement: "Dans l'Introduction à la psychanalyse, Sigmund Freud bouleverse la philosophie du sujet en affirmant que « le moi n'est pas maître dans sa propre maison ». Il postule l'existence d'un inconscient dynamique, résultat d'un conflit psychique fondamental. Selon lui, nos pulsions inavouables (le Ça) se heurtent aux interdits moraux intériorisés (le Surmoi). Pour éviter l'angoisse, le psychisme utilise le « refoulement », un mécanisme de défense qui repousse ces désirs inacceptables hors du champ de la conscience. L'inconscient freudien est donc un lieu actif où survivent des désirs censurés. Cette découverte inflige une profonde blessure narcissique à l'humanité : elle prouve que nos comportements, nos émotions et nos actes sont en grande partie dictés par des forces psychologiques qui nous échappent complètement.",
+        argumentPivot: "Freud établit que l'inconscient est le produit du refoulement des désirs incompatibles avec la morale, infligeant au sujet une blessure narcissique en lui révélant qu'il est agi à son insu."
+      },
+      {
+        these: "Le retour du refoulé : le rêve comme voie royale",
+        reference: "Sigmund Freud, L'Interprétation du rêve",
+        developpement: "Dans L'Interprétation du rêve, Sigmund Freud démontre que l'inconscient, bien qu'invisible, se manifeste de façon indirecte dans notre vie quotidienne. Les désirs refoulés cherchent en permanence à s'exprimer, mais ils doivent tromper la vigilance de la censure morale pour y parvenir. Ils revêtent alors des formes déguisées : ce sont les actes manqués, les lapsus, ou encore les symptômes névrotiques. Freud considère particulièrement le rêve comme la « voie royale menant à la connaissance de l'inconscient ». Pendant le sommeil, la censure se relâche, permettant aux désirs de s'exprimer sous forme de symboles ou d'images absurdes (le contenu manifeste) qui dissimulent le désir réel (le contenu latent). Analyser ces manifestations permet de remonter à la source du conflit psychique originel afin de libérer le patient.",
+        argumentPivot: "Freud montre que les désirs refoulés déjouent la censure morale en se déguisant sous forme de lapsus, de symptômes ou de rêves, ces derniers constituant la voie royale d'accès à l'inconscient."
+      },
+      {
+        these: "Le devoir d'élucider l'inconscient : la responsabilisation",
+        reference: "Sigmund Freud, Nouvelles conférences d'introduction à la psychanalyse",
+        developpement: "Dans les Nouvelles conférences d'introduction à la psychanalyse, Freud affirme que l'inconscient ne doit pas servir d'alibi moral. Si la psychanalyse prouve que nous sommes déterminés par des forces obscures, son but ultime est paradoxalement de nous rendre notre liberté. C'est le sens de la célèbre formule : « Là où était le Ça, le Moi doit advenir ». L'objectif de la cure analytique, via les associations libres, est d'aider le patient à conscientiser ses désirs refoulés. En mettant des mots sur ses traumatismes, l'individu se réapproprie son histoire personnelle et dissipe l'emprise aveugle de ses névroses. Ainsi, loin de déresponsabiliser l'être humain, l'approche freudienne lui impose une nouvelle tâche morale : accomplir un difficile travail d'introspection pour reconquérir patiemment la maîtrise de sa propre existence.",
+        argumentPivot: "Loin d'excuser nos actes, la psychanalyse freudienne vise à émanciper le sujet en transformant ses pulsions aveugles en savoir conscient, illustrant l'exigence morale de se réapproprier son propre psychisme."
+      },
+      {
+        these: "L'inconscient comme mauvaise foi : le refus existentialiste",
+        reference: "Jean-Paul Sartre, L'Être et le Néant",
+        developpement: "Dans L'Être et le Néant, Jean-Paul Sartre rejette catégoriquement le concept d'inconscient freudien, qu'il juge absurde et moralement dangereux. Pour l'existentialisme, l'homme est une conscience transparente à elle-même, « condamnée à être libre ». Admettre l'existence d'une instance obscure qui dicterait nos actes revient, selon Sartre, à se fournir un alibi confortable. Il dénonce l'inconscient comme une parfaite illustration de la « mauvaise foi » : un mensonge que l'on s'adresse à soi-même pour fuir l'angoisse inhérente à notre responsabilité. Par ailleurs, Sartre souligne une contradiction chez Freud : pour refouler un désir, la censure doit préalablement l'identifier comme immoral, ce qui prouve qu'elle en a toujours eu une conscience lucide. L'inconscient n'est donc qu'une fiction pour nier notre liberté absolue.",
+        argumentPivot: "Sartre déconstruit l'inconscient comme un alibi mensonger inventé par la « mauvaise foi » pour nous décharger de notre absolue liberté et fuir l'angoisse de la responsabilité morale."
+      },
+      {
+        these: "L'inconscient comme erreur morale et fatalisme commode",
+        reference: "Alain (Émile Chartier), Éléments de philosophie",
+        developpement: "Dans ses Éléments de philosophie, Alain adresse une critique virulente à la psychanalyse, dénonçant l'inconscient comme une grave erreur d'ordre moral. Pour lui, la pensée est inséparable de la conscience : « il n'y a point de pensées en nous sinon par l'unique sujet, Je ». Postuler un inconscient revient à imaginer un Autre en nous-mêmes, un « mauvais ange » ou un conseiller diabolique qui agirait à notre place. Alain assimile cette idée à une idolâtrie du corps et à une mythologie pernicieuse. S'en remettre à l'inconscient, c'est abandonner sa dignité d'être humain doué de raison. Invoquer cette obscurité psychique n'est qu'une excuse facile pour justifier nos pulsions et nos fautes, ce qui ruine instantanément l'idée même de volonté, de jugement et de responsabilité éthique.",
+        argumentPivot: "Alain dénonce l'inconscient comme une mythologie dangereuse et un fatalisme complaisant qui ruine l'idée de volonté en inventant un « autre Moi » abstrait pour excuser nos fautes."
+      },
+      {
+        these: "La théorie de l'inconscient comme mythe irréfutable",
+        reference: "Karl Popper, Conjectures et réfutations",
+        developpement: "Dans Conjectures et réfutations, le philosophe des sciences Karl Popper attaque la théorie de l'inconscient sous un angle strictement épistémologique. Selon son critère de réfutabilité (falsifiabilité), une théorie n'est scientifique que s'il est possible de concevoir un test capable de prouver qu'elle est fausse. Or, Popper démontre que l'inconscient freudien échappe à toute vérification objective. Si un patient rejette l'interprétation de son psychanalyste, ce dernier argüera simplement que le patient fait preuve d'un mécanisme de « déni » ou de « résistance » inconsciente. La psychanalyse a toujours réponse à tout et ne peut jamais être contredite par les faits. Parce qu'elle interprète chaque comportement humain pour qu'il s'emboîte dans son modèle, la théorie de l'inconscient ne relève pas de la démarche scientifique rigoureuse, mais du dogme et de la croyance.",
+        argumentPivot: "Popper refuse le statut de science à la psychanalyse car la théorie de l'inconscient est irréfutable : elle justifie n'importe quelle contradiction en l'assimilant à une nouvelle forme de résistance inconsciente."
+      },
+      {
+        these: "L'inconscient structuré comme un langage : le décentrement du sujet",
+        reference: "Jacques Lacan, Écrits",
+        developpement: "Dans ses Écrits, Jacques Lacan renouvelle l'approche freudienne en croisant la psychanalyse et la linguistique structurale. Sa thèse majeure affirme que « l'inconscient est structuré comme un langage ». Pour Lacan, l'inconscient n'est pas une fosse obscure peuplée de pulsions bestiales, mais un système hautement organisé obéissant à des lois logiques et grammaticales. Il s'exprime de manière cryptée à travers les lapsus, les mots d'esprit et les récits de rêves. Les mécanismes découverts par Freud correspondent exactement à des figures de rhétorique, comme la métaphore et la métonymie. Cette approche induit une vision radicale : le sujet conscient est fondamentalement décentré et « parlé » par le langage. Notre vérité la plus intime échappe à notre volonté et se lit à notre insu dans les failles de notre discours.",
+        argumentPivot: "En affirmant que l'inconscient est structuré comme un langage, Lacan montre que nos désirs s'organisent selon une logique rhétorique précise, décentrant le sujet qui devient « parlé » par son propre discours."
+      },
+      {
+        these: "L'inconscient collectif : la matrice des archétypes",
+        reference: "Carl Gustav Jung, Les Archétypes et l'Inconscient collectif",
+        developpement: "Dans Les Archétypes et l'Inconscient collectif, Carl Gustav Jung se détache de Freud en refusant de réduire l'inconscient aux seuls traumatismes et refoulements individuels. Jung postule l'existence d'un « inconscient collectif », une strate psychique infiniment plus profonde, commune à l'ensemble de l'humanité. Ce réservoir universel abrite des « archétypes », des structures mentales innées et des images ancestrales (comme le Héros, le Vieux Sage ou l'Ombre) qui influencent notre comportement. Ces figures archétypiques surgissent de manière identique dans les mythologies mondiales, les contes de fées et les rêves individuels, au-delà des différences culturelles. Chez Jung, l'inconscient perd son caractère purement pathologique ou immoral pour devenir une matrice spirituelle vivante, source de créativité profonde et principe d'unification du psychisme humain.",
+        argumentPivot: "Jung élargit la psychanalyse en théorisant un « inconscient collectif » constitué d'archétypes universels, révélant que le psychisme individuel est façonné par un patrimoine symbolique hérité de l'humanité entière."
+      },
+      {
+        these: "L'illusion du libre arbitre : l'inconscience des causes",
+        reference: "Baruch Spinoza, Éthique",
+        developpement: "Dans l'Éthique, bien avant la psychanalyse, Baruch Spinoza pose les bases d'un inconscient conçu comme un déterminisme. Il démontre que le libre arbitre n'est qu'une pure illusion engendrée par notre ignorance. Selon sa célèbre proposition : « les hommes se croient libres parce qu'ils sont conscients de leurs désirs, mais ignorants des causes qui les déterminent ». Ici, l'inconscience désigne notre incapacité structurelle à percevoir la chaîne infinie de causes physiques et psychologiques qui produisent nos choix. Nous agissons sous l'impulsion de nos affects profonds, mais notre conscience orgueilleuse s'attribue faussement le mérite de nos décisions. Pour Spinoza, la libération ne passe pas par l'affirmation naïve du libre arbitre, mais par l'effort rationnel de connaître ces causes cachées pour cesser de les subir aveuglément.",
+        argumentPivot: "Spinoza soutient que l'illusion de notre liberté provient de notre état d'inconscience face aux véritables causes naturelles et psychologiques qui déterminent mécaniquement chacun de nos désirs et de nos actes."
+      },
+      {
+        these: "L'herméneutique de soi : l'inconscient comme texte à interpréter",
+        reference: "Paul Ricœur, De l'interprétation. Essai sur Freud",
+        developpement: "Dans De l'interprétation. Essai sur Freud, Paul Ricœur analyse la psychanalyse par le prisme de l'herméneutique, la science de l'interprétation. Il érige Freud, aux côtés de Marx et Nietzsche, en grand « maître du soupçon » qui détruit la naïveté de la conscience transparente. Ricœur souligne que l'inconscient n'est pas un objet physique observable, mais une réalité sémantique : c'est un ensemble de signes obscurs (rêves, lapsus, névroses) qui exige un travail de traduction méticuleux. L'hypothèse freudienne montre ainsi que l'être humain ne se connaît jamais de manière intuitive et immédiate. L'identité personnelle devient une énigme à résoudre. Dès lors, pour espérer se saisir lui-même, le sujet doit inévitablement faire le long détour de l'interprétation des messages cryptés qu'émet son propre psychisme.",
+        argumentPivot: "En inscrivant Freud parmi les « maîtres du soupçon », Ricœur démontre que la véritable conscience de soi n'est pas une intuition immédiate, mais exige l'interprétation complexe des signes obscurs laissés par l'inconscient."
+      },
+      {
+        these: "L'inconscient moteur : les automatismes du corps propre",
+        reference: "Maurice Merleau-Ponty, Phénoménologie de la perception",
+        developpement: "Dans la Phénoménologie de la perception, Maurice Merleau-Ponty repense l'inconscient pour le détacher de la psychanalyse et l'ancrer intimement dans le corps. Refusant l'idée d'un théâtre mental caché abritant des pulsions, il préfère théoriser un « inconscient moteur » et incarné. Celui-ci rassemble l'ensemble des habitudes, des savoir-faire et des automatismes perceptifs que le corps a sédimentés avec le temps. Par exemple, frapper sur un clavier ou marcher dans la rue requiert une profonde intelligence corporelle qui s'exerce sans qu'aucune délibération consciente ne soit nécessaire. Notre relation première au monde est donc pré-réflexive. Merleau-Ponty prouve que cet arrière-fond prétendument \"inconscient\" n'est pas un refoulement pathologique, mais au contraire la condition vitale de notre présence fluide et spontanée au sein du monde.",
+        argumentPivot: "Merleau-Ponty substitue à l'inconscient psychanalytique l'idée d'un inconscient moteur et corporel, fait d'habitudes pré-réflexives qui garantissent notre ancrage spontané dans le monde sans nécessiter l'intervention de la pensée consciente."
+      }
+    ]
   }
 ];
 
@@ -711,9 +913,9 @@ export const NOTION_INTRO_DATA: Record<Notion, NotionMetadata> = {
     definition: "La conscience est la faculté de l'esprit de se représenter ses propres états mentaux, ses actes et le monde extérieur, permettant au sujet de se saisir comme une entité distincte et responsable.",
     contexte: "Traditionnellement perçue comme une lumière intérieure, la conscience définit l'humanité par sa capacité à ne pas seulement être, mais à savoir qu'elle est. Pour Descartes, elle constitue la première certitude absolue via le cogito. Cependant, la phénoménologie souligne qu'elle est toujours « conscience de quelque chose », projetée vers le monde plutôt qu'enfermée en soi. Elle n'est pas qu'une simple observation passive ; elle porte une dimension morale, agissant comme un juge qui évalue nos intentions. Mais cette transparence est remise en cause : nos sens, nos préjugés et notre inconscient peuvent biaiser cette perception, faisant de la connaissance de soi une tâche infinie et parfois illusoire."
   },
-  "L'Inconscient": {
-    definition: "L'inconscient désigne une partie du psychisme dont les contenus, bien qu'agissants sur le comportement et la pensée, échappent à la perception directe et au contrôle de la conscience claire.",
-    contexte: "Popularisée par la psychanalyse de Freud, cette notion bouleverse la souveraineté du sujet : le moi n'est plus « maître dans sa propre maison ». L'inconscient abrite des désirs refoulés, des pulsions et des traumatismes qui se manifestent de manière déguisée dans les rêves, les actes manqués ou les symptômes. Cette découverte oblige la philosophie à repenser la liberté : si nos actions sont dictées par des forces cachées, sommes-nous encore responsables ? Si certains y voient une excuse pour fuir nos devoirs, d'autres considèrent l'exploration de l'inconscient comme une étape nécessaire vers une libération véritable, permettant à l'individu de mieux comprendre les mécanismes internes qui le gouvernent malgré lui."
+  "L'inconscient": {
+    definition: "L'inconscient désigne l'ensemble des processus, pulsions et représentations psychiques qui échappent à la conscience d'un individu, mais qui influencent ou déterminent activement ses pensées, ses émotions et ses actes.",
+    contexte: "Longtemps, la philosophie classique a assimilé le psychisme à la seule conscience, postulant avec Descartes que le sujet humain était un être transparent à lui-même et pleinement maître de ses choix. Cependant, à partir du XIXe siècle, cette illusion de maîtrise vacille. Des philosophes comme Schopenhauer ou Nietzsche mettent en lumière des forces vitales et obscures qui gouvernent nos instincts. C'est ensuite Sigmund Freud qui théorisera rigoureusement l'inconscient comme un système psychique autonome, fruit du refoulement de nos désirs inavouables, infligeant ainsi à l'humanité une véritable « blessure narcissique ». Cette notion pose alors un double défi philosophique majeur : d'une part, elle limite considérablement notre capacité à nous connaître nous-mêmes, et d'autre part, elle remet en question la souveraineté de notre libre arbitre et les fondements de notre responsabilité morale, suscitant de vives critiques, notamment chez Sartre ou Alain."
   },
   "La nature": {
     definition: "La nature désigne à la fois l'ensemble du monde physique régi par des lois universelles et l'essence immuable d'un être, ce qui constitue ses propriétés innées par opposition à l'acquis.",
