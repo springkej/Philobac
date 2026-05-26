@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Search, Compass, Layers, User, Sparkles, BookOpen, ChevronRight } from 'lucide-react';
 import { subjects, NOTIONS, THESES_LIBRARY, NOTION_INTRO_DATA } from './data';
@@ -6,23 +6,23 @@ import { Subject, ExamType, Notion } from './types';
 
 // Geometric Balance Specific Badges Mapping
 const NOTION_COLORS: Record<Notion, string> = {
-  "L'art": "bg-blue-50 text-blue-600 border-blue-100",
-  "Le bonheur": "bg-emerald-50 text-emerald-600 border-emerald-100",
-  "La conscience": "bg-purple-50 text-purple-600 border-purple-100",
-  "Le devoir": "bg-orange-50 text-orange-600 border-orange-100",
-  "L'État": "bg-rose-50 text-rose-600 border-rose-100",
-  "L'inconscient": "bg-amber-50 text-amber-600 border-amber-100",
-  "La justice": "bg-indigo-50 text-indigo-600 border-indigo-100",
-  "Le langage": "bg-cyan-50 text-cyan-600 border-cyan-100",
-  "La liberté": "bg-sky-50 text-sky-600 border-sky-100",
-  "La nature": "bg-green-50 text-green-600 border-green-100",
-  "La raison": "bg-teal-50 text-teal-600 border-teal-100",
-  "La religion": "bg-violet-50 text-violet-600 border-violet-100",
-  "La science": "bg-fuchsia-50 text-fuchsia-600 border-fuchsia-100",
-  "La technique": "bg-red-50 text-red-600 border-red-100",
-  "Le temps": "bg-slate-100 text-slate-500 border-slate-200",
-  "Le travail": "bg-yellow-50 text-yellow-600 border-yellow-100",
-  "La vérité": "bg-pink-50 text-pink-600 border-pink-100",
+  "L'art": "bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 border-blue-100 dark:border-blue-900/30",
+  "Le bonheur": "bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border-emerald-100 dark:border-emerald-900/30",
+  "La conscience": "bg-purple-50 dark:bg-purple-950/40 text-purple-600 dark:text-purple-400 border-purple-100 dark:border-purple-900/30",
+  "Le devoir": "bg-orange-50 dark:bg-orange-950/40 text-orange-600 dark:text-orange-400 border-orange-100 dark:border-orange-900/30",
+  "L'État": "bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border-rose-100 dark:border-rose-900/30",
+  "L'inconscient": "bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 border-amber-100 dark:border-amber-900/30",
+  "La justice": "bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 border-indigo-100 dark:border-indigo-900/30",
+  "Le langage": "bg-cyan-50 dark:bg-cyan-950/40 text-cyan-600 dark:text-cyan-400 border-cyan-100 dark:border-cyan-900/30",
+  "La liberté": "bg-sky-50 dark:bg-sky-950/40 text-sky-600 dark:text-sky-400 border-sky-100 dark:border-sky-900/30",
+  "La nature": "bg-green-50 dark:bg-green-950/40 text-green-600 dark:text-green-400 border-green-100 dark:border-green-900/30",
+  "La raison": "bg-teal-50 dark:bg-teal-950/40 text-teal-600 dark:text-teal-400 border-teal-100 dark:border-teal-900/30",
+  "La religion": "bg-violet-50 dark:bg-violet-950/40 text-violet-600 dark:text-violet-400 border-violet-100 dark:border-violet-900/30",
+  "La science": "bg-fuchsia-50 dark:bg-fuchsia-950/40 text-fuchsia-600 dark:text-fuchsia-400 border-fuchsia-100 dark:border-fuchsia-900/30",
+  "La technique": "bg-red-50 dark:bg-red-950/40 text-red-600 dark:text-red-400 border-red-100 dark:border-red-900/30",
+  "Le temps": "bg-slate-100 dark:bg-slate-800/80 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-700/50",
+  "Le travail": "bg-yellow-50 dark:bg-yellow-950/40 text-yellow-600 dark:text-yellow-400 border-yellow-100 dark:border-yellow-900/30",
+  "La vérité": "bg-pink-50 dark:bg-pink-950/40 text-pink-600 dark:text-pink-400 border-pink-100 dark:border-pink-900/30",
 };
 
 const NOTION_THEMES: Record<Notion, {
@@ -36,170 +36,170 @@ const NOTION_THEMES: Record<Notion, {
   hoverBorder: string;
 }> = {
   "L'art": {
-    badge: "bg-blue-50 text-blue-700 border-blue-100",
+    badge: "bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 border-blue-100 dark:border-blue-900/30",
     definitionBox: "bg-blue-50/60 text-blue-950 border border-blue-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-blue-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-blue-700 italic font-bold",
     pivotBox: "bg-blue-50/45 border border-blue-100 text-blue-950",
     thesisHeaderBg: "bg-blue-50/30 border-b border-blue-100/85",
     hoverBorder: "hover:border-blue-300",
   },
   "Le bonheur": {
-    badge: "bg-emerald-50 text-emerald-700 border-emerald-100",
+    badge: "bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border-emerald-100 dark:border-emerald-900/30",
     definitionBox: "bg-emerald-50/60 text-emerald-950 border border-emerald-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-emerald-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-emerald-700 italic font-bold",
     pivotBox: "bg-emerald-50/45 border border-emerald-100 text-emerald-950",
     thesisHeaderBg: "bg-emerald-50/30 border-b border-emerald-100/85",
     hoverBorder: "hover:border-emerald-300",
   },
   "La conscience": {
-    badge: "bg-purple-50 text-purple-700 border-purple-100",
+    badge: "bg-purple-50 dark:bg-purple-950/40 text-purple-600 dark:text-purple-400 border-purple-100 dark:border-purple-900/30",
     definitionBox: "bg-purple-50/60 text-purple-950 border border-purple-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-purple-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-purple-700 italic font-bold",
     pivotBox: "bg-purple-50/45 border border-purple-100 text-purple-950",
     thesisHeaderBg: "bg-purple-50/30 border-b border-purple-100/85",
     hoverBorder: "hover:border-purple-300",
   },
   "Le devoir": {
-    badge: "bg-orange-50 text-orange-700 border-orange-100",
+    badge: "bg-orange-50 dark:bg-orange-950/40 text-orange-600 dark:text-orange-400 border-orange-100 dark:border-orange-900/30",
     definitionBox: "bg-orange-50/60 text-orange-950 border border-orange-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-orange-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-orange-700 italic font-bold",
     pivotBox: "bg-orange-50/45 border border-orange-100 text-orange-950",
     thesisHeaderBg: "bg-orange-50/30 border-b border-orange-100/85",
     hoverBorder: "hover:border-orange-300",
   },
   "L'État": {
-    badge: "bg-rose-50 text-rose-700 border-rose-100",
+    badge: "bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border-rose-100 dark:border-rose-900/30",
     definitionBox: "bg-rose-50/60 text-rose-950 border border-rose-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-rose-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-rose-700 italic font-bold",
     pivotBox: "bg-rose-50/45 border border-rose-100 text-rose-950",
     thesisHeaderBg: "bg-rose-50/30 border-b border-rose-100/85",
     hoverBorder: "hover:border-rose-300",
   },
   "L'inconscient": {
-    badge: "bg-amber-50 text-amber-700 border-amber-100",
+    badge: "bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400 border-amber-100 dark:border-amber-900/30",
     definitionBox: "bg-amber-50/60 text-amber-950 border border-amber-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-amber-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-amber-700 italic font-bold",
     pivotBox: "bg-amber-50/45 border border-amber-100 text-amber-950",
     thesisHeaderBg: "bg-amber-50/30 border-b border-amber-100/85",
     hoverBorder: "hover:border-amber-300",
   },
   "La justice": {
-    badge: "bg-indigo-50 text-indigo-700 border-indigo-100",
+    badge: "bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 border-indigo-100 dark:border-indigo-900/30",
     definitionBox: "bg-indigo-50/60 text-indigo-950 border border-indigo-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-indigo-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-indigo-700 italic font-bold",
     pivotBox: "bg-indigo-50/45 border border-indigo-100 text-indigo-950",
     thesisHeaderBg: "bg-indigo-50/30 border-b border-indigo-100/85",
     hoverBorder: "hover:border-indigo-300",
   },
   "Le langage": {
-    badge: "bg-cyan-50 text-cyan-700 border-cyan-100",
+    badge: "bg-cyan-50 dark:bg-cyan-950/40 text-cyan-600 dark:text-cyan-400 border-cyan-100 dark:border-cyan-900/30",
     definitionBox: "bg-cyan-50/60 text-cyan-950 border border-cyan-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-cyan-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-cyan-700 italic font-bold",
     pivotBox: "bg-cyan-50/45 border border-cyan-100 text-cyan-950",
     thesisHeaderBg: "bg-cyan-50/30 border-b border-cyan-100/85",
     hoverBorder: "hover:border-cyan-300",
   },
   "La liberté": {
-    badge: "bg-sky-50 text-sky-700 border-sky-100",
+    badge: "bg-sky-50 dark:bg-sky-950/40 text-sky-600 dark:text-sky-400 border-sky-100 dark:border-sky-900/30",
     definitionBox: "bg-sky-50/60 text-sky-950 border border-sky-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-sky-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-sky-700 italic font-bold",
     pivotBox: "bg-sky-50/45 border border-sky-100 text-sky-950",
     thesisHeaderBg: "bg-sky-50/30 border-b border-sky-100/85",
     hoverBorder: "hover:border-sky-300",
   },
   "La nature": {
-    badge: "bg-green-50 text-green-700 border-green-100",
+    badge: "bg-green-50 dark:bg-green-950/40 text-green-600 dark:text-green-400 border-green-100 dark:border-green-900/30",
     definitionBox: "bg-green-50/60 text-green-950 border border-green-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-green-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-green-700 italic font-bold",
     pivotBox: "bg-green-50/45 border border-green-100 text-green-950",
     thesisHeaderBg: "bg-green-50/30 border-b border-green-100/85",
     hoverBorder: "hover:border-green-300",
   },
   "La raison": {
-    badge: "bg-teal-50 text-teal-700 border-teal-100",
+    badge: "bg-teal-50 dark:bg-teal-950/40 text-teal-600 dark:text-teal-400 border-teal-100 dark:border-teal-900/30",
     definitionBox: "bg-teal-50/60 text-teal-950 border border-teal-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-teal-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-teal-700 italic font-bold",
     pivotBox: "bg-teal-50/45 border border-teal-100 text-teal-950",
     thesisHeaderBg: "bg-teal-50/30 border-b border-teal-100/85",
     hoverBorder: "hover:border-teal-300",
   },
   "La religion": {
-    badge: "bg-violet-50 text-violet-700 border-violet-100",
+    badge: "bg-violet-50 dark:bg-violet-950/40 text-violet-600 dark:text-violet-400 border-violet-100 dark:border-violet-900/30",
     definitionBox: "bg-violet-50/60 text-violet-950 border border-violet-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-violet-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-violet-700 italic font-bold",
     pivotBox: "bg-violet-50/45 border border-violet-100 text-violet-950",
     thesisHeaderBg: "bg-violet-50/30 border-b border-violet-100/85",
     hoverBorder: "hover:border-violet-300",
   },
   "La science": {
-    badge: "bg-fuchsia-50 text-fuchsia-700 border-fuchsia-100",
+    badge: "bg-fuchsia-50 dark:bg-fuchsia-950/40 text-fuchsia-600 dark:text-fuchsia-400 border-fuchsia-100 dark:border-fuchsia-900/30",
     definitionBox: "bg-fuchsia-50/60 text-fuchsia-950 border border-fuchsia-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-fuchsia-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-fuchsia-700 italic font-bold",
     pivotBox: "bg-fuchsia-50/45 border border-fuchsia-100 text-fuchsia-950",
     thesisHeaderBg: "bg-fuchsia-50/30 border-b border-fuchsia-100/85",
     hoverBorder: "hover:border-fuchsia-300",
   },
   "La technique": {
-    badge: "bg-red-50 text-red-700 border-red-100",
+    badge: "bg-red-50 dark:bg-red-950/40 text-red-600 dark:text-red-400 border-red-100 dark:border-red-900/30",
     definitionBox: "bg-red-50/60 text-red-950 border border-red-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-red-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-red-700 italic font-bold",
     pivotBox: "bg-red-50/45 border border-red-100 text-red-950",
     thesisHeaderBg: "bg-red-50/30 border-b border-red-100/85",
     hoverBorder: "hover:border-red-300",
   },
   "Le temps": {
-    badge: "bg-slate-100 text-slate-700 border-slate-200",
+    badge: "bg-slate-100 dark:bg-slate-800/80 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-700/50",
     definitionBox: "bg-slate-100/60 text-slate-950 border border-slate-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-slate-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-slate-700 italic font-bold",
     pivotBox: "bg-slate-50/45 border border-slate-100 text-slate-950",
     thesisHeaderBg: "bg-slate-100/30 border-b border-slate-200/80",
     hoverBorder: "hover:border-slate-300",
   },
   "Le travail": {
-    badge: "bg-yellow-50 text-yellow-700 border-yellow-100",
+    badge: "bg-yellow-50 dark:bg-yellow-950/40 text-yellow-600 dark:text-yellow-400 border-yellow-100 dark:border-yellow-900/30",
     definitionBox: "bg-yellow-50/60 text-yellow-950 border border-yellow-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-yellow-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-yellow-700 italic font-bold",
     pivotBox: "bg-yellow-50/45 border border-yellow-100 text-yellow-950",
     thesisHeaderBg: "bg-yellow-50/30 border-b border-yellow-100/85",
     hoverBorder: "hover:border-yellow-300",
   },
   "La vérité": {
-    badge: "bg-pink-50 text-pink-700 border-pink-100",
+    badge: "bg-pink-50 dark:bg-pink-950/40 text-pink-600 dark:text-pink-400 border-pink-100 dark:border-pink-900/30",
     definitionBox: "bg-pink-50/60 text-pink-950 border border-pink-200/80 shadow-sm backdrop-blur-sm",
     definitionText: "text-pink-900 font-sans font-medium text-[15px] tracking-tight leading-relaxed p-0.5",
-    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-705 shadow-sm",
+    contexteBox: "bg-slate-50/75 border border-slate-200/80 text-slate-700 shadow-sm",
     highlightWord: "text-pink-700 italic font-bold",
     pivotBox: "bg-pink-50/45 border border-pink-100 text-pink-950",
     thesisHeaderBg: "bg-pink-50/30 border-b border-pink-100/85",
@@ -223,6 +223,14 @@ export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
   const [selectedThesisNotion, setSelectedThesisNotion] = useState<Notion | null>(null);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [darkMode]);
 
   // Filter Logic
   const filteredSubjects = useMemo(() => {
@@ -284,15 +292,13 @@ export default function App() {
   }, [searchQuery]);
 
   return (
-    <div className={`flex flex-col lg:flex-row h-screen w-full font-sans overflow-hidden selection:bg-slate-200 transition-colors duration-200 ${
-      darkMode ? 'dark bg-slate-950 text-slate-100' : 'bg-[#F9FAFB] text-slate-805'
-    }`}>
+    <div className="flex flex-col lg:flex-row h-screen w-full font-sans overflow-hidden selection:bg-slate-200 dark:selection:bg-slate-700/60 transition-colors duration-200 bg-[#F9FAFB] dark:bg-slate-950 text-slate-800 dark:text-slate-100">
       
       {/* Sidebar - Desktop */}
       <aside className="w-full lg:w-64 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800/80 flex flex-col h-auto lg:h-full shrink-0 z-20 overflow-y-auto hidden lg:flex">
         <div className="p-6">
           <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-            <div className="w-8 h-8 bg-slate-900 dark:bg-slate-100 rounded flex items-center justify-center text-white dark:text-slate-900 text-xs font-serif">Φ</div>
+            <div className="w-8 h-8 bg-slate-900 dark:bg-slate-800 rounded flex items-center justify-center text-white dark:text-slate-200 text-xs font-serif">Φ</div>
             PhiloBac
           </h1>
         </div>
@@ -375,7 +381,7 @@ export default function App() {
               <select
                 value={selectedYear}
                 onChange={(e) => setSelectedYear(e.target.value)}
-                className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm rounded-md py-2 px-3 text-slate-600 dark:text-slate-350 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:focus:ring-slate-800 focus:border-slate-300 dark:focus:border-slate-600 transition-all font-medium appearance-none"
+                className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm rounded-md py-2 px-3 text-slate-600 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:focus:ring-slate-800 focus:border-slate-300 dark:focus:border-slate-600 transition-all font-medium appearance-none"
               >
                 <option value="all">Toutes les années</option>
                 <option value="2026">Session 2026</option>
@@ -410,12 +416,12 @@ export default function App() {
             >
               <div className="flex items-center justify-between mb-8">
                 <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-                  <div className="w-8 h-8 bg-slate-900 dark:bg-slate-100 rounded flex items-center justify-center text-white dark:text-slate-900 text-xs font-serif">Φ</div>
+                  <div className="w-8 h-8 bg-slate-900 dark:bg-slate-800 rounded flex items-center justify-center text-white dark:text-slate-200 text-xs font-serif">Φ</div>
                   PhiloBac
                 </h1>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="rounded-lg p-1.5 hover:bg-slate-100 dark:hover:bg-slate-850 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:text-white text-sm font-bold"
+                  className="rounded-lg p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:text-white text-sm font-bold"
                 >
                   ✕
                 </button>
@@ -481,7 +487,7 @@ export default function App() {
                           onClick={() => toggleNotion(notion)}
                           className={`px-2.5 py-1 text-[11px] font-bold rounded border transition-all ${
                             isSelected 
-                              ? 'border-slate-900 dark:border-slate-100 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-990' 
+                              ? 'border-slate-900 dark:border-slate-100 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900' 
                               : 'bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800/50'
                           }`}
                         >
@@ -512,7 +518,7 @@ export default function App() {
 
                 {/* Mobile Dark Mode Toggle */}
                 <div className="pt-6 border-t border-slate-100 dark:border-slate-800">
-                  <p className="text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-550 font-bold mb-3">Affichage</p>
+                  <p className="text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-bold mb-3">Affichage</p>
                   <button
                     onClick={() => setDarkMode(!darkMode)}
                     className="w-full flex items-center justify-between px-3 py-2.5 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-md text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors"
@@ -533,13 +539,13 @@ export default function App() {
 
       {/* Main Content Area */}
       <main className="flex-1 flex flex-col h-full lg:overflow-hidden relative">
-
+        
         {/* Mobile Header (replaces sidebar top on mobile) */}
         <header className="lg:hidden h-16 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-3 shrink-0 sticky top-0 z-30">
           <div className="flex items-center gap-2 shrink-0">
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className="px-2.5 py-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold flex items-center gap-1 text-sm border border-slate-200 dark:border-slate-800"
+              className="p-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold flex items-center gap-1 text-sm border border-slate-200 dark:border-slate-800"
             >
               ☰ <span className="hidden sm:inline text-[10px] uppercase tracking-wide font-sans">Filtres</span>
             </button>
@@ -570,7 +576,7 @@ export default function App() {
           <div className="flex items-center gap-3">
              <button
                onClick={() => setDarkMode(!darkMode)}
-               className="px-4 py-2 bg-slate-900 hover:bg-slate-805 dark:bg-slate-800 dark:hover:bg-slate-700 text-white dark:text-slate-100 text-xs font-bold rounded-lg transition-colors border border-transparent dark:border-slate-700 flex items-center gap-2"
+               className="px-4 py-2 bg-slate-900 hover:bg-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 text-white dark:text-slate-100 text-xs font-bold rounded-lg transition-colors border border-transparent dark:border-slate-700 flex items-center gap-2"
              >
                {darkMode ? '☀️ Mode clair' : '🌙 Mode nuit'}
              </button>
@@ -592,7 +598,7 @@ export default function App() {
           {selectedYear !== 'all' && (
             <button 
               onClick={() => setSelectedYear('all')}
-              className="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-lg text-xs font-semibold flex items-center gap-1 hover:bg-slate-205 dark:hover:bg-slate-700"
+              className="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-lg text-xs font-semibold flex items-center gap-1 hover:bg-slate-200 dark:hover:bg-slate-700"
             >
               Ans: {selectedYear} ✕
             </button>
@@ -600,7 +606,7 @@ export default function App() {
           {selectedNotions.size > 0 && (
             <button 
               onClick={() => setSelectedNotions(new Set())}
-              className="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-lg text-xs font-semibold flex items-center gap-1 hover:bg-slate-205 dark:hover:bg-slate-700"
+              className="px-2.5 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-lg text-xs font-semibold flex items-center gap-1 hover:bg-slate-200 dark:hover:bg-slate-700"
             >
               Notions ({selectedNotions.size}) ✕
             </button>
@@ -633,7 +639,7 @@ export default function App() {
                         <button
                           key={notion}
                           onClick={() => setSelectedThesisNotion(notion)}
-                          className={`flex flex-col text-left p-4 rounded-xl border ${hasData ? 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:shadow-sm' : 'border-slate-100 dark:border-slate-850 bg-slate-50/50 dark:bg-slate-900/30 opacity-60 hover:opacity-100'} ${
+                          className={`flex flex-col text-left p-4 rounded-xl border ${hasData ? 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:shadow-sm' : 'border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/30 opacity-60 hover:opacity-100'} ${
                             hasData && theme ? theme.hoverBorder : ''
                           } transition-all`}
                         >
@@ -665,12 +671,12 @@ export default function App() {
                     return (
                       <div className="space-y-6">
                         <h1 className="text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-3">
-                          <span className={`w-3.5 h-3.5 rounded-full inline-block ${theme?.badge.split(' ')[0]}`} />
+                          <span className={`w-3.5 h-3.5 rounded-full inline-block ${theme?.badge.split(' ').filter(c => c.startsWith('bg-') || c.startsWith('dark:bg-')).join(' ')}`} />
                           {selectedThesisNotion}
                         </h1>
 
                         <div className={`p-5 rounded-xl ${theme?.definitionBox} dark:bg-slate-900/40 dark:border-slate-800 dark:text-slate-200`}>
-                          <p className="text-[10px] uppercase tracking-widest text-slate-550 dark:text-slate-400 font-bold mb-2">Définition</p>
+                          <p className="text-[10px] uppercase tracking-widest text-slate-500 dark:text-slate-400 font-bold mb-2">Définition</p>
                           <blockquote className={`${theme?.definitionText} dark:text-slate-100`}>
                             « {metadata?.definition} »
                           </blockquote>
@@ -741,8 +747,8 @@ export default function App() {
                                   })}
                                 </p>
                               </div>
-                              <div className={`rounded-lg p-4 ${theme?.pivotBox} dark:bg-slate-950/40 dark:border-slate-800 dark:text-slate-250`}>
-                                <p className="text-[10px] uppercase tracking-widest text-slate-550 dark:text-slate-400 font-bold mb-2">L'Argument Pivot</p>
+                              <div className={`rounded-lg p-4 ${theme?.pivotBox} dark:bg-slate-950/40 dark:border-slate-800 dark:text-slate-200`}>
+                                <p className="text-[10px] uppercase tracking-widest text-slate-500 dark:text-slate-400 font-bold mb-2">L'Argument Pivot</p>
                                 <p className="text-sm font-bold leading-snug">
                                   {angle.argumentPivot}
                                 </p>
@@ -966,7 +972,7 @@ function SubjectCard({ subject, onViewPistes }: SubjectCardProps) {
       <div className="flex flex-col gap-4 mt-auto border-t border-slate-50 dark:border-slate-800/80 pt-4">
         <div className="flex flex-wrap gap-1.5">
           {subject.notions.map((n) => (
-            <span key={n} className={`px-2 py-0.5 text-[10px] font-bold rounded border ${NOTION_COLORS[n] || 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-705'}`}>
+            <span key={n} className={`px-2 py-0.5 text-[10px] font-bold rounded border ${NOTION_COLORS[n] || 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-700'}`}>
               {n}
             </span>
           ))}
@@ -975,7 +981,7 @@ function SubjectCard({ subject, onViewPistes }: SubjectCardProps) {
         {hasPistes && (
           <button
             onClick={() => onViewPistes(subject)}
-            className="w-full py-2 bg-slate-50 dark:bg-slate-800/60 text-slate-600 dark:text-slate-300 text-xs font-bold rounded border border-slate-105 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center gap-1.5"
+            className="w-full py-2 bg-slate-50 dark:bg-slate-800/60 text-slate-600 dark:text-slate-300 text-xs font-bold rounded border border-slate-100 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center gap-1.5"
           >
             Voir les pistes ↗
           </button>
