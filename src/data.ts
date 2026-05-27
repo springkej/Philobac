@@ -682,6 +682,18 @@ export const THESES_LIBRARY: ThesisNotion[] = [
         developpement: "La pensée grecque antique distingue deux manières d'appréhender le temps : Chronos et Kairos. Chronos représente le temps physique, linéaire, mesurable et quantitatif. C'est le temps de l'horloge, qui s'écoule de manière uniforme et inexorable, menant les êtres vivants vers le vieillissement et la mort. À l'opposé, Kairos désigne le temps qualitatif, l'instant opportun, la fenêtre d'action unique qu'il faut savoir saisir au bon moment. Alors que Chronos se subit ou se compte, Kairos se ressent et exige une attention de chaque instant. Pour Aristote, notamment dans sa réflexion sur l'action éthique, la sagesse pratique consiste à discerner ce moment charnière où l'action humaine peut infléchir le cours des choses. Maîtriser le temps ne consiste pas à ralentir Chronos, mais à décider selon le Kairos.",
         argumentPivot: "La pensée grecque montre que la maîtrise du temps ne consiste pas à mesurer la quantité des heures (Chronos), mais à cultiver l'attention pour saisir l'occasion propice à l'action juste (Kairos)."
       },
+      {
+        these: "La contemplation des choses sous l'aspect de l'éternité : sub specie aeternitatis",
+        reference: "Baruch Spinoza, Éthique",
+        developpement: "Dans l'Éthique, Spinoza explique que l'esprit humain peut s'élever au-dessus de la perception ordinaire du temps, qui reste partielle et passive. Généralement, nous percevons les choses dans la durée, soumises au changement, à l'incertitude et à la finitude. Cependant, par la raison, la conscience est capable de concevoir les choses et soi-même « sous l'aspect de l'éternité » (*sub specie aeternitatis*). Cela ne signifie pas vivre indéfiniment dans le futur, mais comprendre que chaque être s'inscrit de manière nécessaire dans l'ordre immuable de la Nature. En contemplant le monde de ce point de vue intemporel, l'homme se libère des passions tristes, comme la crainte de la mort ou les regrets du passé, accédant ainsi à une joie intellectuelle sereine et impérissable.",
+        argumentPivot: "Spinoza démontre que la raison permet d'échapper aux tourments de la durée en contemplant la nécessité éternelle de la nature, une perspective qui libère l'esprit de l'angoisse temporelle."
+      },
+      {
+        these: "Le devenir perpétuel et le flux universel : « On ne se baigne jamais deux fois dans le même fleuve »",
+        reference: "Héraclite, Fragments",
+        developpement: "Héraclite est le philosophe de la mobilité universelle et du changement perpétuel. Sa célèbre formule, « on ne se baigne jamais deux fois dans le même fleuve », illustre l'idée que rien dans le monde sensible ne demeure jamais identique à soi-même. Tout est dans un état de flux constant (le *panta rhei*). Lorsque nous retournons au fleuve, de nouvelles eaux ont déjà coulé, et nous-mêmes avons également changé. Le temps n'est pas une simple succession d'instants figés, mais un mouvement continu et dynamique où la stabilité n'est qu'une illusion superficielle. Pour Héraclite, le devenir est la loi suprême de la réalité. L'existence s'inscrit dans cette tension permanente où le changement permanent définit la nature même des choses.",
+        argumentPivot: "Héraclite montre que la réalité est un devenir perpétuel où rien ne reste identique, faisant du temps un flux continu qui exclut toute permanence absolue."
+      }
     ]
   },
   {
