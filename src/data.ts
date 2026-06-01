@@ -102,7 +102,7 @@ export const THESES_LIBRARY: ThesisNotion[] = [
       },
       {
         these: "La primauté de la pensée conceptuelle sur le bricolage aveugle",
-        reference: "Alain (Émile Chartier), Propos",
+        reference: "Alain, Propos",
         developpement: "Le philosophe Alain met en garde contre une pratique de la technique qui serait purement empirique ou hasardeuse. Dans nos sociétés, face à la complexité des appareils, nous avons tendance à manipuler des boutons par tâtonnement, sans comprendre la mécanique interne de la machine. Pour Alain, ce simple « bricolage » est le degré zéro de la technique et un affront à notre nature rationnelle. Une véritable action technique n'existe que lorsqu'elle est précédée et guidée par une idée claire, un principe physique ou géométrique. Sans savoir théorique préalable, la pratique aveugle finit toujours par échouer ou provoquer des accidents. Penser l'objet avant de le manipuler garantit que la technique demeure une science rigoureuse.",
         argumentPivot: "Alain insiste sur le fait qu'il n'y a pas de véritable maîtrise technique sans pensée préalable : agir par simple tâtonnement sans théorie expose inévitablement à l'échec."
       },
@@ -191,7 +191,7 @@ export const THESES_LIBRARY: ThesisNotion[] = [
       },
       {
         these: "La dialectique libératrice : le travail comme moyen d'émancipation",
-        reference: "G.W.F. Hegel, Phénoménologie de l'Esprit",
+        reference: "Friedrich Hegel, Phénoménologie de l'Esprit",
         developpement: "Dans sa célèbre dialectique du maître et de l'esclave, Hegel démontre que le travail joue un rôle essentiel dans la formation de la conscience. Initialement, l'esclave est contraint de travailler pour satisfaire son maître. Cependant, en transformant concrètement la nature par son activité, il façonne la matière et y imprime sa volonté. Par cet effort, l'esclave découvre sa propre puissance créatrice et développe une autonomie intérieure inattendue. Le maître, à l'inverse, s'enferme dans une dépendance totale vis-à-vis du travail de l'esclave et reste passif dans la jouissance immédiate des biens produits. Hegel conclut ainsi de manière paradoxale que le travail, bien qu'il naisse d'une violente contrainte, devient le véritable moteur de l'émancipation intellectuelle et de la conquête historique de la liberté pour l'être humain.",
         argumentPivot: "Hegel illustre par la figure de l'esclave que le travail, en transformant la nature, permet à l'homme de prendre conscience de sa puissance créatrice et de s'émanciper."
       },
@@ -393,7 +393,7 @@ export const THESES_LIBRARY: ThesisNotion[] = [
       },
       {
         these: "L'art comme manifestation sensible de l'Esprit supérieur à la nature",
-        reference: "G.W.F. Hegel, Cours d'esthétique",
+        reference: "Friedrich Hegel, Cours d'esthétique",
         developpement: "Dans ses Cours d'esthétique, Hegel conteste l'idée largement répandue selon laquelle l'art devrait imiter la beauté naturelle. Pour lui, l'art est fondamentalement supérieur à la nature. Pourquoi ? Parce que la nature est inconsciente et muette, tandis que l'œuvre d'art est le produit de l'esprit humain, de sa conscience et de sa liberté. Une mauvaise peinture qui exprime une émotion ou une idée humaine a plus de valeur spirituelle que le plus beau des paysages naturels. L'art a donc pour fonction de rendre sensible l'Idée, d'extérioriser la richesse intérieure de l'humanité. En transformant la matière, l'artiste spiritualise le monde physique et permet à l'esprit humain de se contempler lui-même dans ce qu'il a librement créé.",
         argumentPivot: "L'art surpasse la nature car il n'en est pas la simple copie aveugle, mais l'expression consciente de l'esprit humain qui donne une forme sensible à ses idées."
       },
@@ -441,7 +441,7 @@ export const THESES_LIBRARY: ThesisNotion[] = [
       },
       {
         these: "L'art comme manifestation sensible de l'Esprit",
-        reference: "G.W.F. Hegel, Cours d'esthétique",
+        reference: "Friedrich Hegel, Cours d'esthétique",
         developpement: "Hegel rejette l'idée que l'art doit simplement imiter la nature, qualifiant cette imitation de pure caricature technique. Dans ses Cours d'esthétique, il soutient que la beauté artistique est bien supérieure à la beauté naturelle, car elle est produite par l'Esprit humain. L'art a pour mission essentielle de rendre l'Idée, ou la vérité spirituelle, accessible à la perception sensorielle. À travers la matière physique, l'œuvre d'art extériorise la conscience humaine et matérialise son évolution historique. Toutefois, Hegel introduit également la thèse controversée de la « fin de l'art ». Selon lui, dans les sociétés modernes axées sur la réflexion conceptuelle, l'art cesse d'être le mode suprême de manifestation de la vérité absolue, cédant progressivement cette fonction de révélation à la religion et à la philosophie.",
         argumentPivot: "Hegel montre que l'art n'est pas un jeu formel mais une expression spirituelle historique, matérialisant la vérité de la conscience humaine sous une forme concrète."
       },
@@ -512,7 +512,7 @@ export const THESES_LIBRARY: ThesisNotion[] = [
       },
       {
         these: "L'illusion de l'ineffable : le langage comme accomplissement de la pensée",
-        reference: "G.W.F. Hegel, Encyclopédie des sciences philosophiques",
+        reference: "Friedrich Hegel, Encyclopédie des sciences philosophiques",
         developpement: "Contrairement à ceux qui croient que le langage appauvrit nos idées, Hegel soutient que vouloir penser sans les mots est une entreprise insensée. Il s'attaque directement au mythe de l'ineffable, cette illusion selon laquelle nous posséderions des pensées ou des émotions trop sublimes pour être exprimées. Pour Hegel, si nous ne trouvons pas les mots, ce n'est pas parce que le langage est limité, mais parce que notre pensée est encore obscure et inachevée. L'indicible n'est que de la confusion intellectuelle. C'est uniquement en se formulant à travers le langage que la pensée s'objective, gagne en clarté et accède à la conscience d'elle-même. Loin d'être la prison ou le tombeau de l'idée, le mot est ce qui lui donne sa véritable existence rationnelle.",
         argumentPivot: "Hegel détruit le mythe de l'ineffable en affirmant que la pensée n'existe véritablement et clairement qu'à partir du moment où elle s'incarne dans des mots."
       },
@@ -845,7 +845,7 @@ export const THESES_LIBRARY: ThesisNotion[] = [
       },
       {
         these: "La conscience de soi comme construction historique et sociale par la reconnaissance",
-        reference: "G.W.F. Hegel, Phénoménologie de l'esprit",
+        reference: "Friedrich Hegel, Phénoménologie de l'esprit",
         developpement: "Dans la Phénoménologie de l'esprit, Hegel démontre que la conscience de soi n'est pas une donnée immédiate et solitaire. Pour prendre véritablement conscience d'elle-même, une conscience a impérativement besoin d'être reconnue par une autre conscience. C'est l'enjeu de la célèbre dialectique du maître et de l'esclave. La rencontre originelle entre deux sujets prend la forme d'une lutte. L'un préfère la liberté à la vie et devient le maître ; l'autre cède par peur et devient l'esclave. Pourtant, c'est l'esclave qui atteindra une conscience de soi supérieure : en travaillant et en transformant la matière pour autrui, il objective son esprit, découvre sa puissance créatrice et s'émancipe concrètement. La conscience véritable se forge donc dans l'action, le travail et la confrontation à l'altérité.",
         argumentPivot: "La conscience de soi ne s'obtient pas par l'introspection solitaire, mais exige la reconnaissance d'autrui et s'accomplit concrètement à travers le travail transformateur du monde."
       },
@@ -976,7 +976,7 @@ export const THESES_LIBRARY: ThesisNotion[] = [
       },
       {
         these: "L'inconscient comme erreur morale et fatalisme commode",
-        reference: "Alain (Émile Chartier), Éléments de philosophie",
+        reference: "Alain, Éléments de philosophie",
         developpement: "Dans ses Éléments de philosophie, Alain adresse une critique virulente à la psychanalyse, dénonçant l'inconscient comme une grave erreur d'ordre moral. Pour lui, la pensée est inséparable de la conscience : « il n'y a point de pensées en nous sinon par l'unique sujet, Je ». Postuler un inconscient revient à imaginer un Autre en nous-mêmes, un « mauvais ange » ou un conseiller diabolique qui agirait à notre place. Alain assimile cette idée à une idolâtrie du corps et à une mythologie pernicieuse. S'en remettre à l'inconscient, c'est abandonner sa dignité d'être humain doué de raison. Invoquer cette obscurité psychique n'est qu'une excuse facile pour justifier nos pulsions et nos fautes, ce qui ruine instantanément l'idée même de volonté, de jugement et de responsabilité éthique.",
         argumentPivot: "Alain dénonce l'inconscient comme une mythologie dangereuse et un fatalisme complaisant qui ruine l'idée de volonté en inventant un « autre Moi » abstrait pour excuser nos fautes."
       },
