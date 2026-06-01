@@ -17,7 +17,7 @@ export type Notion =
   | "Le travail"
   | "La vérité";
 
-export type ExamType = "Annale" | "Potentiel" | "Theses";
+export type ExamType = "Annale" | "Potentiel" | "Theses" | "Auteurs";
 
 export interface ThesisAngle {
   these: string;

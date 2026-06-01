@@ -713,10 +713,10 @@ export const THESES_LIBRARY: ThesisNotion[] = [
         argumentPivot: "Augustin intériorise le temps en prouvant qu'il n'existe que par les facultés de la conscience humaine : la mémoire, l'attention et l'attente."
       },
       {
-        these: "Le rejet du temps spatialisé au profit de la durée créatrice",
+        these: "Le rejet du temps spatialisé au profit de la durée pure",
         reference: "Henri Bergson, Essai sur les données immédiates de la conscience",
-        developpement: "Henri Bergson reproche à la science d'avoir transformé le temps en une ligne mathématique et homogène, découpée en secondes toutes identiques. Ce « temps spatialisé » est utile pour la vie sociale et la technique, mais il dénature notre véritable rapport à l'existence. À ce temps artificiel, Bergson oppose la « durée », qui est le temps psychologique tel que nous le vivons de l'intérieur. La durée est un flux continu et indivisible où chaque instant s'enrichit du passé, à la manière d'une mélodie ininterrompue. Dans la durée, une heure peut sembler éternelle si l'on s'ennuie, ou fulgurante si l'on est joyeux. C'est seulement en coïncidant avec cette durée intérieure que l'être humain peut retrouver son authenticité profonde et exercer sa véritable liberté fondamentale.",
-        argumentPivot: "Bergson démontre que le temps mécanique et mesurable nous aliène, tandis que la « durée » correspond à notre temps subjectif, continu et qualitatif, véritable lieu de notre liberté."
+        developpement: "Henri Bergson montre que notre intelligence pratique, le langage et la science dénaturent le temps en le projetant sur l'espace. Ils en font un milieu abstrait et homogène, découpé en instants tous identiques et juxtaposés. Ce « temps spatialisé » (le temps des horloges) est indispensable pour la vie sociale, la technique et l'action, mais il masque notre véritable réalité intérieure. À ce temps artificiel et quantitatif, Bergson oppose la « durée pure ». Celle-ci est la trame même de notre conscience : un flux continu, hétérogène et indivisible. Dans la durée, nos états d'âme ne se succèdent pas séparément comme des perles sur un collier ; ils s'interpénètrent et se fondent les uns dans les autres, à la manière d'une mélodie où chaque note s'enrichit du souvenir des précédentes et colore celles qui suivent. L'être humain vit souvent à la surface de lui-même, aliéné par le temps spatialisé (c'est le « moi superficiel »). Ce n'est qu'en redescendant en lui-même pour coïncider avec sa propre durée (le « moi profond ») qu'il peut accomplir un acte authentiquement libre, émanant de sa personnalité tout entière.",
+        argumentPivot: "Il ne faut pas confondre le temps vécu (la durée, qualitative et continue) avec le temps mesurable (le temps spatialisé, quantitatif et homogène). Seul l'effort d'intuition qui nous arrache au second pour renouer avec la durée permet à l'être humain de retrouver son authenticité et sa liberté."
       },
       {
         these: "Le temps comme condition préalable de notre perception du monde",
@@ -781,7 +781,7 @@ export const THESES_LIBRARY: ThesisNotion[] = [
       {
         these: "Le temps comme tyrannie du désir inachevé",
         reference: "Arthur Schopenhauer, Le Monde comme Volonté et comme Représentation",
-        developpement: "Pour Schopenhauer, la réalité profonde et secrète de l'univers est une force aveugle, irrationnelle et perpétuelle qu'il appelle la « Volonté ». Le temps n'est rien d'autre que la forme sous laquelle cette Volonté s'exprime cruellement en nous, à travers une chaîne de désirs infinis. L'homme est condamné à vouloir constamment dans la temporalité. À peine un désir est-il satisfait qu'un autre prend sa place, dans une succession sans aucune fin. Le temps est donc le moteur silencieux d'une insatisfaction chronique et de la souffrance. Il nous précipite dans une course frénétique où le présent s'évapore instantanément pour devenir un passé mort. Seule la contemplation esthétique ou l'ascèse morale permettent de s'extraire momentanément de cette tyrannie destructrice du flux temporel.",
+        developpement: "Pour Schopenhauer, la réalité profonde et secrète de l'univers est une force aveugle, irrationnelle et perpétuelle qu'il appelle la « Volonté ». Le temps n'est rien d'autre que la forme sous laquelle cette Volonté s'exprime cruellement en nous, à travers une chaîne de désirs infinis. L'homme est condamné à vouloir constamment dans la temporalité. À peine un désir est-il satisfait qu'un autre prend sa place, dans une succession sans aucune fin. Le temps est donc le moteur silencieux d'une insatisfaction chronique et de la souffrance. Il nous précipite dans une course frénétique où le présent s'évapore instantanément pour devenir un passé mort. Dans ces conditions, la quête du bonheur est vaine, seule la contemplation esthétique ou l'ascèse morale permettent de s'extraire momentanément de cette tyrannie destructrice du flux temporel.",
         argumentPivot: "Schopenhauer perçoit le temps comme l'expression tragique de la Volonté aveugle, un flux inépuisable qui nous condamne à souffrir en nous enfermant dans la succession des désirs perpétuels."
       },
       {
@@ -1015,6 +1015,179 @@ export const THESES_LIBRARY: ThesisNotion[] = [
         reference: "Maurice Merleau-Ponty, Phénoménologie de la perception",
         developpement: "Dans la Phénoménologie de la perception, Maurice Merleau-Ponty repense l'inconscient pour le détacher de la psychanalyse et l'ancrer intimement dans le corps. Refusant l'idée d'un théâtre mental caché abritant des pulsions, il préfère théoriser un « inconscient moteur » et incarné. Celui-ci rassemble l'ensemble des habitudes, des savoir-faire et des automatismes perceptifs que le corps a sédimentés avec le temps. Par exemple, frapper sur un clavier ou marcher dans la rue requiert une profonde intelligence corporelle qui s'exerce sans qu'aucune délibération consciente ne soit nécessaire. Notre relation première au monde est donc pré-réflexive. Merleau-Ponty prouve que cet arrière-fond prétendument \"inconscient\" n'est pas un refoulement pathologique, mais au contraire la condition vitale de notre présence fluide et spontanée au sein du monde.",
         argumentPivot: "Merleau-Ponty substitue à l'inconscient psychanalytique l'idée d'un inconscient moteur et corporel, fait d'habitudes pré-réflexives qui garantissent notre ancrage spontané dans le monde sans nécessiter l'intervention de la pensée consciente."
+      }
+    ]
+  },
+  {
+    notion: "Le bonheur",
+    angles: [
+      {
+        these: "Le bonheur comme Souverain Bien et fin ultime de l'existence",
+        reference: "Aristote, Éthique à Nicomaque",
+        developpement: "Pour Aristote, toutes les actions humaines visent un but, mais le bonheur est la seule fin recherchée pour elle-même : c'est le « Souverain Bien ». Il ne s'agit pas d'un état passif ni d'une simple accumulation de plaisirs éphémères, mais d'une activité continue. L'homme étant un animal doué de raison, son bonheur véritable consiste à accomplir sa nature propre en exerçant sa rationalité à travers la vertu. La vertu aristotélicienne est la pratique du « juste milieu » entre deux extrêmes vicieux, comme le courage qui se situe entre la lâcheté et la témérité. Ainsi, le bonheur (eudaimonia) s'atteint par une vie active, éthique et intellectuelle, au sein d'une cité harmonieuse, où l'individu réalise pleinement son potentiel rationnel et moral.",
+        argumentPivot: "Aristote définit le bonheur comme une activité de l'âme conforme à la vertu, où l'homme accomplit sa nature rationnelle et sociale en trouvant le juste milieu."
+      },
+      {
+        these: "Le bonheur n'est pas la satisfaction illimitée des désirs",
+        reference: "Platon, Gorgias",
+        developpement: "Dans le Gorgias, Platon oppose Socrate au sophiste Calliclès, qui soutient que le bonheur réside dans la multiplication et la satisfaction illimitée des désirs. Socrate réfute cette vision hédoniste en utilisant la métaphore tragique des « tonneaux percés ». Si l'homme passe sa vie à nourrir de nouveaux désirs sans jamais pouvoir les combler définitivement, il ressemble à un individu condamné à remplir un tonneau troué. Cette quête effrénée n'est pas le bonheur, mais une forme d'esclavage et de souffrance continue. Platon démontre ainsi qu'une vie déréglée, soumise à la tyrannie des passions, est épuisante. Le véritable bonheur nécessite au contraire la tempérance, c'est-à-dire la capacité de la raison à maîtriser et ordonner nos désirs pour atteindre une paix intérieure durable et stable.",
+        argumentPivot: "Platon utilise l'image du tonneau percé pour prouver que la recherche illimitée des plaisirs condamne l'homme à l'insatisfaction chronique et l'empêche d'atteindre le bonheur."
+      },
+      {
+        these: "Le bonheur comme absence de souffrance et de trouble par la modération",
+        reference: "Épicure, Lettre à Ménécée",
+        developpement: "Épicure propose une philosophie hédoniste où le bonheur consiste en la recherche du plaisir, mais un plaisir compris négativement comme l'aponie (l'absence de douleur corporelle) et l'ataraxie (l'absence de trouble de l'âme). Pour atteindre cette paix inébranlable, il ne faut pas céder à la démesure. Épicure élabore un calcul rationnel consistant à classer nos désirs. Nous devons satisfaire uniquement les désirs « naturels et nécessaires » (comme boire de l'eau pour étancher sa soif). Les désirs « naturels mais non nécessaires » (la gastronomie) doivent être limités, tandis que les désirs « vains » et artificiels (la gloire, la richesse démesurée, l'immortalité) doivent être totalement rejetés, car ils engendrent frustration et angoisse. Le bonheur réside donc dans un mode de vie frugal, rationnel et apaisé.",
+        argumentPivot: "Épicure montre que le véritable bonheur s'atteint par une discipline rationnelle des désirs, en se limitant au strict nécessaire pour atteindre l'ataraxie."
+      },
+      {
+        these: "Le bonheur comme un idéal flou de l'imagination",
+        reference: "Emmanuel Kant, Fondements de la métaphysique des mœurs",
+        developpement: "Pour Kant, le bonheur est un concept fondamentalement indéterminé. Bien que chaque être humain désire naturellement être heureux, personne n'est capable de définir avec certitude absolue ce qui le rendra réellement et durablement heureux. S'agit-il de la richesse, de la santé, du savoir ? Chacun de ces biens peut engendrer de nouveaux malheurs selon les circonstances. Par conséquent, Kant affirme que le bonheur n'est pas un idéal de la raison, mais un « idéal de l'imagination », reposant sur des éléments empiriques et incertains. C'est pourquoi la morale kantienne ne doit pas chercher à nous rendre heureux, mais à nous dicter notre devoir inconditionnel. Agir moralement ne garantit pas la félicité, mais c'est l'unique moyen de nous rendre dignes d'être heureux.",
+        argumentPivot: "Kant démontre que la raison ne peut fournir de recette certaine du bonheur, ce dernier étant un idéal subjectif et incertain de l'imagination."
+      },
+      {
+        these: "L'impossibilité d'un bonheur durable face au caractère insatiable du désir",
+        reference: "Arthur Schopenhauer, Le Monde comme Volonté et comme Représentation",
+        developpement: "Schopenhauer développe une vision profondément pessimiste de l'existence humaine en affirmant que le bonheur positif et durable est une illusion. L'homme est animé par le « Vouloir-vivre », une force aveugle qui le pousse à désirer perpétuellement. Or, désirer, c'est manquer, et le manque est souffrance. Lorsqu'un désir est enfin satisfait, le plaisir ressenti n'est que temporaire et négatif : c'est une simple cessation momentanée de la douleur. Très rapidement, ce soulagement laisse place à l'ennui, jusqu'à ce qu'un nouveau désir émerge. La vie humaine oscille donc tragiquement, comme un pendule, entre la souffrance et l'ennui. Dans ces conditions, seule l'extinction du désir par la contemplation esthétique ou l'ascèse morale permet une suspension temporaire de cette misère existentielle.",
+        argumentPivot: "Schopenhauer affirme que le bonheur durable est impossible, car le désir nous condamne à osciller indéfiniment/tragiquement entre la souffrance du manque et l'ennui de la satiété."
+      },
+      {
+        these: "Le bonheur par la maîtrise de nos jugements",
+        reference: "Épictète, Manuel",
+        developpement: "Le stoïcisme enseigne que le bonheur s'atteint par une distinction rationnelle rigoureuse entre « ce qui dépend de nous » (nos opinions, nos désirs, nos jugements) et « ce qui ne dépend pas de nous » (notre corps, la richesse, la maladie, l'opinion d'autrui). Épictète explique que le malheur ne provient pas des événements extérieurs, mais de la représentation que nous nous en faisons et de notre obstination à vouloir contrôler l'incontrôlable. En alignant notre volonté sur l'ordre rationnel et nécessaire de la nature, et en désirant que les choses arrivent telles qu'elles arrivent, nous devenons invulnérables. Le bonheur stoïcien réside dans cette liberté intérieure et cette vertu inébranlable. L'homme sage accepte sereinement son destin, se prémunissant ainsi contre la frustration et la déception.",
+        argumentPivot: "Épictète pose que le bonheur réside dans la maîtrise exclusive de notre intériorité et l'acceptation rationnelle du destin."
+      },
+      {
+        these: "Le bonheur comme augmentation de la puissance d'agir",
+        reference: "Baruch Spinoza, Éthique",
+        developpement: "Pour Spinoza, le bonheur n'est pas un état de repos passif, mais la « joie », définie comme le passage à une perfection supérieure et l'augmentation de notre puissance d'agir (le conatus). Les hommes sont souvent malheureux parce qu'ils subissent des passions tristes (la peur, la haine, la jalousie) causées par une perception inadéquate et confuse des lois de la nature. Cependant, en utilisant notre raison pour comprendre les causes qui nous déterminent, nous cessons d'être esclaves de nos affects. Cette connaissance adéquate transforme notre tristesse subie en une joie active. Le bonheur absolu, que Spinoza nomme « béatitude », s'atteint par l'amour intellectuel de Dieu ou de la Nature. C'est la satisfaction suprême d'une âme libérée par la compréhension rationnelle de l'univers.",
+        argumentPivot: "Spinoza démontre que le bonheur naît de la joie active, obtenue lorsque la raison remplace les passions tristes par la connaissance adéquate de la réalité."
+      },
+      {
+        these: "L'utilitarisme : le bonheur défini comme la maximisation du plaisir collectif",
+        reference: "John Stuart Mill, L'Utilitarisme",
+        developpement: "Mill développe une doctrine morale où la valeur d'une action se juge à sa capacité à produire le plus grand bonheur pour le plus grand nombre. Il définit le bonheur comme la présence de plaisir et l'absence de douleur. Cependant, contrairement à un hédonisme vulgaire, Mill introduit une hiérarchie qualitative des plaisirs. Les plaisirs intellectuels, moraux et esthétiques sont infiniment supérieurs aux simples plaisirs physiques. C'est pourquoi il affirme qu'« il vaut mieux être un Socrate insatisfait qu'un imbécile satisfait ». La recherche du bonheur ne doit pas être égoïste, mais solidaire et altruiste. Le bien-être de l'individu est intrinsèquement lié à l'amélioration de la société tout entière. Ainsi, l'accomplissement moral et intellectuel est la voie la plus noble vers le bonheur collectif.",
+        argumentPivot: "Mill fonde la morale sur la maximisation du bonheur collectif tout en plaçant l'épanouissement intellectuel au-dessus des satisfactions physiques."
+      },
+      {
+        these: "Le bonheur par le bon usage du libre arbitre et la satisfaction de la conscience",
+        reference: "René Descartes, Discours de la méthode",
+        developpement: "Descartes propose de « tâcher toujours plutôt à se vaincre que la fortune, et à changer ses désirs que l'ordre du monde ». Pour le philosophe, le véritable bonheur, qu'il nomme le contentement de l'âme, ne dépend pas des richesses extérieures ou de la chance, qui sont instables. Il repose entièrement sur le bon usage de notre libre arbitre. La joie la plus douce et la plus durable provient de la certitude d'avoir agi selon notre meilleure raison, sans se laisser dicter sa conduite par les passions aveugles. C'est l'exercice de la vertu et la fermeté de nos résolutions qui forgent une « grande âme », seule capable d'offrir une tranquillité intérieure inaltérable face aux aléas de l'existence terrestre.",
+        argumentPivot: "Descartes ancre le bonheur dans le contentement intérieur, fruit d'une volonté ferme agissant selon la raison plutôt que de s'obstiner à changer le monde extérieur."
+      },
+      {
+        these: "L'illusion du bonheur terrestre et la fuite angoissée dans le divertissement",
+        reference: "Blaise Pascal, Pensées",
+        developpement: "Pascal constate que l'homme est fondamentalement incapable de demeurer au repos seul avec lui-même, car l'inaction le confronte à son vide existentiel, à sa misère et à l'approche inéluctable de la mort. Pour fuir cette angoisse, l'homme s'étourdit dans ce que Pascal nomme le « divertissement » : le travail acharné, les jeux, ou les futilités mondaines qui ne sont que des stratagèmes pour occuper l'esprit et s'aveugler sur notre condition. Nous ne vivons jamais le moment présent, préférant regretter le passé ou espérer un avenir meilleur. Cet aveuglement perpétuel rend le bonheur impossible, car nous passons à côté de la seule réalité existante sans jamais l'habiter. Seule la foi permet d'apaiser ce vide infini du cœur humain, tandis que les plaisirs du monde ne sont que des illusions temporaires. « Nous ne nous tenons jamais au temps présent [...] Ainsi nous ne vivons jamais, mais nous espérons de vivre, et nous disposant toujours à être heureux, il est inévitable que nous ne le soyons jamais. »",
+        argumentPivot: "Pascal démontre que le bonheur humain est une illusion, car l'homme cherche à fuir sa condition mortelle par un divertissement perpétuel."
+      },
+      {
+        these: "La corruption du bonheur par les désirs artificiels de la société",
+        reference: "Jean-Jacques Rousseau, Discours sur l'origine et les fondements de l'inégalité",
+        developpement: "Rousseau soutient que l'homme à l'état de nature connaissait un bonheur paisible, car il vivait dans une forme d'innocence isolée et se contentait de satisfaire ses besoins biologiques simples (se nourrir, se reposer). Cependant, l'entrée en société a irrémédiablement détruit ce bonheur en créant des relations de dépendance et d'amour-propre. La civilisation, en multipliant les techniques et la culture, a fait naître une infinité de désirs nouveaux et artificiels. L'individu moderne souffre de la comparaison constante avec autrui, cherchant le prestige et la richesse au lieu de la quiétude originelle. La société de consommation exacerbe ce décalage entre nos désirs illimités et nos moyens limités, nous condamnant à l'insatisfaction. Pour retrouver un bonheur authentique, l'homme doit tendre vers une simplicité naturelle.",
+        argumentPivot: "Rousseau affirme que la société a ruiné le bonheur simple de l'état de nature en multipliant les désirs superflus et en instaurant le règne de la comparaison sociale."
+      },
+      {
+        these: "Le bonheur comme une discipline volontaire, un serment, et un refus du pessimisme",
+        reference: "Alain, Propos sur le bonheur",
+        developpement: "Alain s'élève contre l'idée que le bonheur viendrait naturellement ou dépendrait de circonstances extérieures favorables. Le pessimisme et la tristesse relèvent, selon lui, de l'humeur corporelle et d'un laisser-aller paresseux face aux contrariétés de la vie. Au contraire, l'optimisme et le bonheur relèvent d'une décision ferme de la volonté. Il énonce la célèbre maxime : « Il faut jurer d'être heureux ». Le bonheur est un devoir éthique et une construction quotidienne, une posture d'esprit qui refuse de se laisser écraser par la fatalité. S'attendre à recevoir le bonheur passivement est une illusion. L'homme doit agir, se forcer au sourire, à la politesse et à la bonne humeur pour vaincre et surmonter activement les passions tristes et rayonner authentiquement.",
+        argumentPivot: "Alain conçoit le bonheur non pas comme une chance aléatoire subie, mais comme une conquête exigeante de la volonté qui refuse résolument la facilité du désespoir."
+      },
+      {
+        these: "Le bonheur dans la révolte lucide face à l'absurdité de la condition humaine",
+        reference: "Albert Camus, Le Mythe de Sisyphe",
+        developpement: "Dans Le Mythe de Sisyphe, Camus analyse ce qu'il appelle l'absurde : la confrontation entre le besoin profondément humain de trouver un sens à l'existence et l'indifférence silencieuse du monde, qui ne fournit aucune réponse à nos questions. Cette situation pourrait conduire au désespoir ou à la résignation. Pourtant, Camus refuse ces deux attitudes. À travers la figure de Sisyphe, condamné à pousser éternellement un rocher qui retombe sans cesse, il montre qu'il est possible de vivre pleinement malgré l'absence de sens ultime. Lorsque Sisyphe prend conscience de son destin et cesse d'espérer une délivrance, il conquiert une forme de liberté intérieure. Sa lucidité lui permet d'accepter sa condition sans se soumettre. Le bonheur ne réside donc ni dans l'illusion ni dans l'espoir d'un autre monde, mais dans l'engagement total dans la vie présente. En assumant l'absurde et en continuant à agir, créer et aimer, l'être humain affirme sa dignité et sa liberté. C'est pourquoi Camus conclut qu'« il faut imaginer Sisyphe heureux ».",
+        argumentPivot: "Pour Camus, le bonheur n'est pas la découverte d'un sens caché à l'existence, mais la capacité de vivre intensément malgré son absence, grâce à une lucidité qui nourrit la révolte et la liberté."
+      },
+      {
+        these: "L'illusion du bonheur matériel et l'aliénation des désirs",
+        reference: "Jean Baudrillard, La Société de consommation",
+        developpement: "Baudrillard analyse la manière dont le capitalisme moderne a reconfiguré la notion de bonheur pour l'assimiler à l'accumulation d'objets matériels et de signes de richesse. Dans la société de consommation, le système économique engendre perpétuellement de nouveaux faux besoins par la publicité, maintenant les individus dans un état de manque chronique. Le bonheur promis par les marchandises est une illusion montée de toutes pièces : l'acte d'achat n'apporte qu'une satisfaction éphémère avant que ne surgisse une nouvelle frustration. Le citoyen est ainsi aliéné, persuadé que son bien-être dépend de son pouvoir d'achat. Baudrillard démontre que ce prétendu bonheur n'est en fait qu'une idéologie asservissante servant l'enrichissement du système de production, nous détournant d'une réalisation personnelle.",
+        argumentPivot: "Baudrillard critique le mirage du bonheur par la consommation, dénonçant un système qui aliène l'individu en créant des frustrations artificielles."
+      },
+      {
+        these: "La véritable joie consiste à affirmer pleinement la vie, avec ses grandeurs comme avec ses souffrances.",
+        reference: "Friedrich Nietzsche, Le Gai Savoir",
+        developpement: "Dans Le Gai Savoir, Friedrich Nietzsche critique les conceptions du bonheur bourgeois qui recherchent avant tout la sécurité, le confort ou l'absence de souffrance. Il rejette également les morales et les religions qui dévalorisent la vie terrestre au profit d'un au-delà. Pour Nietzsche, la joie authentique naît de l'affirmation inconditionnelle de l'existence telle qu'elle est, dans toute sa complexité. Cette attitude s'exprime à travers l'amor fati (« l'amour du destin »), qui consiste non seulement à accepter ce qui nous arrive, mais à le vouloir et à l'aimer. La souffrance, l'échec et la finitude ne sont plus des obstacles au bonheur : ils deviennent des éléments constitutifs d'une vie pleinement assumée. L'expérience de l'Éternel Retour invite ainsi chacun à vivre de telle sorte qu'il puisse souhaiter revivre indéfiniment chaque instant de son existence. Le bonheur n'est donc pas un état de repos, mais une puissance créatrice qui transforme les épreuves en occasions de dépassement de soi et d'affirmation de la vie.",
+        argumentPivot: "Nietzsche oppose au bonheur fondé sur le confort et la tranquillité une joie affirmative, qui consiste à aimer son destin et à dire « oui » à la vie dans son intégralité, y compris dans ce qu'elle a de douloureux et de tragique."
+      },
+      {
+        these: "La joie comme manifestation de la création vitale",
+        reference: "Henri Bergson, L'Énergie spirituelle",
+        developpement: "Bergson établit une distinction philosophique fondamentale entre le plaisir et la joie. Le plaisir est seulement un stratagème de la nature, une sensation éphémère qui nous indique que notre organisme survit et maintient son équilibre. À l'inverse, la joie est un état dense, profond et durable. Elle surgit chaque fois que l'être humain participe à l'élan vital en créant de la nouveauté. Que ce soit la mère donnant la vie, l'artiste achevant un chef-d'œuvre, ou le savant découvrant une vérité, la joie signale toujours que la vie a triomphé, qu'elle s'est accrue et a gagné du terrain. Le bonheur véritable ne se trouve donc pas dans la passivité ou la consommation, mais dans l'accomplissement actif d'un acte créateur par lequel l'homme se dépasse.",
+        argumentPivot: "Bergson démontre que le véritable bonheur s'incarne dans la joie, signe irréfutable que l'individu participe à la création vitale et dépasse la simple survie organique."
+      },
+      {
+        these: "L'inaccessibilité du bonheur au présent pour un être de projet",
+        reference: "Jean-Paul Sartre, L'Être et le Néant",
+        developpement: "Pour Sartre, le bonheur tel qu'on le conçoit idéalement – un état de plénitude absolue et statique – est structurellement incompatible avec la nature de la conscience humaine (le pour-soi). L'homme n'est pas une chose achevée (un en-soi), il est perpétuellement « en projet », tendu vers l'avenir, et défini par un manque. Puisque nous sommes fondamentalement liberté et projection, nous ne pouvons jamais coïncider parfaitement avec nous-mêmes dans une plénitude immobile. C'est pourquoi Sartre affirme que « je ne puis être heureux qu'au passé ». Au présent, l'homme est angoisse, liberté et action. Le bonheur n'est donc qu'une illusion ou une reconstitution mémorielle rétrospective. Chercher un état de satisfaction définitive est une forme de « mauvaise foi » visant à fuir notre propre liberté.",
+        argumentPivot: "Sartre soutient que la conscience, perpétuellement en mouvement vers l'avenir, ne peut jamais atteindre un état de bonheur statique au présent, réduisant ce dernier à une illusion passée."
+      },
+      {
+        these: "Le bonheur par l'acceptation de notre condition humaine",
+        reference: "Michel de Montaigne, Les Essais",
+        developpement: "Montaigne propose une sagesse profondément humaniste, éloignée des idéaux inaccessibles et des ascétismes rigides. Selon lui, notre plus grand malheur vient de notre tendance à vivre sans cesse « hors de nous-mêmes », préoccupés par le futur ou effrayés par la mort. Pour être heureux, il faut apprendre à adhérer totalement au moment présent et à accepter notre condition imparfaite et mortelle. « Quand je danse, je danse ; quand je dors, je dors », écrit-il pour illustrer cette présence à soi. Le bonheur de Montaigne ne réside pas dans la suppression du désir, mais dans la modération bienveillante et la jouissance loyale de ce que la vie offre quotidiennement, en harmonie avec soi.",
+        argumentPivot: "Montaigne ancre le bonheur dans une présence attentive au moment présent, prônant l'acceptation de notre condition avec simplicité."
+      },
+      {
+        these: "La précarité du bonheur humain face aux aléas de la Fortune",
+        reference: "Nicolas Machiavel, Le Prince",
+        developpement: "Contrairement aux stoïciens qui croient que la seule volonté rationnelle peut rendre l'homme invulnérable, Machiavel introduit une perspective pragmatique où le bonheur terrestre dépend en grande partie de la « fortune » (la chance, les circonstances historiques imprévisibles). Dans Le Prince, il compare la fortune à un fleuve tumultueux qui, lorsqu'il déborde, détruit tout sur son passage. L'homme ne maîtrise qu'une partie de son destin, tandis que le reste échappe totalement à son contrôle. Pour maximiser ses chances de succès et de félicité, l'individu doit faire preuve de « virtù », c'est-à-dire d'énergie, de courage et d'adaptabilité, anticipant les crises. Cependant, le bonheur restera toujours fluctuant et précaire, exigeant une vigilance et une agilité constantes face aux revirements soudains de l'existence.",
+        argumentPivot: "Machiavel montre que le bonheur n'est jamais définitivement acquis, car il reste soumis aux aléas inévitables de la « fortune », nécessitant virtù et anticipation pour le préserver."
+      },
+      {
+        these: "Le bonheur par l'usage qualitatif du temps contre la dispersion",
+        reference: "Sénèque, De la brièveté de la vie",
+        developpement: "Le philosophe stoïcien Sénèque s'attaque à l'idée reçue selon laquelle la nature nous aurait octroyé une existence trop courte pour atteindre le bonheur. Pour lui, le problème ne vient pas de la quantité de temps qui nous est allouée, mais de la manière déplorable dont nous le gaspillons. Les hommes se rendent malheureux en dispersant leur temps précieux dans des futilités, la recherche d'honneurs vains ou l'accumulation de richesses. En différant sans cesse la recherche de la sagesse à un futur incertain, l'individu passe à côté de sa propre vie. Sénèque exhorte à récupérer la pleine possession de soi-même, à s'ancrer dans le moment présent et à cultiver la philosophie pour habiter qualitativement le temps.",
+        argumentPivot: "Sénèque exhorte à récupérer la pleine possession de soi-même, à cesser de remettre le bonheur au lendemain, à s'ancrer dans le moment présent et à cultiver la philosophie pour habiter qualitativement le temps."
+      },
+      {
+        these: "L'État comme communauté morale et lieu indispensable de la « vie bonne »",
+        reference: "Aristote, La Politique",
+        developpement: "Pour Aristote, l'homme est par nature un « animal politique » destiné à vivre en communauté. L'État, ou plus précisément la cité (polis), n'est pas une simple association utilitaire créée pour se défendre ou échanger des biens. Sa véritable finalité est éthique : elle vise la « vie bonne » et le bonheur suprême (l'eudaimonia) de ses citoyens. C'est à travers les lois et l'éducation politique que l'individu apprend la vertu et le juste milieu, indispensables à une existence accomplie. En dehors de la cité, l'être humain ne peut réaliser son potentiel rationnel et moral. L'État a donc la responsabilité d'orienter les volontés individuelles vers le bien commun, montrant que la politique est le prolongement nécessaire de la morale pour rendre les hommes heureux.",
+        argumentPivot: "Aristote démontre que l'homme ne peut atteindre le bonheur véritable qu'au sein de l'État, dont les lois guident les citoyens vers la vertu."
+      },
+      {
+        these: "L'État comme gestionnaire rationnel et quantitatif de l'utilité collective",
+        reference: "Jeremy Bentham, Introduction aux principes de la morale et de la législation",
+        developpement: "Dans la perspective utilitariste de Bentham, le rôle de l'État se dépouille de toute métaphysique pour devenir un calcul rationnel. Le but de tout gouvernement et de toute législation est de maximiser le plaisir et de minimiser la souffrance, visant ainsi « le plus grand bonheur pour le plus grand nombre ». Pour Bentham, le bonheur est une réalité quantifiable. L'État doit donc agir en gestionnaire de l'utilité sociale en évaluant l'impact de ses lois sur le bien-être concret de la population. Cette vision pragmatique légitime l'intervention de la puissance publique dans l'économie, la santé ou l'aménagement du territoire, car la valeur d'une institution politique se mesure uniquement à la somme de bien-être matériel et de plaisirs réels qu'elle produit pour ses citoyens.",
+        argumentPivot: "Bentham transforme l'État en un outil de régulation quantitative dont l'unique légitimité est de maximiser la somme globale de plaisirs au sein de la société."
+      },
+      {
+        these: "Le bonheur comme droit réel et but révolutionnaire de la société",
+        reference: "Saint-Just, Rapport au nom du Comité de salut public (1794)",
+        developpement: "Lors de la Révolution française, Saint-Just prononce cette formule célèbre : « Le bonheur est une idée neuve en Europe ». Il exprime ainsi un tournant historique majeur : la souffrance et la misère du peuple ne sont plus des fatalités théologiques ou naturelles, mais des échecs politiques que l'État a le devoir de corriger. L'article 1 de la Constitution de 1793 proclame d'ailleurs que « le but de la société est le bonheur commun ». Pour les révolutionnaires, l'État doit intervenir activement pour redistribuer les richesses et éradiquer l'indigence. Cette thèse jette les bases de l'État-providence moderne, où le bonheur n'est plus une quête purement privée ou spirituelle, mais une exigence sociale concrète et un droit garanti par les institutions publiques.",
+        argumentPivot: "Saint-Just affirme que l'État doit cesser d'être un observateur passif pour devenir l'acteur principal de l'éradication de la misère, faisant du bonheur un droit social."
+      },
+      {
+        these: "Le danger de l'État paternaliste et la défense de la liberté individuelle",
+        reference: "Emmanuel Kant, Sur l'expression courante : Il se peut que ce soit juste en théorie, mais en pratique cela ne vaut rien",
+        developpement: "Kant s'oppose fermement à l'idée que l'État devrait prendre en charge le bonheur de ses citoyens. Il affirme qu'un gouvernement qui se comporterait de manière paternaliste, en décidant à la place des individus de ce qui doit les réjouir ou les satisfaire, commet le pire des despotismes. Le bonheur étant subjectif, changeant et propre à l'imagination de chacun, il ne peut servir de base à une loi universelle. Le rôle de l'État doit strictement se limiter à garantir le Droit, c'est-à-dire un cadre de lois assurant la coexistence pacifique des libertés de chacun. Il appartient ensuite à chaque citoyen, en tant qu'adulte libre et responsable, de chercher son propre bonheur par les voies qu'il juge les meilleures pour lui-même.",
+        argumentPivot: "Kant dénonce l'État paternaliste comme une menace pour la liberté individuelle, affirmant que le rôle politique est de garantir le droit et non d'imposer un bonheur uniforme."
+      },
+      {
+        these: "Le despotisme doux de l'État tutélaire, anesthésiant de la liberté humaine",
+        reference: "Alexis de Tocqueville, De la démocratie en Amérique",
+        developpement: "Tocqueville met en garde les sociétés démocratiques contre une nouvelle forme de tyrannie qu'il nomme le « despotisme doux ». Il redoute l'avènement d'un État-providence hyperactif qui, sous couvert d'assurer la sécurité et le bien-être matériel des citoyens, s'immiscerait dans tous les détails de leur vie. Ce pouvoir tutélaire, bienveillant et prévoyant, cherche à fixer les individus dans un bonheur médiocre et uniforme. En prenant en charge toutes les difficultés quotidiennes, il ôte progressivement aux hommes « le trouble de penser et la peine de vivre ». Ce bonheur passif s'apparente à un anesthésiant politique qui infantilise le citoyen, affaiblit son libre arbitre et détruit la vigilance civique nécessaire à la préservation d'une véritable liberté démocratique.",
+        argumentPivot: "Tocqueville avertit que la recherche d'un bonheur matériel garanti par l'État risque de dégénérer en un despotisme doux qui prive les individus de leur autonomie."
+      },
+      {
+        these: "L'aliénation du bonheur programmé au détriment de notre condition humaine",
+        reference: "Aldous Huxley, Le Meilleur des mondes",
+        developpement: "Bien que romancier, Huxley propose une critique philosophique de l'État technocratique qui prend en charge le bonheur des citoyens. Dans sa dystopie, l'État mondial garantit une satisfaction totale et continue grâce au conditionnement biologique, aux distractions standardisées et à la consommation d'une drogue sans effets secondaires, le soma. Si les citoyens se déclarent heureux, ils ont été dépouillés de tout ce qui fait leur humanité : la liberté de choisir, la pensée critique, les émotions complexes, l'art authentique et le rapport à la douleur ou à l'amour. Huxley démontre qu'un bonheur entièrement administré par l'État exige le sacrifice de notre autonomie. Un bien-être sans liberté n'est qu'une aliénation dorée où l'être humain se réduit à un rouage passif.",
+        argumentPivot: "Huxley illustre qu'un bonheur parfait garanti et programmé par l'État détruit la liberté et l'épaisseur morale qui caractérisent notre dignité humaine."
+      },
+      {
+        these: "L'État neutre comme distributeur équitable des moyens du bonheur",
+        reference: "John Rawls, Théorie de la justice",
+        developpement: "Pour Rawls, l'État moderne doit observer une stricte neutralité éthique face aux multiples conceptions de la « vie bonne » que partagent ses citoyens. Il ne revient pas au gouvernement de définir le bonheur, mais d'assurer une répartition équitable des « biens premiers ». Ces biens essentiels comprennent les libertés fondamentales, l'égalité des chances, ainsi que les revenus et les ressources matérielles minimales. Les biens premiers ne constituent pas le bonheur en soi, mais ils sont les outils universels et indispensables dont chacun a besoin pour tenter de réaliser son propre projet de vie, quel qu'il soit. Ainsi, l'État n'apporte pas le bonheur de manière directive, mais il en garantit les conditions juridiques et matérielles de possibilité.",
+        argumentPivot: "Rawls soutient que l'État doit rester neutre quant à la définition de la vie heureuse, tout en garantissant à chacun un accès équitable aux outils nécessaires pour la construire."
+      },
+      {
+        these: "L'État comme développeur de capabilités pour une liberté réelle",
+        reference: "Amartya Sen, Un nouveau modèle économique : Développement, justice, liberté",
+        developpement: "Le philosophe Amartya Sen soutient que le rôle de l'État n'est pas de mesurer le bonheur à travers des indicateurs abstraits comme le produit intérieur brut, mais de développer les « capabilités » des individus. Les capabilités désignent la liberté réelle et concrète qu'a une personne de choisir la vie qu'elle a des raisons d'estimer. Pour cela, l'État doit activement lutter contre les obstacles qui entravent cette liberté, comme l'analphabétisme, la maladie ou l'exclusion sociale. En investissant dans l'éducation, la santé publique et les infrastructures démocratiques, l'État n'impose pas une définition du bonheur. Il donne simplement aux citoyens les capacités réelles d'agir, de s'émanciper et de devenir les véritables auteurs de leur propre épanouissement.",
+        argumentPivot: "Sen affirme que l'État doit concentrer ses efforts sur le développement des capacités réelles d'action des citoyens, leur permettant ainsi de choisir librement leur propre voie."
       }
     ]
   }

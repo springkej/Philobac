@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Search, Compass, Layers, User, Sparkles, BookOpen, ChevronRight } from 'lucide-react';
+import { Search, Compass, Layers, User, Sparkles, BookOpen, ChevronRight, X } from 'lucide-react';
 import { subjects, NOTIONS, THESES_LIBRARY, NOTION_INTRO_DATA } from './data';
 import { Subject, ExamType, Notion } from './types';
 
@@ -223,6 +223,42 @@ export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
   const [selectedThesisNotion, setSelectedThesisNotion] = useState<Notion | null>(null);
+  const [selectedAuthor, setSelectedAuthor] = useState<string | null>(null);
+
+  const authorsList = useMemo(() => {
+    const map = new Map<string, { name: string; theses: (import('./types').ThesisAngle & { notion: Notion })[] }>();
+    THESES_LIBRARY.forEach(thesisBlock => {
+      thesisBlock.angles.forEach(angle => {
+        // Extract author name (before comma)
+        const authorMatch = angle.reference.split(',')[0].trim();
+        const authorName = authorMatch || "Inconnu";
+        
+        if (!map.has(authorName)) {
+          map.set(authorName, { name: authorName, theses: [] });
+        }
+        map.get(authorName)!.theses.push({ ...angle, notion: thesisBlock.notion });
+      });
+    });
+    
+    return Array.from(map.values())
+      .map(entry => {
+        // Simple deduplication of identical theses if needed, here just raw
+        const uniqueTheses = entry.theses.reduce((acc, curr) => {
+          if (!acc.find(t => t.these === curr.these)) {
+            acc.push(curr);
+          }
+          return acc;
+        }, [] as typeof entry.theses);
+        return { ...entry, theses: uniqueTheses };
+      })
+      .sort((a, b) => a.name.localeCompare(b.name));
+  }, []);
+
+  const filteredAuthorsList = useMemo(() => {
+    if (!searchQuery.trim() || activeTab !== 'Auteurs') return authorsList;
+    const q = normalizeString(searchQuery.trim());
+    return authorsList.filter((author) => normalizeString(author.name).includes(q));
+  }, [authorsList, searchQuery, activeTab]);
 
   useEffect(() => {
     if (darkMode) {
@@ -340,6 +376,17 @@ export default function App() {
                 >
                   <Layers className="w-4 h-4" />
                   Explorer les annales
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => { setActiveTab('Auteurs'); setIsMobileMenuOpen(false); }}
+                  className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
+                    activeTab === 'Auteurs' ? 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-medium' : 'text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800/40 font-medium'
+                  }`}
+                >
+                  <User className="w-4 h-4" />
+                  Répertoire des auteurs
                 </button>
               </li>
             </ul>
@@ -465,6 +512,17 @@ export default function App() {
                         Explorer les annales
                       </button>
                     </li>
+                    <li>
+                      <button
+                        onClick={() => { setActiveTab('Auteurs'); setIsMobileMenuOpen(false); }}
+                        className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors ${
+                          activeTab === 'Auteurs' ? 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-semibold' : 'text-slate-500 dark:text-slate-400 font-medium'
+                        }`}
+                      >
+                        <User className="w-4 h-4" />
+                        Répertoire des auteurs
+                      </button>
+                    </li>
                   </ul>
                 </div>
 
@@ -556,6 +614,7 @@ export default function App() {
             <button onClick={() => setActiveTab('Theses')} className={`px-2.5 py-1.5 rounded text-[11px] font-bold whitespace-nowrap snap-start shrink-0 ${activeTab === 'Theses' ? 'bg-emerald-100 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400' : 'text-slate-500 dark:text-slate-400'}`}>Thèses</button>
             <button onClick={() => setActiveTab('Potentiel')} className={`px-2.5 py-1.5 rounded text-[11px] font-bold whitespace-nowrap snap-start shrink-0 ${activeTab === 'Potentiel' ? 'bg-amber-100 dark:bg-amber-950/40 text-amber-700 dark:text-amber-400' : 'text-slate-500 dark:text-slate-400'}`}>Potentiels</button>
             <button onClick={() => setActiveTab('Annale')} className={`px-2.5 py-1.5 rounded text-[11px] font-bold whitespace-nowrap snap-start shrink-0 ${activeTab === 'Annale' ? 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100' : 'text-slate-500 dark:text-slate-400'}`}>Annales</button>
+            <button onClick={() => setActiveTab('Auteurs')} className={`px-2.5 py-1.5 rounded text-[11px] font-bold whitespace-nowrap snap-start shrink-0 ${activeTab === 'Auteurs' ? 'bg-indigo-100 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-400' : 'text-slate-500 dark:text-slate-400'}`}>Auteurs</button>
           </div>
         </header>
 
@@ -566,11 +625,19 @@ export default function App() {
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
               <input
                 type="text"
-                placeholder="Rechercher un sujet, une notion..."
+                placeholder={activeTab === 'Auteurs' ? "Rechercher un auteur..." : "Rechercher un sujet, une notion..."}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 bg-slate-50 dark:bg-slate-800 border border-transparent rounded-lg text-sm text-slate-900 dark:text-white focus:bg-white dark:focus:bg-slate-900 focus:ring-2 focus:ring-slate-200 dark:focus:ring-slate-800 focus:border-slate-300 dark:focus:border-slate-700 transition-all outline-none"
+                className="w-full pl-10 pr-10 py-2 bg-slate-50 dark:bg-slate-800 border border-transparent rounded-lg text-sm text-slate-900 dark:text-white focus:bg-white dark:focus:bg-slate-900 focus:ring-2 focus:ring-slate-200 dark:focus:ring-slate-800 focus:border-slate-300 dark:focus:border-slate-700 transition-all outline-none"
               />
+              {searchQuery.length > 0 && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 flex items-center justify-center p-1 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
             </div>
           </div>
           <div className="flex items-center gap-3">
@@ -589,11 +656,19 @@ export default function App() {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
             <input
               type="text"
-              placeholder="Rechercher sujet/notion..."
+              placeholder={activeTab === 'Auteurs' ? "Rechercher auteur..." : "Rechercher sujet/notion..."}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-3 py-2 bg-slate-100 dark:bg-slate-800 border-transparent rounded-lg text-xs text-slate-900 dark:text-white outline-none"
+              className="w-full pl-9 pr-9 py-2 bg-slate-100 dark:bg-slate-800 border-transparent rounded-lg text-xs text-slate-900 dark:text-white outline-none"
             />
+            {searchQuery.length > 0 && (
+              <button
+                onClick={() => setSearchQuery('')}
+                className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 flex items-center justify-center p-1 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+              >
+                <X className="w-3.5 h-3.5" />
+              </button>
+            )}
           </div>
           {selectedYear !== 'all' && (
             <button 
@@ -756,6 +831,103 @@ export default function App() {
                             </div>
                           </div>
                         ))}
+                      </div>
+                    );
+                  })()}
+                </div>
+              )}
+            </div>
+          ) : activeTab === 'Auteurs' ? (
+            <div className="max-w-4xl mx-auto pb-12">
+              {!selectedAuthor ? (
+                <>
+                  <div className="mb-8">
+                    <h2 className="text-2xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2 mb-2">
+                      <User className="w-6 h-6 text-indigo-500" /> Répertoire des auteurs
+                    </h2>
+                    <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">Parcourez tous les philosophes cités dans notre base de données et découvrez les thèses associées.</p>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    {filteredAuthorsList.length === 0 ? (
+                      <div className="col-span-full p-8 text-center border border-slate-200 dark:border-slate-800 border-dashed rounded-xl bg-white/50 dark:bg-slate-900/50">
+                        <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Aucun auteur ne correspond à votre recherche.</p>
+                      </div>
+                    ) : (
+                      filteredAuthorsList.map((authorInfo) => (
+                        <button
+                          key={authorInfo.name}
+                          onClick={() => setSelectedAuthor(authorInfo.name)}
+                          className="flex flex-col text-left p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:shadow-md hover:border-indigo-300 dark:hover:border-indigo-700 transition-all select-none group"
+                        >
+                          <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors mb-1">{authorInfo.name}</h3>
+                          <p className="text-xs font-semibold text-slate-500 dark:text-slate-400">{authorInfo.theses.length} thèse{authorInfo.theses.length > 1 ? 's' : ''}</p>
+                        </button>
+                      ))
+                    )}
+                  </div>
+                </>
+              ) : (
+                <div className="space-y-8">
+                  <button 
+                    onClick={() => setSelectedAuthor(null)}
+                    className="text-xs font-bold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white flex items-center gap-1 transition-colors"
+                  >
+                    ← Retour à la liste des auteurs
+                  </button>
+
+                  {(() => {
+                    const authorData = authorsList.find(a => a.name === selectedAuthor);
+                    if (!authorData) return null;
+
+                    return (
+                      <div className="space-y-6">
+                        <div className="mb-4">
+                          <h1 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-3">
+                            <span className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/40 text-indigo-500 dark:text-indigo-400 rounded-full flex items-center justify-center shrink-0">
+                              <User className="w-6 h-6" />
+                            </span>
+                            {authorData.name}
+                          </h1>
+                          <p className="text-sm text-slate-500 dark:text-slate-400 font-medium mt-2">{authorData.theses.length} thèse{authorData.theses.length > 1 ? 's' : ''} répertoriée{authorData.theses.length > 1 ? 's' : ''}</p>
+                        </div>
+
+                        <div className="space-y-6 pt-4">
+                          {authorData.theses.map((angle, idx) => {
+                            const theme = NOTION_THEMES[angle.notion];
+                            return (
+                              <div key={idx} className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm transition-shadow hover:shadow-md">
+                                <div className={`p-4 border-b border-slate-100 dark:border-slate-800/60 ${theme?.thesisHeaderBg} dark:bg-slate-900/30 w-full`}>
+                                  <div className="flex items-center justify-between mb-2">
+                                    <span className={`px-2.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider ${theme?.badge}`}>{angle.notion}</span>
+                                  </div>
+                                  <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-1">{angle.these}</h3>
+                                  <p className="text-xs font-semibold text-slate-600 dark:text-slate-400 flex items-center gap-1.5">
+                                    <BookOpen className="w-3.5 h-3.5 shrink-0 text-slate-500 dark:text-slate-400" /> {angle.reference}
+                                  </p>
+                                </div>
+                                <div className="p-5 space-y-4">
+                                  <div>
+                                    <p className="text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-500 font-bold mb-2">Développement</p>
+                                    <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300 font-medium">
+                                      {angle.developpement.split(/(«[^»]+»|"[^"]+")/g).map((part, i) => {
+                                        if (part.startsWith('«') || part.startsWith('"')) {
+                                          return <em key={i} className={`${theme?.highlightWord} dark:text-amber-400`}>{part}</em>;
+                                        }
+                                        return part;
+                                      })}
+                                    </p>
+                                  </div>
+                                  <div className={`rounded-lg p-4 ${theme?.pivotBox} dark:bg-slate-950/40 dark:border-slate-800 dark:text-slate-200`}>
+                                    <p className="text-[10px] uppercase tracking-widest text-slate-500 dark:text-slate-400 font-bold mb-2">L'Argument Pivot</p>
+                                    <p className="text-sm font-bold leading-snug">
+                                      {angle.argumentPivot}
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
                       </div>
                     );
                   })()}
